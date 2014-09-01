@@ -1,18 +1,19 @@
-version 6.0
-
 " Setup vundle
 set rtp+=~/.vim/bundle/vundle/
 let path = '~/.vim/plugin/vundle_installed/'
 call vundle#rc(path)
 
+Plugin 'techlivezheng/vim-plugin-minibufexpl'
 Plugin 'taglist.vim'
 Plugin 'krisajenkins/vim-pipe'
-Plugin 'techlivezheng/vim-plugin-minibufexpl'
+Plugin 'cscope.vim'
+"Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 "Plugin 'airblade/vim-gitgutter'
 Plugin 'drmikehenry/vim-fontsize'
-Plugin 'cscope.vim'
 Plugin 'wincent/Command-T'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'wting/rust.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
@@ -25,10 +26,6 @@ set cscopeverbose
 set fileencodings=ucs-bom,utf-8,latin1
 set formatoptions=tcql
 set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon175,a:blinkon0
-
-" Force minibuf to start - prevents problems with using command-T
-let g:miniBufExplAutoStart = 1
-let g:miniBufExplBuffersNeeded = 0
 
 """"" FONTS
 "set guifont=LucidaTypewriter\ 9
@@ -60,55 +57,96 @@ set termencoding=utf-8
 set viminfo='20,\"50
 set window=69
 set number
+
+" Tab Settings
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
+set smarttab
+set expandtab
 set autoindent
 set smartindent
- 
+
+" Force minibuf to start - prevents problems with using command-T
+let g:miniBufExplAutoStart = 1
+let g:miniBufExplBuffersNeeded = 0
+
+" Copy to clipboard
+
+" relative path (src/foo.txt)
+nnoremap <leader>cr :let @+=expand("%")<CR>
+" absolute path (/something/src/foo.txt)
+nnoremap <leader>ca :let @+=expand("%:p")<CR>
+" filename (foo.txt)
+nnoremap <leader>cf :let @+=expand("%:t")<CR>
+" directory name (/something/src)
+nnoremap <leader>cd :let @+=expand("%:p:h")<CR>
+
+
 " Font sizes
- 
+
 nmap <F10> <Plug>FontsizeInc
 nmap <F9> <Plug>FontsizeDec
 
+" Col markings
+
+nnoremap <F8> :call ToggleColMarkings()<CR>
+function! ToggleColMarkings()
+  if &cc == 0
+    set cc=80
+    hi ColorColumn ctermbg=red ctermfg=white guibg=#592929
+    highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+    match OverLength /\%81v.\+/
+    echo "Columns marked"
+  else
+    set cc=0
+    highlight OverLength None
+    echo "Columns not marked"
+  endif
+endfunction
+
 """"" COLORS
-"colorscheme desert 
-"colorscheme colorful
-colorscheme gruvbox 
+set background=dark
+colorscheme gruvbox
 
 " lhs comments
-map ,# :s/^/#/<CR>
-map ,/ :s/^/\/\//<CR>
-map ,> :s/^/> /<CR>
-map ," :s/^/\"/<CR>
-map ,% :s/^/%/<CR>
-map ,! :s/^/!/<CR>
-map ,; :s/^/;/<CR>
-map ,- :s/^/--/<CR>
-map ,c :s/^\/\/\\|^--\\|^> \\|^[#"%!;]//<CR>
+map ,# :s/^/#/<CR>:noh<CR>
+map ,/ :s/^/\/\//<CR>:noh<CR>
+map ,> :s/^/> /<CR>:noh<CR>
+map ," :s/^/\"/<CR>:noh<CR>
+map ,% :s/^/%/<CR>:noh<CR>
+map ,! :s/^/!/<CR>:noh<CR>
+map ,; :s/^/;/<CR>:noh<CR>
+map ,- :s/^/--/<CR>:noh<CR>
+map ,c :s/^\/\/\\|^--\\|^> \\|^[#"%!;]//<CR>:noh<CR>
 
 " wrapping comments
-map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR>
-map ,( :s/^\(.*\)$/\(\* \1 \*\)/<CR>
-map ,< :s/^\(.*\)$/<!-- \1 -->/<CR>
-map ,d :s/^\([/(]\*\\|<!--\) \(.*\) \(\*[/)]\\|-->\)$/\2/<CR> 
+map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR>:noh<CR>
+map ,( :s/^\(.*\)$/\(\* \1 \*\)/<CR>:noh<CR>
+map ,< :s/^\(.*\)$/<!-- \1 -->/<CR>:noh<CR>
+map ,d :s/^\([/(]\*\\|<!--\) \(.*\) \(\*[/)]\\|-->\)$/\2/<CR>:noh<CR>
+
+" Create ctags
+command! Tags !ctags -R && cscope -Rb
 
 " Map CTRL X, C, V, A
 vnoremap <C-X> "+x
 vnoremap <C-C> "+y
-map <C-V>               "+gP
-map <C-A>               ggVG
+map <C-V> "+gP
+map <C-A> ggVG
+
+" Ctrl-V in insert mode
+set pastetoggle=<F12>
+inoremap <C-v> <F12><C-r>+<F12>
 
 " Ctrl-V in command line mode
 cmap <C-V> <C-R>+
 
 " Use CTRL-S for saving, also in Insert mode
-noremap <C-S>           :update<CR>
-vnoremap <C-S>          <C-C>:update<CR>
-inoremap <C-S>          <C-O>:update<CR>
+noremap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
 
-" Ctrl-V in insert mode
-set pastetoggle=<F12>
-inoremap <C-v> <F12><C-r>+<F12>
 
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
@@ -137,7 +175,7 @@ au FileType python setl shiftwidth=4 tabstop=4
 " Setup tags to recurse back up tree
 set tags=tags;/
 
-" func shortcuts
+" F key mappings
 map <F2> :NERDTreeToggle<CR>
 map <F3> :TlistToggle<CR>
 map <F7> :make<CR>
@@ -161,7 +199,7 @@ let g:CommandTMinHeight=20
 let g:CommandTMaxHeight=20
 let g:CommandTCursorStartMap='<Home>'
 let g:CommandTCursorEndMap='<End>'
- 
+
 " Ack search
 map <leader>a :Ack <cword><CR>
 
@@ -175,34 +213,36 @@ nnoremap <leader>p yyp^Cimport pdb; pdb.set_trace()<ESC>
 
 scriptencoding utf-8
 set encoding=utf-8
- 
+
 let g:lightline = {
-\ 'component_function': {
-\ 'fugitive': 'MyFugitive',
-\ },
-\ 'active': {
-\ 'left': [ [ 'mode', 'paste' ],
-\ [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
-\ },
-\ 'component': {
-\ 'readonly': '%{&filetype=="help"?"":&readonly?"\ue0a2":""}',
-\ 'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-\ 'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-\ },
-\ 'component_visible_condition': {
-\ 'readonly': '(&filetype!="help"&& &readonly)',
-\ 'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-\ 'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
-\ },
-\ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-\ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
-\ }
- 
+      \ 'component_function': {
+      \   'fugitive': 'MyFugitive',
+      \ },  
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component': {
+      \   'readonly': '%{&filetype=="help"?"":&readonly?"\ue0a2":""}',
+      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+      \ },
+      \ 'component_visible_condition': {
+      \   'readonly': '(&filetype!="help"&& &readonly)',
+      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+      \ },
+      \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+      \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+      \ }
+
 function! MyFugitive()
-if exists("*fugitive#head")
-let _ = fugitive#head()
-return strlen(_) ? "\ue0a0 "._ : ''
-endif
-return ''
+  if exists("*fugitive#head")
+    let _ = fugitive#head()
+    return strlen(_) ? "\ue0a0 "._ : ''
+  endif
+  return ''
 endfunction
+
+
 
