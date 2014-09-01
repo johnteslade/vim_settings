@@ -10,6 +10,7 @@ Plugin 'krisajenkins/vim-pipe'
 Plugin 'techlivezheng/vim-plugin-minibufexpl'
 Plugin 'mileszs/ack.vim'
 "Plugin 'airblade/vim-gitgutter'
+Plugin 'drmikehenry/vim-fontsize'
 Plugin 'cscope.vim'
 Plugin 'wincent/Command-T'
 Plugin 'Yggdroot/indentLine'
@@ -31,11 +32,23 @@ let g:miniBufExplBuffersNeeded = 0
 
 """"" FONTS
 "set guifont=LucidaTypewriter\ 9
-set guifont=Liberation\ Mono\ 10
+"set guifont=Liberation\ Mono\ 10
 "set guifont=Monaco\ 10
 "set guifont=DroidSansMono\ 10
 "set guifont=DejaVuSansMono\ 9 
 "set guifont=CodingFontTobi\ 12
+"set guifont=Monaco\ 9
+
+"" Switch depending on distro
+let os = substitute(system('lsb_release -si'), "\n", "", "")
+if os == "Fedora"
+    set guifont=Liberation\ Mono\ for\ Powerline\ 10
+else
+    set guifont=Liberation\ Mono\ for\ Powerline\ 9
+    " Fix for ack on Ubuntu
+    let g:ack_default_options = " -H --nocolor --nogroup --column"
+endif
+
 
 set helplang=en
 set history=50
@@ -51,7 +64,11 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-
+ 
+" Font sizes
+ 
+nmap <F10> <Plug>FontsizeInc
+nmap <F9> <Plug>FontsizeDec
 
 """"" COLORS
 "colorscheme desert 
@@ -90,8 +107,8 @@ vnoremap <C-S>          <C-C>:update<CR>
 inoremap <C-S>          <C-O>:update<CR>
 
 " Ctrl-V in insert mode
-set pastetoggle=<F10>
-inoremap <C-v> <F10><C-r>+<F10>
+set pastetoggle=<F12>
+inoremap <C-v> <F12><C-r>+<F12>
 
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
@@ -153,4 +170,39 @@ set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,*.o,*.orig,*~
 
 " Python debug line
 nnoremap <leader>p yyp^Cimport pdb; pdb.set_trace()<ESC>
+
+"" Lightline setup
+
+scriptencoding utf-8
+set encoding=utf-8
+ 
+let g:lightline = {
+\ 'component_function': {
+\ 'fugitive': 'MyFugitive',
+\ },
+\ 'active': {
+\ 'left': [ [ 'mode', 'paste' ],
+\ [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+\ },
+\ 'component': {
+\ 'readonly': '%{&filetype=="help"?"":&readonly?"\ue0a2":""}',
+\ 'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+\ 'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+\ },
+\ 'component_visible_condition': {
+\ 'readonly': '(&filetype!="help"&& &readonly)',
+\ 'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+\ 'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+\ },
+\ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+\ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+\ }
+ 
+function! MyFugitive()
+if exists("*fugitive#head")
+let _ = fugitive#head()
+return strlen(_) ? "\ue0a0 "._ : ''
+endif
+return ''
+endfunction
 
