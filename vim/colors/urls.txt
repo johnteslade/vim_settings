@@ -1,4 +1,6 @@
 https://raw.githubusercontent.com/morhetz/gruvbox/master/colors/gruvbox.vim
 https://h3rald.com/files/herald.vim
 https://github.com/nanotech/jellybeans.vim/raw/master/colors/jellybeans.vim
-https://github.com/altercation/vim-colors-solarized/blob/master/colors/solarized.vim
+https://github.com/altercation/vim-colors-solarized/raw/master/colors/solarized.vim
+https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
+https://github.com/29decibel/codeschool-vim-theme/raw/master/colors/codeschool.vim

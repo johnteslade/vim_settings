@@ -1,5052 +1,1117 @@
-
-
-
-
-<!DOCTYPE html>
-<html lang="en" class="   ">
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Language" content="en">
-    
-    
-    <title>vim-colors-solarized/solarized.vim at master · altercation/vim-colors-solarized · GitHub</title>
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
-    <meta property="fb:app_id" content="1401488693436528">
-
-      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="altercation/vim-colors-solarized" name="twitter:title" /><meta content="vim-colors-solarized - precision colorscheme for the vim text editor" name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/113542?v=2&amp;s=400" name="twitter:image:src" />
-<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/113542?v=2&amp;s=400" property="og:image" /><meta content="altercation/vim-colors-solarized" property="og:title" /><meta content="https://github.com/altercation/vim-colors-solarized" property="og:url" /><meta content="vim-colors-solarized - precision colorscheme for the vim text editor" property="og:description" />
-
-    <link rel="assets" href="https://assets-cdn.github.com/">
-    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
-    
-
-    <meta name="msapplication-TileImage" content="/windows-tile.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="selected-link" value="repo_source" data-pjax-transient>
-      <meta name="google-analytics" content="UA-3769691-2">
-
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="021B5EAD:255B:D8279C:5404D16B" name="octolytics-dimension-request_id" />
-    
-
-    
-    
-    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
-
-
-    <meta content="authenticity_token" name="csrf-param" />
-<meta content="QmB0boddLXmkHZRKHKn8ShwL5CqjDdmMI00galn4MRgLjHTCDXN4IlPcHLdwKTvSMCAUtzcw8gh9GiLkgjYgSA==" name="csrf-token" />
-
-    <link href="https://assets-cdn.github.com/assets/github-2f010074d65499cb8aaa1ae087582cb156e544c4.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="https://assets-cdn.github.com/assets/github2-bd1d16204c9d8b7092836e4709c50ae7cc341da4.css" media="all" rel="stylesheet" type="text/css" />
-    
-
-
-    <meta http-equiv="x-pjax-version" content="e5380a360077fb07abffca60a7971977">
-
-      
-  <meta name="description" content="vim-colors-solarized - precision colorscheme for the vim text editor">
-  <meta name="go-import" content="github.com/altercation/vim-colors-solarized git https://github.com/altercation/vim-colors-solarized.git">
-
-  <meta content="113542" name="octolytics-dimension-user_id" /><meta content="altercation" name="octolytics-dimension-user_login" /><meta content="1381275" name="octolytics-dimension-repository_id" /><meta content="altercation/vim-colors-solarized" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="1381275" name="octolytics-dimension-repository_network_root_id" /><meta content="altercation/vim-colors-solarized" name="octolytics-dimension-repository_network_root_nwo" />
-  <link href="https://github.com/altercation/vim-colors-solarized/commits/master.atom" rel="alternate" title="Recent Commits to vim-colors-solarized:master" type="application/atom+xml">
-
-  </head>
-
-
-  <body class="logged_out  env-production  vis-public page-blob">
-    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
-    <div class="wrapper">
-      
-      
-      
-      
-
-
-      
-      <div class="header header-logged-out">
-  <div class="container clearfix">
-
-    <a class="header-logo-wordmark" href="https://github.com/">
-      <span class="mega-octicon octicon-logo-github"></span>
-    </a>
-
-    <div class="header-actions">
-        <a class="button primary" href="/join">Sign up</a>
-      <a class="button signin" href="/login?return_to=%2Faltercation%2Fvim-colors-solarized%2Fblob%2Fmaster%2Fcolors%2Fsolarized.vim">Sign in</a>
-    </div>
-
-    <div class="site-search repo-scope js-site-search">
-      <form accept-charset="UTF-8" action="/altercation/vim-colors-solarized/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/altercation/vim-colors-solarized/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-  <input type="text"
-    class="js-site-search-field is-clearable"
-    data-hotkey="s"
-    name="q"
-    placeholder="Search"
-    data-global-scope-placeholder="Search GitHub"
-    data-repo-scope-placeholder="Search"
-    tabindex="1"
-    autocapitalize="off">
-  <div class="scope-badge">This repository</div>
-</form>
-    </div>
-
-      <ul class="header-nav left">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="/explore">Explore</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="/features">Features</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="https://enterprise.github.com/">Enterprise</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="/blog">Blog</a>
-          </li>
-      </ul>
-
-  </div>
-</div>
-
-
-
-      <div id="start-of-content" class="accessibility-aid"></div>
-          <div class="site" itemscope itemtype="http://schema.org/WebPage">
-    <div id="js-flash-container">
-      
-    </div>
-    <div class="pagehead repohead instapaper_ignore readability-menu">
-      <div class="container">
-        
-<ul class="pagehead-actions">
-
-
-  <li>
-      <a href="/login?return_to=%2Faltercation%2Fvim-colors-solarized"
-    class="minibutton with-count star-button tooltipped tooltipped-n"
-    aria-label="You must be signed in to star a repository" rel="nofollow">
-    <span class="octicon octicon-star"></span>
-    Star
-  </a>
-
-    <a class="social-count js-social-count" href="/altercation/vim-colors-solarized/stargazers">
-      2,526
-    </a>
-
-  </li>
-
-    <li>
-      <a href="/login?return_to=%2Faltercation%2Fvim-colors-solarized"
-        class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
-        aria-label="You must be signed in to fork a repository" rel="nofollow">
-        <span class="octicon octicon-repo-forked"></span>
-        Fork
-      </a>
-      <a href="/altercation/vim-colors-solarized/network" class="social-count">
-        748
-      </a>
-    </li>
-</ul>
-
-        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
-          <span class="mega-octicon octicon-repo"></span>
-          <span class="author"><a href="/altercation" class="url fn" itemprop="url" rel="author"><span itemprop="title">altercation</span></a></span><!--
-       --><span class="path-divider">/</span><!--
-       --><strong><a href="/altercation/vim-colors-solarized" class="js-current-repository js-repo-home-link">vim-colors-solarized</a></strong>
-
-          <span class="page-context-loader">
-            <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
-          </span>
-
-        </h1>
-      </div><!-- /.container -->
-    </div><!-- /.repohead -->
-
-    <div class="container">
-      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
-        <div class="repository-sidebar clearfix">
-            
-<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders" data-issue-count-url="/altercation/vim-colors-solarized/issues/counts">
-  <div class="sunken-menu-contents">
-    <ul class="sunken-menu-group">
-      <li class="tooltipped tooltipped-w" aria-label="Code">
-        <a href="/altercation/vim-colors-solarized" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /altercation/vim-colors-solarized">
-          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
-          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-
-        <li class="tooltipped tooltipped-w" aria-label="Issues">
-          <a href="/altercation/vim-colors-solarized/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /altercation/vim-colors-solarized/issues">
-            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
-            <span class="js-issue-replace-counter"></span>
-            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>        </li>
-
-      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
-        <a href="/altercation/vim-colors-solarized/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g p" data-selected-links="repo_pulls /altercation/vim-colors-solarized/pulls">
-            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
-            <span class="js-pull-replace-counter"></span>
-            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-
-
-    </ul>
-    <div class="sunken-menu-separator"></div>
-    <ul class="sunken-menu-group">
-
-      <li class="tooltipped tooltipped-w" aria-label="Pulse">
-        <a href="/altercation/vim-colors-solarized/pulse/weekly" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /altercation/vim-colors-solarized/pulse/weekly">
-          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
-          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-
-      <li class="tooltipped tooltipped-w" aria-label="Graphs">
-        <a href="/altercation/vim-colors-solarized/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /altercation/vim-colors-solarized/graphs">
-          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
-          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-    </ul>
-
-
-  </div>
-</div>
-
-              <div class="only-with-full-nav">
-                
-  
-<div class="clone-url open"
-  data-protocol-type="http"
-  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
-  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
-  <div class="input-group">
-    <input type="text" class="input-mini input-monospace js-url-field"
-           value="https://github.com/altercation/vim-colors-solarized.git" readonly="readonly">
-    <span class="input-group-button">
-      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/altercation/vim-colors-solarized.git" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
-    </span>
-  </div>
-</div>
-
-  
-<div class="clone-url "
-  data-protocol-type="subversion"
-  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
-  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
-  <div class="input-group">
-    <input type="text" class="input-mini input-monospace js-url-field"
-           value="https://github.com/altercation/vim-colors-solarized" readonly="readonly">
-    <span class="input-group-button">
-      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/altercation/vim-colors-solarized" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
-    </span>
-  </div>
-</div>
-
-
-<p class="clone-options">You can clone with
-      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>
-      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
-  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
-    <span class="octicon octicon-question"></span>
-  </a>
-</p>
-
-
-
-                <a href="/altercation/vim-colors-solarized/archive/master.zip"
-                   class="minibutton sidebar-button"
-                   aria-label="Download altercation/vim-colors-solarized as a zip file"
-                   title="Download altercation/vim-colors-solarized as a zip file"
-                   rel="nofollow">
-                  <span class="octicon octicon-cloud-download"></span>
-                  Download ZIP
-                </a>
-              </div>
-        </div><!-- /.repository-sidebar -->
-
-        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
-          
-
-<a href="/altercation/vim-colors-solarized/blob/528a59f26d12278698bb946f8fb82a63711eec21/colors/solarized.vim" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
-
-<!-- blob contrib key: blob_contributors:v21:2f5127a235ee39b54f8472dd8be1de09 -->
-
-<div class="file-navigation">
-  
-<div class="select-menu js-menu-container js-select-menu left">
-  <span class="minibutton select-menu-button js-menu-target css-truncate" data-hotkey="w"
-    data-master-branch="master"
-    data-ref="master"
-    title="master"
-    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
-    <span class="octicon octicon-git-branch"></span>
-    <i>branch:</i>
-    <span class="js-select-button css-truncate-target">master</span>
-  </span>
-
-  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
-
-    <div class="select-menu-modal">
-      <div class="select-menu-header">
-        <span class="select-menu-title">Switch branches/tags</span>
-        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
-      </div> <!-- /.select-menu-header -->
-
-      <div class="select-menu-filters">
-        <div class="select-menu-text-filter">
-          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
-        </div>
-        <div class="select-menu-tabs">
-          <ul>
-            <li class="select-menu-tab">
-              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
-            </li>
-            <li class="select-menu-tab">
-              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
-            </li>
-          </ul>
-        </div><!-- /.select-menu-tabs -->
-      </div><!-- /.select-menu-filters -->
-
-      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
-
-        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
-
-
-            <div class="select-menu-item js-navigation-item selected">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/altercation/vim-colors-solarized/blob/master/colors/solarized.vim"
-                 data-name="master"
-                 data-skip-pjax="true"
-                 rel="nofollow"
-                 class="js-navigation-open select-menu-item-text css-truncate-target"
-                 title="master">master</a>
-            </div> <!-- /.select-menu-item -->
-        </div>
-
-          <div class="select-menu-no-results">Nothing to show</div>
-      </div> <!-- /.select-menu-list -->
-
-      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
-        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
-
-
-        </div>
-
-        <div class="select-menu-no-results">Nothing to show</div>
-      </div> <!-- /.select-menu-list -->
-
-    </div> <!-- /.select-menu-modal -->
-  </div> <!-- /.select-menu-modal-holder -->
-</div> <!-- /.select-menu -->
-
-  <div class="button-group right">
-    <a href="/altercation/vim-colors-solarized/find/master"
-          class="js-show-file-finder minibutton empty-icon tooltipped tooltipped-s"
-          data-pjax
-          data-hotkey="t"
-          aria-label="Quickly jump between files">
-      <span class="octicon octicon-list-unordered"></span>
-    </a>
-    <button class="js-zeroclipboard minibutton zeroclipboard-button"
-          data-clipboard-text="colors/solarized.vim"
-          aria-label="Copy to clipboard"
-          data-copied-hint="Copied!">
-      <span class="octicon octicon-clippy"></span>
-    </button>
-  </div>
-
-  <div class="breadcrumb">
-    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/altercation/vim-colors-solarized" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">vim-colors-solarized</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/altercation/vim-colors-solarized/tree/master/colors" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">colors</span></a></span><span class="separator"> / </span><strong class="final-path">solarized.vim</strong>
-  </div>
-</div>
-
-
-  <div class="commit file-history-tease">
-    <div class="file-history-tease-header">
-        <img alt="Ethan Schoonover" class="avatar" data-user="113542" height="24" src="https://avatars0.githubusercontent.com/u/113542?v=2&amp;s=48" width="24" />
-        <span class="author"><a href="/altercation" rel="author">altercation</a></span>
-        <time datetime="2011-05-09T14:39:01-07:00" is="relative-time">May 09, 2011</time>
-        <div class="commit-title">
-            <a href="/altercation/vim-colors-solarized/commit/528a59f26d12278698bb946f8fb82a63711eec21" class="message" data-pjax="true" title="[vim] solarized.vim menu updates">[vim] solarized.vim menu updates</a>
-        </div>
-    </div>
-
-    <div class="participation">
-      <p class="quickstat">
-        <a href="#blob_contributors_box" rel="facebox">
-          <strong>3</strong>
-           contributors
-        </a>
-      </p>
-          <a class="avatar-link tooltipped tooltipped-s" aria-label="altercation" href="/altercation/vim-colors-solarized/commits/master/colors/solarized.vim?author=altercation"><img alt="Ethan Schoonover" class="avatar" data-user="113542" height="20" src="https://avatars2.githubusercontent.com/u/113542?v=2&amp;s=40" width="20" /></a>
-    <a class="avatar-link tooltipped tooltipped-s" aria-label="tpope" href="/altercation/vim-colors-solarized/commits/master/colors/solarized.vim?author=tpope"><img alt="Tim Pope" class="avatar" data-user="378" height="20" src="https://avatars1.githubusercontent.com/u/378?v=2&amp;s=40" width="20" /></a>
-    <a class="avatar-link tooltipped tooltipped-s" aria-label="nelstrom" href="/altercation/vim-colors-solarized/commits/master/colors/solarized.vim?author=nelstrom"><img alt="Drew Neil" class="avatar" data-user="7069" height="20" src="https://avatars3.githubusercontent.com/u/7069?v=2&amp;s=40" width="20" /></a>
-
-
-    </div>
-    <div id="blob_contributors_box" style="display:none">
-      <h2 class="facebox-header">Users who have contributed to this file</h2>
-      <ul class="facebox-user-list">
-          <li class="facebox-user-list-item">
-            <img alt="Ethan Schoonover" data-user="113542" height="24" src="https://avatars0.githubusercontent.com/u/113542?v=2&amp;s=48" width="24" />
-            <a href="/altercation">altercation</a>
-          </li>
-          <li class="facebox-user-list-item">
-            <img alt="Tim Pope" data-user="378" height="24" src="https://avatars3.githubusercontent.com/u/378?v=2&amp;s=48" width="24" />
-            <a href="/tpope">tpope</a>
-          </li>
-          <li class="facebox-user-list-item">
-            <img alt="Drew Neil" data-user="7069" height="24" src="https://avatars1.githubusercontent.com/u/7069?v=2&amp;s=48" width="24" />
-            <a href="/nelstrom">nelstrom</a>
-          </li>
-      </ul>
-    </div>
-  </div>
-
-<div class="file-box">
-  <div class="file">
-    <div class="meta clearfix">
-      <div class="info file-name">
-          <span>1118 lines (1058 sloc)</span>
-          <span class="meta-divider"></span>
-        <span>51.917 kb</span>
-      </div>
-      <div class="actions">
-        <div class="button-group">
-          <a href="/altercation/vim-colors-solarized/raw/master/colors/solarized.vim" class="minibutton " id="raw-url">Raw</a>
-            <a href="/altercation/vim-colors-solarized/blame/master/colors/solarized.vim" class="minibutton js-update-url-with-hash">Blame</a>
-          <a href="/altercation/vim-colors-solarized/commits/master/colors/solarized.vim" class="minibutton " rel="nofollow">History</a>
-        </div><!-- /.button-group -->
-
-
-            <a class="octicon-button disabled tooltipped tooltipped-w" href="#"
-               aria-label="You must be signed in to make or propose changes"><span class="octicon octicon-pencil"></span></a>
-
-          <a class="octicon-button danger disabled tooltipped tooltipped-w" href="#"
-             aria-label="You must be signed in to make or propose changes">
-          <span class="octicon octicon-trashcan"></span>
-        </a>
-      </div><!-- /.actions -->
-    </div>
-      
-  <div class="blob-wrapper data type-viml">
-      <table class="highlight tab-size-8 js-file-line-container">
-      <tr>
-        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code js-file-line"><span class="c">&quot; Name:     Solarized vim colorscheme</span></td>
-      </tr>
-      <tr>
-        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code js-file-line"><span class="c">&quot; Author:   Ethan Schoonover &lt;es@ethanschoonover.com&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code js-file-line"><span class="c">&quot; URL:      http://ethanschoonover.com/solarized</span></td>
-      </tr>
-      <tr>
-        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code js-file-line"><span class="c">&quot;           (see this url for latest release &amp; screenshots)</span></td>
-      </tr>
-      <tr>
-        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code js-file-line"><span class="c">&quot; License:  OSI approved MIT license (see end of this file)</span></td>
-      </tr>
-      <tr>
-        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code js-file-line"><span class="c">&quot; Created:  In the middle of the night</span></td>
-      </tr>
-      <tr>
-        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code js-file-line"><span class="c">&quot; Modified: 2011 May 05</span></td>
-      </tr>
-      <tr>
-        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code js-file-line"><span class="c">&quot; Usage &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code js-file-line"><span class="c">&quot; ABOUT:</span></td>
-      </tr>
-      <tr>
-        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code js-file-line"><span class="c">&quot; Solarized is a carefully designed selective contrast colorscheme with dual</span></td>
-      </tr>
-      <tr>
-        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code js-file-line"><span class="c">&quot; light and dark modes that runs in both GUI, 256 and 16 color modes.</span></td>
-      </tr>
-      <tr>
-        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code js-file-line"><span class="c">&quot; See the homepage above for screenshots and details.</span></td>
-      </tr>
-      <tr>
-        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="LC19" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code js-file-line"><span class="c">&quot; OPTIONS:</span></td>
-      </tr>
-      <tr>
-        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code js-file-line"><span class="c">&quot; See the &quot;solarized.txt&quot; help file included with this colorscheme (in the </span></td>
-      </tr>
-      <tr>
-        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code js-file-line"><span class="c">&quot; &quot;doc&quot; subdirectory) for information on options, usage, the Toggle Background </span></td>
-      </tr>
-      <tr>
-        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code js-file-line"><span class="c">&quot; function and more. If you have already installed Solarized, this is available </span></td>
-      </tr>
-      <tr>
-        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code js-file-line"><span class="c">&quot; from the Solarized menu and command line as &quot;:help solarized&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code js-file-line"><span class="c">&quot; INSTALLATION:</span></td>
-      </tr>
-      <tr>
-        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
-        <td id="LC29" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="LC30" class="blob-code js-file-line"><span class="c">&quot; Two options for installation: manual or pathogen</span></td>
-      </tr>
-      <tr>
-        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
-        <td id="LC31" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
-        <td id="LC32" class="blob-code js-file-line"><span class="c">&quot; MANUAL INSTALLATION OPTION:</span></td>
-      </tr>
-      <tr>
-        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
-        <td id="LC33" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
-        <td id="LC34" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
-        <td id="LC35" class="blob-code js-file-line"><span class="c">&quot; 1.  Download the solarized distribution (available on the homepage above)</span></td>
-      </tr>
-      <tr>
-        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
-        <td id="LC36" class="blob-code js-file-line"><span class="c">&quot;     and unarchive the file.</span></td>
-      </tr>
-      <tr>
-        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
-        <td id="LC37" class="blob-code js-file-line"><span class="c">&quot; 2.  Move `solarized.vim` to your `.vim/colors` directory.</span></td>
-      </tr>
-      <tr>
-        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
-        <td id="LC38" class="blob-code js-file-line"><span class="c">&quot; 3.  Move each of the files in each subdirectories to the corresponding .vim</span></td>
-      </tr>
-      <tr>
-        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
-        <td id="LC39" class="blob-code js-file-line"><span class="c">&quot;     subdirectory (e.g. autoload/togglebg.vim goes into your .vim/autoload </span></td>
-      </tr>
-      <tr>
-        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
-        <td id="LC40" class="blob-code js-file-line"><span class="c">&quot;     directory as .vim/autoload/togglebg.vim).</span></td>
-      </tr>
-      <tr>
-        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
-        <td id="LC41" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
-        <td id="LC42" class="blob-code js-file-line"><span class="c">&quot; RECOMMENDED PATHOGEN INSTALLATION OPTION:</span></td>
-      </tr>
-      <tr>
-        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
-        <td id="LC43" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
-        <td id="LC44" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
-        <td id="LC45" class="blob-code js-file-line"><span class="c">&quot; 1.  Download and install Tim Pope&#39;s Pathogen from:</span></td>
-      </tr>
-      <tr>
-        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
-        <td id="LC46" class="blob-code js-file-line"><span class="c">&quot;     https://github.com/tpope/vim-pathogen</span></td>
-      </tr>
-      <tr>
-        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
-        <td id="LC47" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
-        <td id="LC48" class="blob-code js-file-line"><span class="c">&quot; 2.  Next, move or clone the `vim-colors-solarized` directory so that it is</span></td>
-      </tr>
-      <tr>
-        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
-        <td id="LC49" class="blob-code js-file-line"><span class="c">&quot;     a subdirectory of the `.vim/bundle` directory.</span></td>
-      </tr>
-      <tr>
-        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
-        <td id="LC50" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
-        <td id="LC51" class="blob-code js-file-line"><span class="c">&quot;     a. **clone with git:**</span></td>
-      </tr>
-      <tr>
-        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
-        <td id="LC52" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
-        <td id="LC53" class="blob-code js-file-line"><span class="c">&quot;       $ cd ~/.vim/bundle</span></td>
-      </tr>
-      <tr>
-        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
-        <td id="LC54" class="blob-code js-file-line"><span class="c">&quot;       $ git clone git://github.com/altercation/vim-colors-solarized.git</span></td>
-      </tr>
-      <tr>
-        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
-        <td id="LC55" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
-        <td id="LC56" class="blob-code js-file-line"><span class="c">&quot;     b. **or move manually into the pathogen bundle directory:**</span></td>
-      </tr>
-      <tr>
-        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
-        <td id="LC57" class="blob-code js-file-line"><span class="c">&quot;         In the parent directory of vim-colors-solarized:</span></td>
-      </tr>
-      <tr>
-        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
-        <td id="LC58" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
-        <td id="LC59" class="blob-code js-file-line"><span class="c">&quot;         $ mv vim-colors-solarized ~/.vim/bundle/</span></td>
-      </tr>
-      <tr>
-        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
-        <td id="LC60" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
-        <td id="LC61" class="blob-code js-file-line"><span class="c">&quot; MODIFY VIMRC:</span></td>
-      </tr>
-      <tr>
-        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
-        <td id="LC62" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
-        <td id="LC63" class="blob-code js-file-line"><span class="c">&quot; After either Option 1 or Option 2 above, put the following two lines in your</span></td>
-      </tr>
-      <tr>
-        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
-        <td id="LC64" class="blob-code js-file-line"><span class="c">&quot; .vimrc:</span></td>
-      </tr>
-      <tr>
-        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
-        <td id="LC65" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
-        <td id="LC66" class="blob-code js-file-line"><span class="c">&quot;     syntax enable</span></td>
-      </tr>
-      <tr>
-        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
-        <td id="LC67" class="blob-code js-file-line"><span class="c">&quot;     set background=dark</span></td>
-      </tr>
-      <tr>
-        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
-        <td id="LC68" class="blob-code js-file-line"><span class="c">&quot;     colorscheme solarized</span></td>
-      </tr>
-      <tr>
-        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
-        <td id="LC69" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
-        <td id="LC70" class="blob-code js-file-line"><span class="c">&quot; or, for the light background mode of Solarized:</span></td>
-      </tr>
-      <tr>
-        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
-        <td id="LC71" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
-        <td id="LC72" class="blob-code js-file-line"><span class="c">&quot;     syntax enable</span></td>
-      </tr>
-      <tr>
-        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
-        <td id="LC73" class="blob-code js-file-line"><span class="c">&quot;     set background=light</span></td>
-      </tr>
-      <tr>
-        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
-        <td id="LC74" class="blob-code js-file-line"><span class="c">&quot;     colorscheme solarized</span></td>
-      </tr>
-      <tr>
-        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
-        <td id="LC75" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
-        <td id="LC76" class="blob-code js-file-line"><span class="c">&quot; I like to have a different background in GUI and terminal modes, so I can use</span></td>
-      </tr>
-      <tr>
-        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
-        <td id="LC77" class="blob-code js-file-line"><span class="c">&quot; the following if-then. However, I find vim&#39;s background autodetection to be</span></td>
-      </tr>
-      <tr>
-        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
-        <td id="LC78" class="blob-code js-file-line"><span class="c">&quot; pretty good and, at least with MacVim, I can leave this background value</span></td>
-      </tr>
-      <tr>
-        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
-        <td id="LC79" class="blob-code js-file-line"><span class="c">&quot; assignment out entirely and get the same results.</span></td>
-      </tr>
-      <tr>
-        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
-        <td id="LC80" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
-        <td id="LC81" class="blob-code js-file-line"><span class="c">&quot;     if has(&#39;gui_running&#39;)</span></td>
-      </tr>
-      <tr>
-        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
-        <td id="LC82" class="blob-code js-file-line"><span class="c">&quot;       set background=light</span></td>
-      </tr>
-      <tr>
-        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
-        <td id="LC83" class="blob-code js-file-line"><span class="c">&quot;     else</span></td>
-      </tr>
-      <tr>
-        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
-        <td id="LC84" class="blob-code js-file-line"><span class="c">&quot;       set background=dark</span></td>
-      </tr>
-      <tr>
-        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
-        <td id="LC85" class="blob-code js-file-line"><span class="c">&quot;     endif</span></td>
-      </tr>
-      <tr>
-        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
-        <td id="LC86" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
-        <td id="LC87" class="blob-code js-file-line"><span class="c">&quot; See the Solarized homepage at http://ethanschoonover.com/solarized for</span></td>
-      </tr>
-      <tr>
-        <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
-        <td id="LC88" class="blob-code js-file-line"><span class="c">&quot; screenshots which will help you select either the light or dark background.</span></td>
-      </tr>
-      <tr>
-        <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
-        <td id="LC89" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
-        <td id="LC90" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
-        <td id="LC91" class="blob-code js-file-line"><span class="c">&quot; COLOR VALUES</span></td>
-      </tr>
-      <tr>
-        <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
-        <td id="LC92" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
-        <td id="LC93" class="blob-code js-file-line"><span class="c">&quot; Download palettes and files from: http://ethanschoonover.com/solarized</span></td>
-      </tr>
-      <tr>
-        <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
-        <td id="LC94" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
-        <td id="LC95" class="blob-code js-file-line"><span class="c">&quot; L\*a\*b values are canonical (White D65, Reference D50), other values are</span></td>
-      </tr>
-      <tr>
-        <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
-        <td id="LC96" class="blob-code js-file-line"><span class="c">&quot; matched in sRGB space.</span></td>
-      </tr>
-      <tr>
-        <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
-        <td id="LC97" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
-        <td id="LC98" class="blob-code js-file-line"><span class="c">&quot; SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      sRGB        HSB</span></td>
-      </tr>
-      <tr>
-        <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
-        <td id="LC99" class="blob-code js-file-line"><span class="c">&quot; --------- ------- ---- -------  ----------- ---------- ----------- -----------</span></td>
-      </tr>
-      <tr>
-        <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
-        <td id="LC100" class="blob-code js-file-line"><span class="c">&quot; base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21</span></td>
-      </tr>
-      <tr>
-        <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
-        <td id="LC101" class="blob-code js-file-line"><span class="c">&quot; base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26</span></td>
-      </tr>
-      <tr>
-        <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
-        <td id="LC102" class="blob-code js-file-line"><span class="c">&quot; base01    #586e75 10/7 brgreen  240 #4e4e4e 45 -07 -07  88 110 117 194  25  46</span></td>
-      </tr>
-      <tr>
-        <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
-        <td id="LC103" class="blob-code js-file-line"><span class="c">&quot; base00    #657b83 11/7 bryellow 241 #585858 50 -07 -07 101 123 131 195  23  51</span></td>
-      </tr>
-      <tr>
-        <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
-        <td id="LC104" class="blob-code js-file-line"><span class="c">&quot; base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59</span></td>
-      </tr>
-      <tr>
-        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
-        <td id="LC105" class="blob-code js-file-line"><span class="c">&quot; base1     #93a1a1 14/4 brcyan   245 #8a8a8a 65 -05 -02 147 161 161 180   9  63</span></td>
-      </tr>
-      <tr>
-        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
-        <td id="LC106" class="blob-code js-file-line"><span class="c">&quot; base2     #eee8d5  7/7 white    254 #d7d7af 92 -00  10 238 232 213  44  11  93</span></td>
-      </tr>
-      <tr>
-        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
-        <td id="LC107" class="blob-code js-file-line"><span class="c">&quot; base3     #fdf6e3 15/7 brwhite  230 #ffffd7 97  00  10 253 246 227  44  10  99</span></td>
-      </tr>
-      <tr>
-        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
-        <td id="LC108" class="blob-code js-file-line"><span class="c">&quot; yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  71</span></td>
-      </tr>
-      <tr>
-        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
-        <td id="LC109" class="blob-code js-file-line"><span class="c">&quot; orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80</span></td>
-      </tr>
-      <tr>
-        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
-        <td id="LC110" class="blob-code js-file-line"><span class="c">&quot; red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86</span></td>
-      </tr>
-      <tr>
-        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
-        <td id="LC111" class="blob-code js-file-line"><span class="c">&quot; magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83</span></td>
-      </tr>
-      <tr>
-        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
-        <td id="LC112" class="blob-code js-file-line"><span class="c">&quot; violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77</span></td>
-      </tr>
-      <tr>
-        <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
-        <td id="LC113" class="blob-code js-file-line"><span class="c">&quot; blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82</span></td>
-      </tr>
-      <tr>
-        <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
-        <td id="LC114" class="blob-code js-file-line"><span class="c">&quot; cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63</span></td>
-      </tr>
-      <tr>
-        <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
-        <td id="LC115" class="blob-code js-file-line"><span class="c">&quot; green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60</span></td>
-      </tr>
-      <tr>
-        <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
-        <td id="LC116" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
-        <td id="LC117" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
-        <td id="LC118" class="blob-code js-file-line"><span class="c">&quot; COLORSCHEME HACKING</span></td>
-      </tr>
-      <tr>
-        <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
-        <td id="LC119" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
-        <td id="LC120" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
-        <td id="LC121" class="blob-code js-file-line"><span class="c">&quot; Useful commands for testing colorschemes:</span></td>
-      </tr>
-      <tr>
-        <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
-        <td id="LC122" class="blob-code js-file-line"><span class="c">&quot; :source $VIMRUNTIME/syntax/hitest.vim</span></td>
-      </tr>
-      <tr>
-        <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
-        <td id="LC123" class="blob-code js-file-line"><span class="c">&quot; :help highlight-groups</span></td>
-      </tr>
-      <tr>
-        <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
-        <td id="LC124" class="blob-code js-file-line"><span class="c">&quot; :help cterm-colors</span></td>
-      </tr>
-      <tr>
-        <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
-        <td id="LC125" class="blob-code js-file-line"><span class="c">&quot; :help group-name</span></td>
-      </tr>
-      <tr>
-        <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
-        <td id="LC126" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
-        <td id="LC127" class="blob-code js-file-line"><span class="c">&quot; Useful links for developing colorschemes:</span></td>
-      </tr>
-      <tr>
-        <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
-        <td id="LC128" class="blob-code js-file-line"><span class="c">&quot; http://www.vim.org/scripts/script.php?script_id=2937</span></td>
-      </tr>
-      <tr>
-        <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
-        <td id="LC129" class="blob-code js-file-line"><span class="c">&quot; http://vimcasts.org/episodes/creating-colorschemes-for-vim/</span></td>
-      </tr>
-      <tr>
-        <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
-        <td id="LC130" class="blob-code js-file-line"><span class="c">&quot; http://www.frexx.de/xterm-256-notes/&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
-        <td id="LC131" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
-        <td id="LC132" class="blob-code js-file-line"><span class="c">&quot; }}}</span></td>
-      </tr>
-      <tr>
-        <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
-        <td id="LC133" class="blob-code js-file-line"><span class="c">&quot; Environment Specific Overrides &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
-        <td id="LC134" class="blob-code js-file-line"><span class="c">&quot; Allow or disallow certain features based on current terminal emulator or </span></td>
-      </tr>
-      <tr>
-        <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
-        <td id="LC135" class="blob-code js-file-line"><span class="c">&quot; environment.</span></td>
-      </tr>
-      <tr>
-        <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
-        <td id="LC136" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
-        <td id="LC137" class="blob-code js-file-line"><span class="c">&quot; Terminals that support italics</span></td>
-      </tr>
-      <tr>
-        <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
-        <td id="LC138" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:terms_italic<span class="p">=</span>[</td>
-      </tr>
-      <tr>
-        <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
-        <td id="LC139" class="blob-code js-file-line">            \<span class="s2">&quot;rxvt&quot;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
-        <td id="LC140" class="blob-code js-file-line">            \<span class="s2">&quot;gnome-terminal&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
-        <td id="LC141" class="blob-code js-file-line">            \]</td>
-      </tr>
-      <tr>
-        <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
-        <td id="LC142" class="blob-code js-file-line"><span class="c">&quot; For reference only, terminals are known to be incomptible.</span></td>
-      </tr>
-      <tr>
-        <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
-        <td id="LC143" class="blob-code js-file-line"><span class="c">&quot; Terminals that are in neither list need to be tested.</span></td>
-      </tr>
-      <tr>
-        <td id="L144" class="blob-num js-line-number" data-line-number="144"></td>
-        <td id="LC144" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:terms_noitalic<span class="p">=</span>[</td>
-      </tr>
-      <tr>
-        <td id="L145" class="blob-num js-line-number" data-line-number="145"></td>
-        <td id="LC145" class="blob-code js-file-line">            \<span class="s2">&quot;iTerm.app&quot;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L146" class="blob-num js-line-number" data-line-number="146"></td>
-        <td id="LC146" class="blob-code js-file-line">            \<span class="s2">&quot;Apple_Terminal&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L147" class="blob-num js-line-number" data-line-number="147"></td>
-        <td id="LC147" class="blob-code js-file-line">            \]</td>
-      </tr>
-      <tr>
-        <td id="L148" class="blob-num js-line-number" data-line-number="148"></td>
-        <td id="LC148" class="blob-code js-file-line"><span class="k">if</span> has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L149" class="blob-num js-line-number" data-line-number="149"></td>
-        <td id="LC149" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:terminal_italic<span class="p">=</span><span class="m">1</span> <span class="c">&quot; TODO: could refactor to not require this at all</span></td>
-      </tr>
-      <tr>
-        <td id="L150" class="blob-num js-line-number" data-line-number="150"></td>
-        <td id="LC150" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L151" class="blob-num js-line-number" data-line-number="151"></td>
-        <td id="LC151" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:terminal_italic<span class="p">=</span><span class="m">0</span> <span class="c">&quot; terminals will be guilty until proven compatible</span></td>
-      </tr>
-      <tr>
-        <td id="L152" class="blob-num js-line-number" data-line-number="152"></td>
-        <td id="LC152" class="blob-code js-file-line">    <span class="k">for</span> <span class="nb">term</span> <span class="k">in</span> <span class="k">s</span>:terms_italic</td>
-      </tr>
-      <tr>
-        <td id="L153" class="blob-num js-line-number" data-line-number="153"></td>
-        <td id="LC153" class="blob-code js-file-line">        <span class="k">if</span> $TERM_PROGRAM <span class="p">=~</span> <span class="nb">term</span></td>
-      </tr>
-      <tr>
-        <td id="L154" class="blob-num js-line-number" data-line-number="154"></td>
-        <td id="LC154" class="blob-code js-file-line">            <span class="k">let</span> <span class="k">s</span>:terminal_italic<span class="p">=</span><span class="m">1</span></td>
-      </tr>
-      <tr>
-        <td id="L155" class="blob-num js-line-number" data-line-number="155"></td>
-        <td id="LC155" class="blob-code js-file-line">        <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L156" class="blob-num js-line-number" data-line-number="156"></td>
-        <td id="LC156" class="blob-code js-file-line">    <span class="k">endfor</span></td>
-      </tr>
-      <tr>
-        <td id="L157" class="blob-num js-line-number" data-line-number="157"></td>
-        <td id="LC157" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L158" class="blob-num js-line-number" data-line-number="158"></td>
-        <td id="LC158" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L159" class="blob-num js-line-number" data-line-number="159"></td>
-        <td id="LC159" class="blob-code js-file-line"><span class="c">&quot; }}}</span></td>
-      </tr>
-      <tr>
-        <td id="L160" class="blob-num js-line-number" data-line-number="160"></td>
-        <td id="LC160" class="blob-code js-file-line"><span class="c">&quot; Default option values&quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L161" class="blob-num js-line-number" data-line-number="161"></td>
-        <td id="LC161" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L162" class="blob-num js-line-number" data-line-number="162"></td>
-        <td id="LC162" class="blob-code js-file-line"><span class="c">&quot; s:options_list is used to autogenerate a list of all non-default options </span></td>
-      </tr>
-      <tr>
-        <td id="L163" class="blob-num js-line-number" data-line-number="163"></td>
-        <td id="LC163" class="blob-code js-file-line"><span class="c">&quot; using &quot;call SolarizedOptions()&quot; or with the &quot;Generate .vimrc commands&quot; </span></td>
-      </tr>
-      <tr>
-        <td id="L164" class="blob-num js-line-number" data-line-number="164"></td>
-        <td id="LC164" class="blob-code js-file-line"><span class="c">&quot; Solarized menu option. See the &quot;Menus&quot; section below for the function itself.</span></td>
-      </tr>
-      <tr>
-        <td id="L165" class="blob-num js-line-number" data-line-number="165"></td>
-        <td id="LC165" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:options_list<span class="p">=</span>[</td>
-      </tr>
-      <tr>
-        <td id="L166" class="blob-num js-line-number" data-line-number="166"></td>
-        <td id="LC166" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; this block of commands has been autogenerated by solarized.vim and&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L167" class="blob-num js-line-number" data-line-number="167"></td>
-        <td id="LC167" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; includes the current, non-default Solarized option values.&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L168" class="blob-num js-line-number" data-line-number="168"></td>
-        <td id="LC168" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; To use, place these commands in your .vimrc file (replacing any&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L169" class="blob-num js-line-number" data-line-number="169"></td>
-        <td id="LC169" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; existing colorscheme commands). See also &quot;:help solarized&quot;&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L170" class="blob-num js-line-number" data-line-number="170"></td>
-        <td id="LC170" class="blob-code js-file-line">            \<span class="s1">&#39;&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L171" class="blob-num js-line-number" data-line-number="171"></td>
-        <td id="LC171" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; ------------------------------------------------------------------&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L172" class="blob-num js-line-number" data-line-number="172"></td>
-        <td id="LC172" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; Solarized Colorscheme Config&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L173" class="blob-num js-line-number" data-line-number="173"></td>
-        <td id="LC173" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; ------------------------------------------------------------------&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L174" class="blob-num js-line-number" data-line-number="174"></td>
-        <td id="LC174" class="blob-code js-file-line">            \]</td>
-      </tr>
-      <tr>
-        <td id="L175" class="blob-num js-line-number" data-line-number="175"></td>
-        <td id="LC175" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:colorscheme_list<span class="p">=</span>[</td>
-      </tr>
-      <tr>
-        <td id="L176" class="blob-num js-line-number" data-line-number="176"></td>
-        <td id="LC176" class="blob-code js-file-line">            \<span class="s1">&#39;syntax enable&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L177" class="blob-num js-line-number" data-line-number="177"></td>
-        <td id="LC177" class="blob-code js-file-line">            \<span class="s1">&#39;set background=&#39;</span>.&amp;<span class="nb">background</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L178" class="blob-num js-line-number" data-line-number="178"></td>
-        <td id="LC178" class="blob-code js-file-line">            \<span class="s1">&#39;colorscheme solarized&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L179" class="blob-num js-line-number" data-line-number="179"></td>
-        <td id="LC179" class="blob-code js-file-line">            \]</td>
-      </tr>
-      <tr>
-        <td id="L180" class="blob-num js-line-number" data-line-number="180"></td>
-        <td id="LC180" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:defaults_list<span class="p">=</span>[</td>
-      </tr>
-      <tr>
-        <td id="L181" class="blob-num js-line-number" data-line-number="181"></td>
-        <td id="LC181" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; ------------------------------------------------------------------&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L182" class="blob-num js-line-number" data-line-number="182"></td>
-        <td id="LC182" class="blob-code js-file-line">            \<span class="s1">&#39;&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L183" class="blob-num js-line-number" data-line-number="183"></td>
-        <td id="LC183" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; The following items are available options, but do not need to be&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L184" class="blob-num js-line-number" data-line-number="184"></td>
-        <td id="LC184" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; included in your .vimrc as they are currently set to their defaults.&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L185" class="blob-num js-line-number" data-line-number="185"></td>
-        <td id="LC185" class="blob-code js-file-line">            \<span class="s1">&#39;&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L186" class="blob-num js-line-number" data-line-number="186"></td>
-        <td id="LC186" class="blob-code js-file-line">            \]</td>
-      </tr>
-      <tr>
-        <td id="L187" class="blob-num js-line-number" data-line-number="187"></td>
-        <td id="LC187" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:lazycat_list<span class="p">=</span>[</td>
-      </tr>
-      <tr>
-        <td id="L188" class="blob-num js-line-number" data-line-number="188"></td>
-        <td id="LC188" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; lazy method of appending this onto your .vimrc &quot;:w! &gt;&gt; ~/.vimrc&quot;&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L189" class="blob-num js-line-number" data-line-number="189"></td>
-        <td id="LC189" class="blob-code js-file-line">            \<span class="s1">&#39;&quot; ------------------------------------------------------------------&#39;</span><span class="p">,</span></td>
-      </tr>
-      <tr>
-        <td id="L190" class="blob-num js-line-number" data-line-number="190"></td>
-        <td id="LC190" class="blob-code js-file-line">            \]</td>
-      </tr>
-      <tr>
-        <td id="L191" class="blob-num js-line-number" data-line-number="191"></td>
-        <td id="LC191" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L192" class="blob-num js-line-number" data-line-number="192"></td>
-        <td id="LC192" class="blob-code js-file-line"><span class="k">function</span><span class="p">!</span> <span class="k">s</span>:SetOption<span class="p">(</span>name<span class="p">,</span>default<span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L193" class="blob-num js-line-number" data-line-number="193"></td>
-        <td id="LC193" class="blob-code js-file-line">    <span class="k">if</span> type<span class="p">(</span><span class="k">a</span>:default<span class="p">)</span> <span class="p">==</span> type<span class="p">(</span><span class="m">0</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L194" class="blob-num js-line-number" data-line-number="194"></td>
-        <td id="LC194" class="blob-code js-file-line">        <span class="k">let</span> <span class="k">l</span>:<span class="nb">wrap</span><span class="p">=</span><span class="s1">&#39;&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L195" class="blob-num js-line-number" data-line-number="195"></td>
-        <td id="LC195" class="blob-code js-file-line">        <span class="k">let</span> <span class="k">l</span>:ewrap<span class="p">=</span><span class="s1">&#39;&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L196" class="blob-num js-line-number" data-line-number="196"></td>
-        <td id="LC196" class="blob-code js-file-line">    <span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L197" class="blob-num js-line-number" data-line-number="197"></td>
-        <td id="LC197" class="blob-code js-file-line">        <span class="k">let</span> <span class="k">l</span>:<span class="nb">wrap</span><span class="p">=</span><span class="s1">&#39;&quot;&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L198" class="blob-num js-line-number" data-line-number="198"></td>
-        <td id="LC198" class="blob-code js-file-line">        <span class="k">let</span> <span class="k">l</span>:ewrap<span class="p">=</span><span class="s1">&#39;\&quot;&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L199" class="blob-num js-line-number" data-line-number="199"></td>
-        <td id="LC199" class="blob-code js-file-line">    <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L200" class="blob-num js-line-number" data-line-number="200"></td>
-        <td id="LC200" class="blob-code js-file-line">    <span class="k">if</span> <span class="p">!</span>exists<span class="p">(</span><span class="s2">&quot;g:solarized_&quot;</span>.<span class="k">a</span>:name<span class="p">)</span> <span class="p">||</span> <span class="k">g</span>:solarized_{<span class="k">a</span>:name}<span class="p">==</span><span class="k">a</span>:default</td>
-      </tr>
-      <tr>
-        <td id="L201" class="blob-num js-line-number" data-line-number="201"></td>
-        <td id="LC201" class="blob-code js-file-line">        exe <span class="s1">&#39;let g:solarized_&#39;</span>.<span class="k">a</span>:name.<span class="s1">&#39;=&#39;</span>.<span class="k">l</span>:<span class="nb">wrap</span>.<span class="k">a</span>:default.<span class="k">l</span>:<span class="nb">wrap</span>.<span class="s1">&#39;&quot;&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L202" class="blob-num js-line-number" data-line-number="202"></td>
-        <td id="LC202" class="blob-code js-file-line">        exe <span class="s1">&#39;call add(s:defaults_list, &quot;\&quot; let g:solarized_&#39;</span>.<span class="k">a</span>:name.<span class="s1">&#39;=&#39;</span>.<span class="k">l</span>:ewrap.<span class="k">g</span>:solarized_{<span class="k">a</span>:name}.<span class="k">l</span>:ewrap.<span class="s1">&#39;&quot;)&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L203" class="blob-num js-line-number" data-line-number="203"></td>
-        <td id="LC203" class="blob-code js-file-line">    <span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L204" class="blob-num js-line-number" data-line-number="204"></td>
-        <td id="LC204" class="blob-code js-file-line">        exe <span class="s1">&#39;call add(s:options_list,  &quot;let g:solarized_&#39;</span>.<span class="k">a</span>:name.<span class="s1">&#39;=&#39;</span>.<span class="k">l</span>:ewrap.<span class="k">g</span>:solarized_{<span class="k">a</span>:name}.<span class="k">l</span>:ewrap.<span class="s1">&#39;    \&quot;default value is &#39;</span>.<span class="k">a</span>:default.<span class="s1">&#39;&quot;)&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L205" class="blob-num js-line-number" data-line-number="205"></td>
-        <td id="LC205" class="blob-code js-file-line">    <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L206" class="blob-num js-line-number" data-line-number="206"></td>
-        <td id="LC206" class="blob-code js-file-line"><span class="k">endfunction</span></td>
-      </tr>
-      <tr>
-        <td id="L207" class="blob-num js-line-number" data-line-number="207"></td>
-        <td id="LC207" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L208" class="blob-num js-line-number" data-line-number="208"></td>
-        <td id="LC208" class="blob-code js-file-line"><span class="k">if</span> <span class="p">(</span>$TERM_PROGRAM <span class="p">==</span>? <span class="s2">&quot;apple_terminal&quot;</span> &amp;&amp; &amp;<span class="nb">t_Co</span> <span class="p">&lt;</span> <span class="m">256</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L209" class="blob-num js-line-number" data-line-number="209"></td>
-        <td id="LC209" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:solarized_termtrans_default <span class="p">=</span> <span class="m">1</span></td>
-      </tr>
-      <tr>
-        <td id="L210" class="blob-num js-line-number" data-line-number="210"></td>
-        <td id="LC210" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L211" class="blob-num js-line-number" data-line-number="211"></td>
-        <td id="LC211" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:solarized_termtrans_default <span class="p">=</span> <span class="m">0</span></td>
-      </tr>
-      <tr>
-        <td id="L212" class="blob-num js-line-number" data-line-number="212"></td>
-        <td id="LC212" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L213" class="blob-num js-line-number" data-line-number="213"></td>
-        <td id="LC213" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;termtrans&quot;</span><span class="p">,</span><span class="k">s</span>:solarized_termtrans_default<span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L214" class="blob-num js-line-number" data-line-number="214"></td>
-        <td id="LC214" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;degrade&quot;</span><span class="p">,</span><span class="m">0</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L215" class="blob-num js-line-number" data-line-number="215"></td>
-        <td id="LC215" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span><span class="m">1</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L216" class="blob-num js-line-number" data-line-number="216"></td>
-        <td id="LC216" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;underline&quot;</span><span class="p">,</span><span class="m">1</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L217" class="blob-num js-line-number" data-line-number="217"></td>
-        <td id="LC217" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;italic&quot;</span><span class="p">,</span><span class="m">1</span><span class="p">)</span> <span class="c">&quot; note that we need to override this later if the terminal doesn&#39;t support</span></td>
-      </tr>
-      <tr>
-        <td id="L218" class="blob-num js-line-number" data-line-number="218"></td>
-        <td id="LC218" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;termcolors&quot;</span><span class="p">,</span><span class="m">16</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L219" class="blob-num js-line-number" data-line-number="219"></td>
-        <td id="LC219" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;contrast&quot;</span><span class="p">,</span><span class="s2">&quot;normal&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L220" class="blob-num js-line-number" data-line-number="220"></td>
-        <td id="LC220" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;visibility&quot;</span><span class="p">,</span><span class="s2">&quot;normal&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L221" class="blob-num js-line-number" data-line-number="221"></td>
-        <td id="LC221" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;diffmode&quot;</span><span class="p">,</span><span class="s2">&quot;normal&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L222" class="blob-num js-line-number" data-line-number="222"></td>
-        <td id="LC222" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;hitrail&quot;</span><span class="p">,</span><span class="m">0</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L223" class="blob-num js-line-number" data-line-number="223"></td>
-        <td id="LC223" class="blob-code js-file-line"><span class="k">call</span> <span class="k">s</span>:SetOption<span class="p">(</span><span class="s2">&quot;menu&quot;</span><span class="p">,</span><span class="m">1</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L224" class="blob-num js-line-number" data-line-number="224"></td>
-        <td id="LC224" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L225" class="blob-num js-line-number" data-line-number="225"></td>
-        <td id="LC225" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L226" class="blob-num js-line-number" data-line-number="226"></td>
-        <td id="LC226" class="blob-code js-file-line"><span class="c">&quot; Colorscheme initialization &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L227" class="blob-num js-line-number" data-line-number="227"></td>
-        <td id="LC227" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L228" class="blob-num js-line-number" data-line-number="228"></td>
-        <td id="LC228" class="blob-code js-file-line"><span class="k">hi</span> clear</td>
-      </tr>
-      <tr>
-        <td id="L229" class="blob-num js-line-number" data-line-number="229"></td>
-        <td id="LC229" class="blob-code js-file-line"><span class="k">if</span> exists<span class="p">(</span><span class="s2">&quot;syntax_on&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L230" class="blob-num js-line-number" data-line-number="230"></td>
-        <td id="LC230" class="blob-code js-file-line">  <span class="nb">syntax</span> reset</td>
-      </tr>
-      <tr>
-        <td id="L231" class="blob-num js-line-number" data-line-number="231"></td>
-        <td id="LC231" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L232" class="blob-num js-line-number" data-line-number="232"></td>
-        <td id="LC232" class="blob-code js-file-line"><span class="k">let</span> colors_name <span class="p">=</span> <span class="s2">&quot;solarized&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L233" class="blob-num js-line-number" data-line-number="233"></td>
-        <td id="LC233" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L234" class="blob-num js-line-number" data-line-number="234"></td>
-        <td id="LC234" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L235" class="blob-num js-line-number" data-line-number="235"></td>
-        <td id="LC235" class="blob-code js-file-line"><span class="c">&quot; GUI &amp; CSApprox hexadecimal palettes&quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L236" class="blob-num js-line-number" data-line-number="236"></td>
-        <td id="LC236" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L237" class="blob-num js-line-number" data-line-number="237"></td>
-        <td id="LC237" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L238" class="blob-num js-line-number" data-line-number="238"></td>
-        <td id="LC238" class="blob-code js-file-line"><span class="c">&quot; Set both gui and terminal color values in separate conditional statements</span></td>
-      </tr>
-      <tr>
-        <td id="L239" class="blob-num js-line-number" data-line-number="239"></td>
-        <td id="LC239" class="blob-code js-file-line"><span class="c">&quot; Due to possibility that CSApprox is running (though I suppose we could just</span></td>
-      </tr>
-      <tr>
-        <td id="L240" class="blob-num js-line-number" data-line-number="240"></td>
-        <td id="LC240" class="blob-code js-file-line"><span class="c">&quot; leave the hex values out entirely in that case and include only cterm colors)</span></td>
-      </tr>
-      <tr>
-        <td id="L241" class="blob-num js-line-number" data-line-number="241"></td>
-        <td id="LC241" class="blob-code js-file-line"><span class="c">&quot; We also check to see if user has set solarized (force use of the</span></td>
-      </tr>
-      <tr>
-        <td id="L242" class="blob-num js-line-number" data-line-number="242"></td>
-        <td id="LC242" class="blob-code js-file-line"><span class="c">&quot; neutral gray monotone palette component)</span></td>
-      </tr>
-      <tr>
-        <td id="L243" class="blob-num js-line-number" data-line-number="243"></td>
-        <td id="LC243" class="blob-code js-file-line"><span class="k">if</span> <span class="p">(</span>has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span> &amp;&amp; <span class="k">g</span>:solarized_degrade <span class="p">==</span> <span class="m">0</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L244" class="blob-num js-line-number" data-line-number="244"></td>
-        <td id="LC244" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:vmode       <span class="p">=</span> <span class="s2">&quot;gui&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L245" class="blob-num js-line-number" data-line-number="245"></td>
-        <td id="LC245" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base03      <span class="p">=</span> <span class="s2">&quot;#002b36&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L246" class="blob-num js-line-number" data-line-number="246"></td>
-        <td id="LC246" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base02      <span class="p">=</span> <span class="s2">&quot;#073642&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L247" class="blob-num js-line-number" data-line-number="247"></td>
-        <td id="LC247" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base01      <span class="p">=</span> <span class="s2">&quot;#586e75&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L248" class="blob-num js-line-number" data-line-number="248"></td>
-        <td id="LC248" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base00      <span class="p">=</span> <span class="s2">&quot;#657b83&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L249" class="blob-num js-line-number" data-line-number="249"></td>
-        <td id="LC249" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base0       <span class="p">=</span> <span class="s2">&quot;#839496&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L250" class="blob-num js-line-number" data-line-number="250"></td>
-        <td id="LC250" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base1       <span class="p">=</span> <span class="s2">&quot;#93a1a1&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L251" class="blob-num js-line-number" data-line-number="251"></td>
-        <td id="LC251" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base2       <span class="p">=</span> <span class="s2">&quot;#eee8d5&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L252" class="blob-num js-line-number" data-line-number="252"></td>
-        <td id="LC252" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base3       <span class="p">=</span> <span class="s2">&quot;#fdf6e3&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L253" class="blob-num js-line-number" data-line-number="253"></td>
-        <td id="LC253" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:yellow      <span class="p">=</span> <span class="s2">&quot;#b58900&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L254" class="blob-num js-line-number" data-line-number="254"></td>
-        <td id="LC254" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:orange      <span class="p">=</span> <span class="s2">&quot;#cb4b16&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L255" class="blob-num js-line-number" data-line-number="255"></td>
-        <td id="LC255" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">red</span>         <span class="p">=</span> <span class="s2">&quot;#dc322f&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L256" class="blob-num js-line-number" data-line-number="256"></td>
-        <td id="LC256" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:magenta     <span class="p">=</span> <span class="s2">&quot;#d33682&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L257" class="blob-num js-line-number" data-line-number="257"></td>
-        <td id="LC257" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:violet      <span class="p">=</span> <span class="s2">&quot;#6c71c4&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L258" class="blob-num js-line-number" data-line-number="258"></td>
-        <td id="LC258" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:blue        <span class="p">=</span> <span class="s2">&quot;#268bd2&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L259" class="blob-num js-line-number" data-line-number="259"></td>
-        <td id="LC259" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:cyan        <span class="p">=</span> <span class="s2">&quot;#2aa198&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L260" class="blob-num js-line-number" data-line-number="260"></td>
-        <td id="LC260" class="blob-code js-file-line"><span class="c">    &quot;let s:green       = &quot;#859900&quot; &quot;original</span></td>
-      </tr>
-      <tr>
-        <td id="L261" class="blob-num js-line-number" data-line-number="261"></td>
-        <td id="LC261" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:green       <span class="p">=</span> <span class="s2">&quot;#719e07&quot;</span> <span class="c">&quot;experimental</span></td>
-      </tr>
-      <tr>
-        <td id="L262" class="blob-num js-line-number" data-line-number="262"></td>
-        <td id="LC262" class="blob-code js-file-line"><span class="k">elseif</span> <span class="p">(</span>has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span> &amp;&amp; <span class="k">g</span>:solarized_degrade <span class="p">==</span> <span class="m">1</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L263" class="blob-num js-line-number" data-line-number="263"></td>
-        <td id="LC263" class="blob-code js-file-line"><span class="c">    &quot; These colors are identical to the 256 color mode. They may be viewed</span></td>
-      </tr>
-      <tr>
-        <td id="L264" class="blob-num js-line-number" data-line-number="264"></td>
-        <td id="LC264" class="blob-code js-file-line"><span class="c">    &quot; while in gui mode via &quot;let g:solarized_degrade=1&quot;, though this is not</span></td>
-      </tr>
-      <tr>
-        <td id="L265" class="blob-num js-line-number" data-line-number="265"></td>
-        <td id="LC265" class="blob-code js-file-line"><span class="c">    &quot; recommened and is for testing only.</span></td>
-      </tr>
-      <tr>
-        <td id="L266" class="blob-num js-line-number" data-line-number="266"></td>
-        <td id="LC266" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:vmode       <span class="p">=</span> <span class="s2">&quot;gui&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L267" class="blob-num js-line-number" data-line-number="267"></td>
-        <td id="LC267" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base03      <span class="p">=</span> <span class="s2">&quot;#1c1c1c&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L268" class="blob-num js-line-number" data-line-number="268"></td>
-        <td id="LC268" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base02      <span class="p">=</span> <span class="s2">&quot;#262626&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L269" class="blob-num js-line-number" data-line-number="269"></td>
-        <td id="LC269" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base01      <span class="p">=</span> <span class="s2">&quot;#4e4e4e&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L270" class="blob-num js-line-number" data-line-number="270"></td>
-        <td id="LC270" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base00      <span class="p">=</span> <span class="s2">&quot;#585858&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L271" class="blob-num js-line-number" data-line-number="271"></td>
-        <td id="LC271" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base0       <span class="p">=</span> <span class="s2">&quot;#808080&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L272" class="blob-num js-line-number" data-line-number="272"></td>
-        <td id="LC272" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base1       <span class="p">=</span> <span class="s2">&quot;#8a8a8a&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L273" class="blob-num js-line-number" data-line-number="273"></td>
-        <td id="LC273" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base2       <span class="p">=</span> <span class="s2">&quot;#d7d7af&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L274" class="blob-num js-line-number" data-line-number="274"></td>
-        <td id="LC274" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base3       <span class="p">=</span> <span class="s2">&quot;#ffffd7&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L275" class="blob-num js-line-number" data-line-number="275"></td>
-        <td id="LC275" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:yellow      <span class="p">=</span> <span class="s2">&quot;#af8700&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L276" class="blob-num js-line-number" data-line-number="276"></td>
-        <td id="LC276" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:orange      <span class="p">=</span> <span class="s2">&quot;#d75f00&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L277" class="blob-num js-line-number" data-line-number="277"></td>
-        <td id="LC277" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">red</span>         <span class="p">=</span> <span class="s2">&quot;#af0000&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L278" class="blob-num js-line-number" data-line-number="278"></td>
-        <td id="LC278" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:magenta     <span class="p">=</span> <span class="s2">&quot;#af005f&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L279" class="blob-num js-line-number" data-line-number="279"></td>
-        <td id="LC279" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:violet      <span class="p">=</span> <span class="s2">&quot;#5f5faf&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L280" class="blob-num js-line-number" data-line-number="280"></td>
-        <td id="LC280" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:blue        <span class="p">=</span> <span class="s2">&quot;#0087ff&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L281" class="blob-num js-line-number" data-line-number="281"></td>
-        <td id="LC281" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:cyan        <span class="p">=</span> <span class="s2">&quot;#00afaf&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L282" class="blob-num js-line-number" data-line-number="282"></td>
-        <td id="LC282" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:green       <span class="p">=</span> <span class="s2">&quot;#5f8700&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L283" class="blob-num js-line-number" data-line-number="283"></td>
-        <td id="LC283" class="blob-code js-file-line"><span class="k">elseif</span> <span class="k">g</span>:solarized_termcolors <span class="p">!=</span> <span class="m">256</span> &amp;&amp; &amp;<span class="nb">t_Co</span> <span class="p">&gt;=</span> <span class="m">16</span></td>
-      </tr>
-      <tr>
-        <td id="L284" class="blob-num js-line-number" data-line-number="284"></td>
-        <td id="LC284" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:vmode       <span class="p">=</span> <span class="s2">&quot;cterm&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L285" class="blob-num js-line-number" data-line-number="285"></td>
-        <td id="LC285" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base03      <span class="p">=</span> <span class="s2">&quot;8&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L286" class="blob-num js-line-number" data-line-number="286"></td>
-        <td id="LC286" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base02      <span class="p">=</span> <span class="s2">&quot;0&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L287" class="blob-num js-line-number" data-line-number="287"></td>
-        <td id="LC287" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base01      <span class="p">=</span> <span class="s2">&quot;10&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L288" class="blob-num js-line-number" data-line-number="288"></td>
-        <td id="LC288" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base00      <span class="p">=</span> <span class="s2">&quot;11&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L289" class="blob-num js-line-number" data-line-number="289"></td>
-        <td id="LC289" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base0       <span class="p">=</span> <span class="s2">&quot;12&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L290" class="blob-num js-line-number" data-line-number="290"></td>
-        <td id="LC290" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base1       <span class="p">=</span> <span class="s2">&quot;14&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L291" class="blob-num js-line-number" data-line-number="291"></td>
-        <td id="LC291" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base2       <span class="p">=</span> <span class="s2">&quot;7&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L292" class="blob-num js-line-number" data-line-number="292"></td>
-        <td id="LC292" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base3       <span class="p">=</span> <span class="s2">&quot;15&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L293" class="blob-num js-line-number" data-line-number="293"></td>
-        <td id="LC293" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:yellow      <span class="p">=</span> <span class="s2">&quot;3&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L294" class="blob-num js-line-number" data-line-number="294"></td>
-        <td id="LC294" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:orange      <span class="p">=</span> <span class="s2">&quot;9&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L295" class="blob-num js-line-number" data-line-number="295"></td>
-        <td id="LC295" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">red</span>         <span class="p">=</span> <span class="s2">&quot;1&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L296" class="blob-num js-line-number" data-line-number="296"></td>
-        <td id="LC296" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:magenta     <span class="p">=</span> <span class="s2">&quot;5&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L297" class="blob-num js-line-number" data-line-number="297"></td>
-        <td id="LC297" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:violet      <span class="p">=</span> <span class="s2">&quot;13&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L298" class="blob-num js-line-number" data-line-number="298"></td>
-        <td id="LC298" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:blue        <span class="p">=</span> <span class="s2">&quot;4&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L299" class="blob-num js-line-number" data-line-number="299"></td>
-        <td id="LC299" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:cyan        <span class="p">=</span> <span class="s2">&quot;6&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L300" class="blob-num js-line-number" data-line-number="300"></td>
-        <td id="LC300" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:green       <span class="p">=</span> <span class="s2">&quot;2&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L301" class="blob-num js-line-number" data-line-number="301"></td>
-        <td id="LC301" class="blob-code js-file-line"><span class="k">elseif</span> <span class="k">g</span>:solarized_termcolors <span class="p">==</span> <span class="m">256</span></td>
-      </tr>
-      <tr>
-        <td id="L302" class="blob-num js-line-number" data-line-number="302"></td>
-        <td id="LC302" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:vmode       <span class="p">=</span> <span class="s2">&quot;cterm&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L303" class="blob-num js-line-number" data-line-number="303"></td>
-        <td id="LC303" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base03      <span class="p">=</span> <span class="s2">&quot;234&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L304" class="blob-num js-line-number" data-line-number="304"></td>
-        <td id="LC304" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base02      <span class="p">=</span> <span class="s2">&quot;235&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L305" class="blob-num js-line-number" data-line-number="305"></td>
-        <td id="LC305" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base01      <span class="p">=</span> <span class="s2">&quot;239&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L306" class="blob-num js-line-number" data-line-number="306"></td>
-        <td id="LC306" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base00      <span class="p">=</span> <span class="s2">&quot;240&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L307" class="blob-num js-line-number" data-line-number="307"></td>
-        <td id="LC307" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base0       <span class="p">=</span> <span class="s2">&quot;244&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L308" class="blob-num js-line-number" data-line-number="308"></td>
-        <td id="LC308" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base1       <span class="p">=</span> <span class="s2">&quot;245&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L309" class="blob-num js-line-number" data-line-number="309"></td>
-        <td id="LC309" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base2       <span class="p">=</span> <span class="s2">&quot;187&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L310" class="blob-num js-line-number" data-line-number="310"></td>
-        <td id="LC310" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base3       <span class="p">=</span> <span class="s2">&quot;230&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L311" class="blob-num js-line-number" data-line-number="311"></td>
-        <td id="LC311" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:yellow      <span class="p">=</span> <span class="s2">&quot;136&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L312" class="blob-num js-line-number" data-line-number="312"></td>
-        <td id="LC312" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:orange      <span class="p">=</span> <span class="s2">&quot;166&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L313" class="blob-num js-line-number" data-line-number="313"></td>
-        <td id="LC313" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">red</span>         <span class="p">=</span> <span class="s2">&quot;124&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L314" class="blob-num js-line-number" data-line-number="314"></td>
-        <td id="LC314" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:magenta     <span class="p">=</span> <span class="s2">&quot;125&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L315" class="blob-num js-line-number" data-line-number="315"></td>
-        <td id="LC315" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:violet      <span class="p">=</span> <span class="s2">&quot;61&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L316" class="blob-num js-line-number" data-line-number="316"></td>
-        <td id="LC316" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:blue        <span class="p">=</span> <span class="s2">&quot;33&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L317" class="blob-num js-line-number" data-line-number="317"></td>
-        <td id="LC317" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:cyan        <span class="p">=</span> <span class="s2">&quot;37&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L318" class="blob-num js-line-number" data-line-number="318"></td>
-        <td id="LC318" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:green       <span class="p">=</span> <span class="s2">&quot;64&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L319" class="blob-num js-line-number" data-line-number="319"></td>
-        <td id="LC319" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L320" class="blob-num js-line-number" data-line-number="320"></td>
-        <td id="LC320" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:vmode       <span class="p">=</span> <span class="s2">&quot;cterm&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L321" class="blob-num js-line-number" data-line-number="321"></td>
-        <td id="LC321" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:bright      <span class="p">=</span> <span class="s2">&quot;* term=bold cterm=bold&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L322" class="blob-num js-line-number" data-line-number="322"></td>
-        <td id="LC322" class="blob-code js-file-line"><span class="c">&quot;   let s:base03      = &quot;0&quot;.s:bright</span></td>
-      </tr>
-      <tr>
-        <td id="L323" class="blob-num js-line-number" data-line-number="323"></td>
-        <td id="LC323" class="blob-code js-file-line"><span class="c">&quot;   let s:base02      = &quot;0&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L324" class="blob-num js-line-number" data-line-number="324"></td>
-        <td id="LC324" class="blob-code js-file-line"><span class="c">&quot;   let s:base01      = &quot;2&quot;.s:bright</span></td>
-      </tr>
-      <tr>
-        <td id="L325" class="blob-num js-line-number" data-line-number="325"></td>
-        <td id="LC325" class="blob-code js-file-line"><span class="c">&quot;   let s:base00      = &quot;3&quot;.s:bright</span></td>
-      </tr>
-      <tr>
-        <td id="L326" class="blob-num js-line-number" data-line-number="326"></td>
-        <td id="LC326" class="blob-code js-file-line"><span class="c">&quot;   let s:base0       = &quot;4&quot;.s:bright</span></td>
-      </tr>
-      <tr>
-        <td id="L327" class="blob-num js-line-number" data-line-number="327"></td>
-        <td id="LC327" class="blob-code js-file-line"><span class="c">&quot;   let s:base1       = &quot;6&quot;.s:bright</span></td>
-      </tr>
-      <tr>
-        <td id="L328" class="blob-num js-line-number" data-line-number="328"></td>
-        <td id="LC328" class="blob-code js-file-line"><span class="c">&quot;   let s:base2       = &quot;7&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L329" class="blob-num js-line-number" data-line-number="329"></td>
-        <td id="LC329" class="blob-code js-file-line"><span class="c">&quot;   let s:base3       = &quot;7&quot;.s:bright</span></td>
-      </tr>
-      <tr>
-        <td id="L330" class="blob-num js-line-number" data-line-number="330"></td>
-        <td id="LC330" class="blob-code js-file-line"><span class="c">&quot;   let s:yellow      = &quot;3&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L331" class="blob-num js-line-number" data-line-number="331"></td>
-        <td id="LC331" class="blob-code js-file-line"><span class="c">&quot;   let s:orange      = &quot;1&quot;.s:bright</span></td>
-      </tr>
-      <tr>
-        <td id="L332" class="blob-num js-line-number" data-line-number="332"></td>
-        <td id="LC332" class="blob-code js-file-line"><span class="c">&quot;   let s:red         = &quot;1&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L333" class="blob-num js-line-number" data-line-number="333"></td>
-        <td id="LC333" class="blob-code js-file-line"><span class="c">&quot;   let s:magenta     = &quot;5&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L334" class="blob-num js-line-number" data-line-number="334"></td>
-        <td id="LC334" class="blob-code js-file-line"><span class="c">&quot;   let s:violet      = &quot;5&quot;.s:bright</span></td>
-      </tr>
-      <tr>
-        <td id="L335" class="blob-num js-line-number" data-line-number="335"></td>
-        <td id="LC335" class="blob-code js-file-line"><span class="c">&quot;   let s:blue        = &quot;4&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L336" class="blob-num js-line-number" data-line-number="336"></td>
-        <td id="LC336" class="blob-code js-file-line"><span class="c">&quot;   let s:cyan        = &quot;6&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L337" class="blob-num js-line-number" data-line-number="337"></td>
-        <td id="LC337" class="blob-code js-file-line"><span class="c">&quot;   let s:green       = &quot;2&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L338" class="blob-num js-line-number" data-line-number="338"></td>
-        <td id="LC338" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base03      <span class="p">=</span> <span class="s2">&quot;DarkGray&quot;</span>      <span class="c">&quot; 0*</span></td>
-      </tr>
-      <tr>
-        <td id="L339" class="blob-num js-line-number" data-line-number="339"></td>
-        <td id="LC339" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base02      <span class="p">=</span> <span class="s2">&quot;Black&quot;</span>         <span class="c">&quot; 0</span></td>
-      </tr>
-      <tr>
-        <td id="L340" class="blob-num js-line-number" data-line-number="340"></td>
-        <td id="LC340" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base01      <span class="p">=</span> <span class="s2">&quot;LightGreen&quot;</span>    <span class="c">&quot; 2*</span></td>
-      </tr>
-      <tr>
-        <td id="L341" class="blob-num js-line-number" data-line-number="341"></td>
-        <td id="LC341" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base00      <span class="p">=</span> <span class="s2">&quot;LightYellow&quot;</span>   <span class="c">&quot; 3*</span></td>
-      </tr>
-      <tr>
-        <td id="L342" class="blob-num js-line-number" data-line-number="342"></td>
-        <td id="LC342" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base0       <span class="p">=</span> <span class="s2">&quot;LightBlue&quot;</span>     <span class="c">&quot; 4*</span></td>
-      </tr>
-      <tr>
-        <td id="L343" class="blob-num js-line-number" data-line-number="343"></td>
-        <td id="LC343" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base1       <span class="p">=</span> <span class="s2">&quot;LightCyan&quot;</span>     <span class="c">&quot; 6*</span></td>
-      </tr>
-      <tr>
-        <td id="L344" class="blob-num js-line-number" data-line-number="344"></td>
-        <td id="LC344" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base2       <span class="p">=</span> <span class="s2">&quot;LightGray&quot;</span>     <span class="c">&quot; 7</span></td>
-      </tr>
-      <tr>
-        <td id="L345" class="blob-num js-line-number" data-line-number="345"></td>
-        <td id="LC345" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base3       <span class="p">=</span> <span class="s2">&quot;White&quot;</span>         <span class="c">&quot; 7*</span></td>
-      </tr>
-      <tr>
-        <td id="L346" class="blob-num js-line-number" data-line-number="346"></td>
-        <td id="LC346" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:yellow      <span class="p">=</span> <span class="s2">&quot;DarkYellow&quot;</span>    <span class="c">&quot; 3</span></td>
-      </tr>
-      <tr>
-        <td id="L347" class="blob-num js-line-number" data-line-number="347"></td>
-        <td id="LC347" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:orange      <span class="p">=</span> <span class="s2">&quot;LightRed&quot;</span>      <span class="c">&quot; 1*</span></td>
-      </tr>
-      <tr>
-        <td id="L348" class="blob-num js-line-number" data-line-number="348"></td>
-        <td id="LC348" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">red</span>         <span class="p">=</span> <span class="s2">&quot;DarkRed&quot;</span>       <span class="c">&quot; 1</span></td>
-      </tr>
-      <tr>
-        <td id="L349" class="blob-num js-line-number" data-line-number="349"></td>
-        <td id="LC349" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:magenta     <span class="p">=</span> <span class="s2">&quot;DarkMagenta&quot;</span>   <span class="c">&quot; 5</span></td>
-      </tr>
-      <tr>
-        <td id="L350" class="blob-num js-line-number" data-line-number="350"></td>
-        <td id="LC350" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:violet      <span class="p">=</span> <span class="s2">&quot;LightMagenta&quot;</span>  <span class="c">&quot; 5*</span></td>
-      </tr>
-      <tr>
-        <td id="L351" class="blob-num js-line-number" data-line-number="351"></td>
-        <td id="LC351" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:blue        <span class="p">=</span> <span class="s2">&quot;DarkBlue&quot;</span>      <span class="c">&quot; 4</span></td>
-      </tr>
-      <tr>
-        <td id="L352" class="blob-num js-line-number" data-line-number="352"></td>
-        <td id="LC352" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:cyan        <span class="p">=</span> <span class="s2">&quot;DarkCyan&quot;</span>      <span class="c">&quot; 6</span></td>
-      </tr>
-      <tr>
-        <td id="L353" class="blob-num js-line-number" data-line-number="353"></td>
-        <td id="LC353" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:green       <span class="p">=</span> <span class="s2">&quot;DarkGreen&quot;</span>     <span class="c">&quot; 2</span></td>
-      </tr>
-      <tr>
-        <td id="L354" class="blob-num js-line-number" data-line-number="354"></td>
-        <td id="LC354" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L355" class="blob-num js-line-number" data-line-number="355"></td>
-        <td id="LC355" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L356" class="blob-num js-line-number" data-line-number="356"></td>
-        <td id="LC356" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L357" class="blob-num js-line-number" data-line-number="357"></td>
-        <td id="LC357" class="blob-code js-file-line"><span class="c">&quot; Formatting options and null values for passthrough effect &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L358" class="blob-num js-line-number" data-line-number="358"></td>
-        <td id="LC358" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L359" class="blob-num js-line-number" data-line-number="359"></td>
-        <td id="LC359" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:none            <span class="p">=</span> <span class="s2">&quot;NONE&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L360" class="blob-num js-line-number" data-line-number="360"></td>
-        <td id="LC360" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:none            <span class="p">=</span> <span class="s2">&quot;NONE&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L361" class="blob-num js-line-number" data-line-number="361"></td>
-        <td id="LC361" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:t_none          <span class="p">=</span> <span class="s2">&quot;NONE&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L362" class="blob-num js-line-number" data-line-number="362"></td>
-        <td id="LC362" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">n</span>               <span class="p">=</span> <span class="s2">&quot;NONE&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L363" class="blob-num js-line-number" data-line-number="363"></td>
-        <td id="LC363" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">c</span>               <span class="p">=</span> <span class="s2">&quot;,undercurl&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L364" class="blob-num js-line-number" data-line-number="364"></td>
-        <td id="LC364" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">r</span>               <span class="p">=</span> <span class="s2">&quot;,reverse&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L365" class="blob-num js-line-number" data-line-number="365"></td>
-        <td id="LC365" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">s</span>               <span class="p">=</span> <span class="s2">&quot;,standout&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L366" class="blob-num js-line-number" data-line-number="366"></td>
-        <td id="LC366" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:ou              <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L367" class="blob-num js-line-number" data-line-number="367"></td>
-        <td id="LC367" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:ob              <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L368" class="blob-num js-line-number" data-line-number="368"></td>
-        <td id="LC368" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L369" class="blob-num js-line-number" data-line-number="369"></td>
-        <td id="LC369" class="blob-code js-file-line"><span class="c">&quot; Background value based on termtrans setting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L370" class="blob-num js-line-number" data-line-number="370"></td>
-        <td id="LC370" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L371" class="blob-num js-line-number" data-line-number="371"></td>
-        <td id="LC371" class="blob-code js-file-line"><span class="k">if</span> <span class="p">(</span>has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span> <span class="p">||</span> <span class="k">g</span>:solarized_termtrans <span class="p">==</span> <span class="m">0</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L372" class="blob-num js-line-number" data-line-number="372"></td>
-        <td id="LC372" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:back        <span class="p">=</span> <span class="k">s</span>:base03</td>
-      </tr>
-      <tr>
-        <td id="L373" class="blob-num js-line-number" data-line-number="373"></td>
-        <td id="LC373" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L374" class="blob-num js-line-number" data-line-number="374"></td>
-        <td id="LC374" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:back        <span class="p">=</span> <span class="s2">&quot;NONE&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L375" class="blob-num js-line-number" data-line-number="375"></td>
-        <td id="LC375" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L376" class="blob-num js-line-number" data-line-number="376"></td>
-        <td id="LC376" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L377" class="blob-num js-line-number" data-line-number="377"></td>
-        <td id="LC377" class="blob-code js-file-line"><span class="c">&quot; Alternate light scheme &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L378" class="blob-num js-line-number" data-line-number="378"></td>
-        <td id="LC378" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L379" class="blob-num js-line-number" data-line-number="379"></td>
-        <td id="LC379" class="blob-code js-file-line"><span class="k">if</span> &amp;<span class="nb">background</span> <span class="p">==</span> <span class="s2">&quot;light&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L380" class="blob-num js-line-number" data-line-number="380"></td>
-        <td id="LC380" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:temp03      <span class="p">=</span> <span class="k">s</span>:base03</td>
-      </tr>
-      <tr>
-        <td id="L381" class="blob-num js-line-number" data-line-number="381"></td>
-        <td id="LC381" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:temp02      <span class="p">=</span> <span class="k">s</span>:base02</td>
-      </tr>
-      <tr>
-        <td id="L382" class="blob-num js-line-number" data-line-number="382"></td>
-        <td id="LC382" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:temp01      <span class="p">=</span> <span class="k">s</span>:base01</td>
-      </tr>
-      <tr>
-        <td id="L383" class="blob-num js-line-number" data-line-number="383"></td>
-        <td id="LC383" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:temp00      <span class="p">=</span> <span class="k">s</span>:base00</td>
-      </tr>
-      <tr>
-        <td id="L384" class="blob-num js-line-number" data-line-number="384"></td>
-        <td id="LC384" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base03      <span class="p">=</span> <span class="k">s</span>:base3</td>
-      </tr>
-      <tr>
-        <td id="L385" class="blob-num js-line-number" data-line-number="385"></td>
-        <td id="LC385" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base02      <span class="p">=</span> <span class="k">s</span>:base2</td>
-      </tr>
-      <tr>
-        <td id="L386" class="blob-num js-line-number" data-line-number="386"></td>
-        <td id="LC386" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base01      <span class="p">=</span> <span class="k">s</span>:base1</td>
-      </tr>
-      <tr>
-        <td id="L387" class="blob-num js-line-number" data-line-number="387"></td>
-        <td id="LC387" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base00      <span class="p">=</span> <span class="k">s</span>:base0</td>
-      </tr>
-      <tr>
-        <td id="L388" class="blob-num js-line-number" data-line-number="388"></td>
-        <td id="LC388" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base0       <span class="p">=</span> <span class="k">s</span>:temp00</td>
-      </tr>
-      <tr>
-        <td id="L389" class="blob-num js-line-number" data-line-number="389"></td>
-        <td id="LC389" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base1       <span class="p">=</span> <span class="k">s</span>:temp01</td>
-      </tr>
-      <tr>
-        <td id="L390" class="blob-num js-line-number" data-line-number="390"></td>
-        <td id="LC390" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base2       <span class="p">=</span> <span class="k">s</span>:temp02</td>
-      </tr>
-      <tr>
-        <td id="L391" class="blob-num js-line-number" data-line-number="391"></td>
-        <td id="LC391" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base3       <span class="p">=</span> <span class="k">s</span>:temp03</td>
-      </tr>
-      <tr>
-        <td id="L392" class="blob-num js-line-number" data-line-number="392"></td>
-        <td id="LC392" class="blob-code js-file-line">    <span class="k">if</span> <span class="p">(</span><span class="k">s</span>:back <span class="p">!=</span> <span class="s2">&quot;NONE&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L393" class="blob-num js-line-number" data-line-number="393"></td>
-        <td id="LC393" class="blob-code js-file-line">        <span class="k">let</span> <span class="k">s</span>:back    <span class="p">=</span> <span class="k">s</span>:base03</td>
-      </tr>
-      <tr>
-        <td id="L394" class="blob-num js-line-number" data-line-number="394"></td>
-        <td id="LC394" class="blob-code js-file-line">    <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L395" class="blob-num js-line-number" data-line-number="395"></td>
-        <td id="LC395" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L396" class="blob-num js-line-number" data-line-number="396"></td>
-        <td id="LC396" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L397" class="blob-num js-line-number" data-line-number="397"></td>
-        <td id="LC397" class="blob-code js-file-line"><span class="c">&quot; Optional contrast schemes &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L398" class="blob-num js-line-number" data-line-number="398"></td>
-        <td id="LC398" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L399" class="blob-num js-line-number" data-line-number="399"></td>
-        <td id="LC399" class="blob-code js-file-line"><span class="k">if</span> <span class="k">g</span>:solarized_contrast <span class="p">==</span> <span class="s2">&quot;high&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L400" class="blob-num js-line-number" data-line-number="400"></td>
-        <td id="LC400" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base01      <span class="p">=</span> <span class="k">s</span>:base00</td>
-      </tr>
-      <tr>
-        <td id="L401" class="blob-num js-line-number" data-line-number="401"></td>
-        <td id="LC401" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base00      <span class="p">=</span> <span class="k">s</span>:base0</td>
-      </tr>
-      <tr>
-        <td id="L402" class="blob-num js-line-number" data-line-number="402"></td>
-        <td id="LC402" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base0       <span class="p">=</span> <span class="k">s</span>:base1</td>
-      </tr>
-      <tr>
-        <td id="L403" class="blob-num js-line-number" data-line-number="403"></td>
-        <td id="LC403" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base1       <span class="p">=</span> <span class="k">s</span>:base2</td>
-      </tr>
-      <tr>
-        <td id="L404" class="blob-num js-line-number" data-line-number="404"></td>
-        <td id="LC404" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:base2       <span class="p">=</span> <span class="k">s</span>:base3</td>
-      </tr>
-      <tr>
-        <td id="L405" class="blob-num js-line-number" data-line-number="405"></td>
-        <td id="LC405" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:back        <span class="p">=</span> <span class="k">s</span>:back</td>
-      </tr>
-      <tr>
-        <td id="L406" class="blob-num js-line-number" data-line-number="406"></td>
-        <td id="LC406" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L407" class="blob-num js-line-number" data-line-number="407"></td>
-        <td id="LC407" class="blob-code js-file-line"><span class="k">if</span> <span class="k">g</span>:solarized_contrast <span class="p">==</span> <span class="s2">&quot;low&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L408" class="blob-num js-line-number" data-line-number="408"></td>
-        <td id="LC408" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:back        <span class="p">=</span> <span class="k">s</span>:base02</td>
-      </tr>
-      <tr>
-        <td id="L409" class="blob-num js-line-number" data-line-number="409"></td>
-        <td id="LC409" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:ou          <span class="p">=</span> <span class="s2">&quot;,underline&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L410" class="blob-num js-line-number" data-line-number="410"></td>
-        <td id="LC410" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L411" class="blob-num js-line-number" data-line-number="411"></td>
-        <td id="LC411" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L412" class="blob-num js-line-number" data-line-number="412"></td>
-        <td id="LC412" class="blob-code js-file-line"><span class="c">&quot; Overrides dependent on user specified values and environment &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L413" class="blob-num js-line-number" data-line-number="413"></td>
-        <td id="LC413" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L414" class="blob-num js-line-number" data-line-number="414"></td>
-        <td id="LC414" class="blob-code js-file-line"><span class="k">if</span> <span class="p">(</span><span class="k">g</span>:solarized_bold <span class="p">==</span> <span class="m">0</span> <span class="p">||</span> &amp;<span class="nb">t_Co</span> <span class="p">==</span> <span class="m">8</span> <span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L415" class="blob-num js-line-number" data-line-number="415"></td>
-        <td id="LC415" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">b</span>           <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L416" class="blob-num js-line-number" data-line-number="416"></td>
-        <td id="LC416" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:bb          <span class="p">=</span> <span class="s2">&quot;,bold&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L417" class="blob-num js-line-number" data-line-number="417"></td>
-        <td id="LC417" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L418" class="blob-num js-line-number" data-line-number="418"></td>
-        <td id="LC418" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">b</span>           <span class="p">=</span> <span class="s2">&quot;,bold&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L419" class="blob-num js-line-number" data-line-number="419"></td>
-        <td id="LC419" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:bb          <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L420" class="blob-num js-line-number" data-line-number="420"></td>
-        <td id="LC420" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L421" class="blob-num js-line-number" data-line-number="421"></td>
-        <td id="LC421" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L422" class="blob-num js-line-number" data-line-number="422"></td>
-        <td id="LC422" class="blob-code js-file-line"><span class="k">if</span> <span class="k">g</span>:solarized_underline <span class="p">==</span> <span class="m">0</span></td>
-      </tr>
-      <tr>
-        <td id="L423" class="blob-num js-line-number" data-line-number="423"></td>
-        <td id="LC423" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">u</span>           <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L424" class="blob-num js-line-number" data-line-number="424"></td>
-        <td id="LC424" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L425" class="blob-num js-line-number" data-line-number="425"></td>
-        <td id="LC425" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">u</span>           <span class="p">=</span> <span class="s2">&quot;,underline&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L426" class="blob-num js-line-number" data-line-number="426"></td>
-        <td id="LC426" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L427" class="blob-num js-line-number" data-line-number="427"></td>
-        <td id="LC427" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L428" class="blob-num js-line-number" data-line-number="428"></td>
-        <td id="LC428" class="blob-code js-file-line"><span class="k">if</span> <span class="k">g</span>:solarized_italic <span class="p">==</span> <span class="m">0</span> <span class="p">||</span> <span class="k">s</span>:terminal_italic <span class="p">==</span> <span class="m">0</span></td>
-      </tr>
-      <tr>
-        <td id="L429" class="blob-num js-line-number" data-line-number="429"></td>
-        <td id="LC429" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">i</span>           <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L430" class="blob-num js-line-number" data-line-number="430"></td>
-        <td id="LC430" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L431" class="blob-num js-line-number" data-line-number="431"></td>
-        <td id="LC431" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:<span class="k">i</span>           <span class="p">=</span> <span class="s2">&quot;,italic&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L432" class="blob-num js-line-number" data-line-number="432"></td>
-        <td id="LC432" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L433" class="blob-num js-line-number" data-line-number="433"></td>
-        <td id="LC433" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L434" class="blob-num js-line-number" data-line-number="434"></td>
-        <td id="LC434" class="blob-code js-file-line"><span class="c">&quot; Highlighting primitives&quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L435" class="blob-num js-line-number" data-line-number="435"></td>
-        <td id="LC435" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L436" class="blob-num js-line-number" data-line-number="436"></td>
-        <td id="LC436" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L437" class="blob-num js-line-number" data-line-number="437"></td>
-        <td id="LC437" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_none      = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:none   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L438" class="blob-num js-line-number" data-line-number="438"></td>
-        <td id="LC438" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_back      = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:back   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L439" class="blob-num js-line-number" data-line-number="439"></td>
-        <td id="LC439" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_base03    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:base03 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L440" class="blob-num js-line-number" data-line-number="440"></td>
-        <td id="LC440" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_base02    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:base02 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L441" class="blob-num js-line-number" data-line-number="441"></td>
-        <td id="LC441" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_base01    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:base01 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L442" class="blob-num js-line-number" data-line-number="442"></td>
-        <td id="LC442" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_base00    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:base00 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L443" class="blob-num js-line-number" data-line-number="443"></td>
-        <td id="LC443" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_base0     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:base0  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L444" class="blob-num js-line-number" data-line-number="444"></td>
-        <td id="LC444" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_base1     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:base1  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L445" class="blob-num js-line-number" data-line-number="445"></td>
-        <td id="LC445" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_base2     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:base2  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L446" class="blob-num js-line-number" data-line-number="446"></td>
-        <td id="LC446" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_base3     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:base3  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L447" class="blob-num js-line-number" data-line-number="447"></td>
-        <td id="LC447" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_green     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:green  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L448" class="blob-num js-line-number" data-line-number="448"></td>
-        <td id="LC448" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_yellow    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:yellow .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L449" class="blob-num js-line-number" data-line-number="449"></td>
-        <td id="LC449" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_orange    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:orange .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L450" class="blob-num js-line-number" data-line-number="450"></td>
-        <td id="LC450" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_red       = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:<span class="k">red</span>    .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L451" class="blob-num js-line-number" data-line-number="451"></td>
-        <td id="LC451" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_magenta   = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:magenta.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L452" class="blob-num js-line-number" data-line-number="452"></td>
-        <td id="LC452" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_violet    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:violet .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L453" class="blob-num js-line-number" data-line-number="453"></td>
-        <td id="LC453" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_blue      = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:blue   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L454" class="blob-num js-line-number" data-line-number="454"></td>
-        <td id="LC454" class="blob-code js-file-line">exe <span class="s2">&quot;let s:bg_cyan      = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;bg=&quot;</span>.<span class="k">s</span>:cyan   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L455" class="blob-num js-line-number" data-line-number="455"></td>
-        <td id="LC455" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L456" class="blob-num js-line-number" data-line-number="456"></td>
-        <td id="LC456" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_none      = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:none   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L457" class="blob-num js-line-number" data-line-number="457"></td>
-        <td id="LC457" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_back      = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:back   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L458" class="blob-num js-line-number" data-line-number="458"></td>
-        <td id="LC458" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_base03    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:base03 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L459" class="blob-num js-line-number" data-line-number="459"></td>
-        <td id="LC459" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_base02    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:base02 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L460" class="blob-num js-line-number" data-line-number="460"></td>
-        <td id="LC460" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_base01    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:base01 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L461" class="blob-num js-line-number" data-line-number="461"></td>
-        <td id="LC461" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_base00    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:base00 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L462" class="blob-num js-line-number" data-line-number="462"></td>
-        <td id="LC462" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_base0     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:base0  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L463" class="blob-num js-line-number" data-line-number="463"></td>
-        <td id="LC463" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_base1     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:base1  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L464" class="blob-num js-line-number" data-line-number="464"></td>
-        <td id="LC464" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_base2     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:base2  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L465" class="blob-num js-line-number" data-line-number="465"></td>
-        <td id="LC465" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_base3     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:base3  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L466" class="blob-num js-line-number" data-line-number="466"></td>
-        <td id="LC466" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_green     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:green  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L467" class="blob-num js-line-number" data-line-number="467"></td>
-        <td id="LC467" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_yellow    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:yellow .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L468" class="blob-num js-line-number" data-line-number="468"></td>
-        <td id="LC468" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_orange    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:orange .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L469" class="blob-num js-line-number" data-line-number="469"></td>
-        <td id="LC469" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_red       = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:<span class="k">red</span>    .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L470" class="blob-num js-line-number" data-line-number="470"></td>
-        <td id="LC470" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_magenta   = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:magenta.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L471" class="blob-num js-line-number" data-line-number="471"></td>
-        <td id="LC471" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_violet    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:violet .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L472" class="blob-num js-line-number" data-line-number="472"></td>
-        <td id="LC472" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_blue      = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:blue   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L473" class="blob-num js-line-number" data-line-number="473"></td>
-        <td id="LC473" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fg_cyan      = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;fg=&quot;</span>.<span class="k">s</span>:cyan   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L474" class="blob-num js-line-number" data-line-number="474"></td>
-        <td id="LC474" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L475" class="blob-num js-line-number" data-line-number="475"></td>
-        <td id="LC475" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_none     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.          <span class="s2">&quot; term=NONE&quot;</span>.    <span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L476" class="blob-num js-line-number" data-line-number="476"></td>
-        <td id="LC476" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_bold     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">b</span>.      <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">b</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L477" class="blob-num js-line-number" data-line-number="477"></td>
-        <td id="LC477" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_bldi     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">b</span>.      <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">b</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L478" class="blob-num js-line-number" data-line-number="478"></td>
-        <td id="LC478" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_undr     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">u</span>.      <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">u</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L479" class="blob-num js-line-number" data-line-number="479"></td>
-        <td id="LC479" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_undb     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">u</span>.<span class="k">s</span>:<span class="k">b</span>.  <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">u</span>.<span class="k">s</span>:<span class="k">b</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L480" class="blob-num js-line-number" data-line-number="480"></td>
-        <td id="LC480" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_undi     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">u</span>.      <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">u</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L481" class="blob-num js-line-number" data-line-number="481"></td>
-        <td id="LC481" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_uopt     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:ou.     <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:ou.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L482" class="blob-num js-line-number" data-line-number="482"></td>
-        <td id="LC482" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_curl     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">c</span>.      <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">c</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L483" class="blob-num js-line-number" data-line-number="483"></td>
-        <td id="LC483" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_ital     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">i</span>.      <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">i</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L484" class="blob-num js-line-number" data-line-number="484"></td>
-        <td id="LC484" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_stnd     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">s</span>.      <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">s</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L485" class="blob-num js-line-number" data-line-number="485"></td>
-        <td id="LC485" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_revr     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">r</span>.      <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">r</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L486" class="blob-num js-line-number" data-line-number="486"></td>
-        <td id="LC486" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_revb     = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">r</span>.<span class="k">s</span>:<span class="k">b</span>.  <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">r</span>.<span class="k">s</span>:<span class="k">b</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L487" class="blob-num js-line-number" data-line-number="487"></td>
-        <td id="LC487" class="blob-code js-file-line"><span class="c">&quot; revbb (reverse bold for bright colors) is only set to actual bold in low </span></td>
-      </tr>
-      <tr>
-        <td id="L488" class="blob-num js-line-number" data-line-number="488"></td>
-        <td id="LC488" class="blob-code js-file-line"><span class="c">&quot; color terminals (t_co=8, such as OS X Terminal.app) and should only be used </span></td>
-      </tr>
-      <tr>
-        <td id="L489" class="blob-num js-line-number" data-line-number="489"></td>
-        <td id="LC489" class="blob-code js-file-line"><span class="c">&quot; with colors 8-15.</span></td>
-      </tr>
-      <tr>
-        <td id="L490" class="blob-num js-line-number" data-line-number="490"></td>
-        <td id="LC490" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_revbb    = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">r</span>.<span class="k">s</span>:bb.   <span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">r</span>.<span class="k">s</span>:bb.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L491" class="blob-num js-line-number" data-line-number="491"></td>
-        <td id="LC491" class="blob-code js-file-line">exe <span class="s2">&quot;let s:fmt_revbbu   = &#39; &quot;</span>.<span class="k">s</span>:vmode.<span class="s2">&quot;=NONE&quot;</span>.<span class="k">s</span>:<span class="k">r</span>.<span class="k">s</span>:bb.<span class="k">s</span>:<span class="k">u</span>.<span class="s2">&quot; term=NONE&quot;</span>.<span class="k">s</span>:<span class="k">r</span>.<span class="k">s</span>:bb.<span class="k">s</span>:<span class="k">u</span>.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L492" class="blob-num js-line-number" data-line-number="492"></td>
-        <td id="LC492" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L493" class="blob-num js-line-number" data-line-number="493"></td>
-        <td id="LC493" class="blob-code js-file-line"><span class="k">if</span> has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L494" class="blob-num js-line-number" data-line-number="494"></td>
-        <td id="LC494" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_none      = &#39; guisp=&quot;</span>.<span class="k">s</span>:none   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L495" class="blob-num js-line-number" data-line-number="495"></td>
-        <td id="LC495" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_back      = &#39; guisp=&quot;</span>.<span class="k">s</span>:back   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L496" class="blob-num js-line-number" data-line-number="496"></td>
-        <td id="LC496" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_base03    = &#39; guisp=&quot;</span>.<span class="k">s</span>:base03 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L497" class="blob-num js-line-number" data-line-number="497"></td>
-        <td id="LC497" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_base02    = &#39; guisp=&quot;</span>.<span class="k">s</span>:base02 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L498" class="blob-num js-line-number" data-line-number="498"></td>
-        <td id="LC498" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_base01    = &#39; guisp=&quot;</span>.<span class="k">s</span>:base01 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L499" class="blob-num js-line-number" data-line-number="499"></td>
-        <td id="LC499" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_base00    = &#39; guisp=&quot;</span>.<span class="k">s</span>:base00 .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L500" class="blob-num js-line-number" data-line-number="500"></td>
-        <td id="LC500" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_base0     = &#39; guisp=&quot;</span>.<span class="k">s</span>:base0  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L501" class="blob-num js-line-number" data-line-number="501"></td>
-        <td id="LC501" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_base1     = &#39; guisp=&quot;</span>.<span class="k">s</span>:base1  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L502" class="blob-num js-line-number" data-line-number="502"></td>
-        <td id="LC502" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_base2     = &#39; guisp=&quot;</span>.<span class="k">s</span>:base2  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L503" class="blob-num js-line-number" data-line-number="503"></td>
-        <td id="LC503" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_base3     = &#39; guisp=&quot;</span>.<span class="k">s</span>:base3  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L504" class="blob-num js-line-number" data-line-number="504"></td>
-        <td id="LC504" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_green     = &#39; guisp=&quot;</span>.<span class="k">s</span>:green  .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L505" class="blob-num js-line-number" data-line-number="505"></td>
-        <td id="LC505" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_yellow    = &#39; guisp=&quot;</span>.<span class="k">s</span>:yellow .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L506" class="blob-num js-line-number" data-line-number="506"></td>
-        <td id="LC506" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_orange    = &#39; guisp=&quot;</span>.<span class="k">s</span>:orange .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L507" class="blob-num js-line-number" data-line-number="507"></td>
-        <td id="LC507" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_red       = &#39; guisp=&quot;</span>.<span class="k">s</span>:<span class="k">red</span>    .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L508" class="blob-num js-line-number" data-line-number="508"></td>
-        <td id="LC508" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_magenta   = &#39; guisp=&quot;</span>.<span class="k">s</span>:magenta.<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L509" class="blob-num js-line-number" data-line-number="509"></td>
-        <td id="LC509" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_violet    = &#39; guisp=&quot;</span>.<span class="k">s</span>:violet .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L510" class="blob-num js-line-number" data-line-number="510"></td>
-        <td id="LC510" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_blue      = &#39; guisp=&quot;</span>.<span class="k">s</span>:blue   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L511" class="blob-num js-line-number" data-line-number="511"></td>
-        <td id="LC511" class="blob-code js-file-line">    exe <span class="s2">&quot;let s:sp_cyan      = &#39; guisp=&quot;</span>.<span class="k">s</span>:cyan   .<span class="s2">&quot;&#39;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L512" class="blob-num js-line-number" data-line-number="512"></td>
-        <td id="LC512" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L513" class="blob-num js-line-number" data-line-number="513"></td>
-        <td id="LC513" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_none      <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L514" class="blob-num js-line-number" data-line-number="514"></td>
-        <td id="LC514" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_back      <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L515" class="blob-num js-line-number" data-line-number="515"></td>
-        <td id="LC515" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_base03    <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L516" class="blob-num js-line-number" data-line-number="516"></td>
-        <td id="LC516" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_base02    <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L517" class="blob-num js-line-number" data-line-number="517"></td>
-        <td id="LC517" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_base01    <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L518" class="blob-num js-line-number" data-line-number="518"></td>
-        <td id="LC518" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_base00    <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L519" class="blob-num js-line-number" data-line-number="519"></td>
-        <td id="LC519" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_base0     <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L520" class="blob-num js-line-number" data-line-number="520"></td>
-        <td id="LC520" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_base1     <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L521" class="blob-num js-line-number" data-line-number="521"></td>
-        <td id="LC521" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_base2     <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L522" class="blob-num js-line-number" data-line-number="522"></td>
-        <td id="LC522" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_base3     <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L523" class="blob-num js-line-number" data-line-number="523"></td>
-        <td id="LC523" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_green     <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L524" class="blob-num js-line-number" data-line-number="524"></td>
-        <td id="LC524" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_yellow    <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L525" class="blob-num js-line-number" data-line-number="525"></td>
-        <td id="LC525" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_orange    <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L526" class="blob-num js-line-number" data-line-number="526"></td>
-        <td id="LC526" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_red       <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L527" class="blob-num js-line-number" data-line-number="527"></td>
-        <td id="LC527" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_magenta   <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L528" class="blob-num js-line-number" data-line-number="528"></td>
-        <td id="LC528" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_violet    <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L529" class="blob-num js-line-number" data-line-number="529"></td>
-        <td id="LC529" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_blue      <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L530" class="blob-num js-line-number" data-line-number="530"></td>
-        <td id="LC530" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">s</span>:sp_cyan      <span class="p">=</span> <span class="s2">&quot;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L531" class="blob-num js-line-number" data-line-number="531"></td>
-        <td id="LC531" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L532" class="blob-num js-line-number" data-line-number="532"></td>
-        <td id="LC532" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L533" class="blob-num js-line-number" data-line-number="533"></td>
-        <td id="LC533" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L534" class="blob-num js-line-number" data-line-number="534"></td>
-        <td id="LC534" class="blob-code js-file-line"><span class="c">&quot; Basic highlighting&quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L535" class="blob-num js-line-number" data-line-number="535"></td>
-        <td id="LC535" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L536" class="blob-num js-line-number" data-line-number="536"></td>
-        <td id="LC536" class="blob-code js-file-line"><span class="c">&quot; note that link syntax to avoid duplicate configuration doesn&#39;t work with the</span></td>
-      </tr>
-      <tr>
-        <td id="L537" class="blob-num js-line-number" data-line-number="537"></td>
-        <td id="LC537" class="blob-code js-file-line"><span class="c">&quot; exe compiled formats</span></td>
-      </tr>
-      <tr>
-        <td id="L538" class="blob-num js-line-number" data-line-number="538"></td>
-        <td id="LC538" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L539" class="blob-num js-line-number" data-line-number="539"></td>
-        <td id="LC539" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Normal&quot;</span>         .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_back</td>
-      </tr>
-      <tr>
-        <td id="L540" class="blob-num js-line-number" data-line-number="540"></td>
-        <td id="LC540" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L541" class="blob-num js-line-number" data-line-number="541"></td>
-        <td id="LC541" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Comment&quot;</span>        .<span class="k">s</span>:fmt_ital   .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L542" class="blob-num js-line-number" data-line-number="542"></td>
-        <td id="LC542" class="blob-code js-file-line"><span class="c">&quot;       *Comment         any comment</span></td>
-      </tr>
-      <tr>
-        <td id="L543" class="blob-num js-line-number" data-line-number="543"></td>
-        <td id="LC543" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L544" class="blob-num js-line-number" data-line-number="544"></td>
-        <td id="LC544" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Constant&quot;</span>       .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L545" class="blob-num js-line-number" data-line-number="545"></td>
-        <td id="LC545" class="blob-code js-file-line"><span class="c">&quot;       *Constant        any constant</span></td>
-      </tr>
-      <tr>
-        <td id="L546" class="blob-num js-line-number" data-line-number="546"></td>
-        <td id="LC546" class="blob-code js-file-line"><span class="c">&quot;        String          a string constant: &quot;this is a string&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L547" class="blob-num js-line-number" data-line-number="547"></td>
-        <td id="LC547" class="blob-code js-file-line"><span class="c">&quot;        Character       a character constant: &#39;c&#39;, &#39;\n&#39;</span></td>
-      </tr>
-      <tr>
-        <td id="L548" class="blob-num js-line-number" data-line-number="548"></td>
-        <td id="LC548" class="blob-code js-file-line"><span class="c">&quot;        Number          a number constant: 234, 0xff</span></td>
-      </tr>
-      <tr>
-        <td id="L549" class="blob-num js-line-number" data-line-number="549"></td>
-        <td id="LC549" class="blob-code js-file-line"><span class="c">&quot;        Boolean         a boolean constant: TRUE, false</span></td>
-      </tr>
-      <tr>
-        <td id="L550" class="blob-num js-line-number" data-line-number="550"></td>
-        <td id="LC550" class="blob-code js-file-line"><span class="c">&quot;        Float           a floating point constant: 2.3e10</span></td>
-      </tr>
-      <tr>
-        <td id="L551" class="blob-num js-line-number" data-line-number="551"></td>
-        <td id="LC551" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L552" class="blob-num js-line-number" data-line-number="552"></td>
-        <td id="LC552" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Identifier&quot;</span>     .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L553" class="blob-num js-line-number" data-line-number="553"></td>
-        <td id="LC553" class="blob-code js-file-line"><span class="c">&quot;       *Identifier      any variable name</span></td>
-      </tr>
-      <tr>
-        <td id="L554" class="blob-num js-line-number" data-line-number="554"></td>
-        <td id="LC554" class="blob-code js-file-line"><span class="c">&quot;        Function        function name (also: methods for classes)</span></td>
-      </tr>
-      <tr>
-        <td id="L555" class="blob-num js-line-number" data-line-number="555"></td>
-        <td id="LC555" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L556" class="blob-num js-line-number" data-line-number="556"></td>
-        <td id="LC556" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Statement&quot;</span>      .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L557" class="blob-num js-line-number" data-line-number="557"></td>
-        <td id="LC557" class="blob-code js-file-line"><span class="c">&quot;       *Statement       any statement</span></td>
-      </tr>
-      <tr>
-        <td id="L558" class="blob-num js-line-number" data-line-number="558"></td>
-        <td id="LC558" class="blob-code js-file-line"><span class="c">&quot;        Conditional     if, then, else, endif, switch, etc.</span></td>
-      </tr>
-      <tr>
-        <td id="L559" class="blob-num js-line-number" data-line-number="559"></td>
-        <td id="LC559" class="blob-code js-file-line"><span class="c">&quot;        Repeat          for, do, while, etc.</span></td>
-      </tr>
-      <tr>
-        <td id="L560" class="blob-num js-line-number" data-line-number="560"></td>
-        <td id="LC560" class="blob-code js-file-line"><span class="c">&quot;        Label           case, default, etc.</span></td>
-      </tr>
-      <tr>
-        <td id="L561" class="blob-num js-line-number" data-line-number="561"></td>
-        <td id="LC561" class="blob-code js-file-line"><span class="c">&quot;        Operator        &quot;sizeof&quot;, &quot;+&quot;, &quot;*&quot;, etc.</span></td>
-      </tr>
-      <tr>
-        <td id="L562" class="blob-num js-line-number" data-line-number="562"></td>
-        <td id="LC562" class="blob-code js-file-line"><span class="c">&quot;        Keyword         any other keyword</span></td>
-      </tr>
-      <tr>
-        <td id="L563" class="blob-num js-line-number" data-line-number="563"></td>
-        <td id="LC563" class="blob-code js-file-line"><span class="c">&quot;        Exception       try, catch, throw</span></td>
-      </tr>
-      <tr>
-        <td id="L564" class="blob-num js-line-number" data-line-number="564"></td>
-        <td id="LC564" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L565" class="blob-num js-line-number" data-line-number="565"></td>
-        <td id="LC565" class="blob-code js-file-line">exe <span class="s2">&quot;hi! PreProc&quot;</span>        .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_orange .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L566" class="blob-num js-line-number" data-line-number="566"></td>
-        <td id="LC566" class="blob-code js-file-line"><span class="c">&quot;       *PreProc         generic Preprocessor</span></td>
-      </tr>
-      <tr>
-        <td id="L567" class="blob-num js-line-number" data-line-number="567"></td>
-        <td id="LC567" class="blob-code js-file-line"><span class="c">&quot;        Include         preprocessor #include</span></td>
-      </tr>
-      <tr>
-        <td id="L568" class="blob-num js-line-number" data-line-number="568"></td>
-        <td id="LC568" class="blob-code js-file-line"><span class="c">&quot;        Define          preprocessor #define</span></td>
-      </tr>
-      <tr>
-        <td id="L569" class="blob-num js-line-number" data-line-number="569"></td>
-        <td id="LC569" class="blob-code js-file-line"><span class="c">&quot;        Macro           same as Define</span></td>
-      </tr>
-      <tr>
-        <td id="L570" class="blob-num js-line-number" data-line-number="570"></td>
-        <td id="LC570" class="blob-code js-file-line"><span class="c">&quot;        PreCondit       preprocessor #if, #else, #endif, etc.</span></td>
-      </tr>
-      <tr>
-        <td id="L571" class="blob-num js-line-number" data-line-number="571"></td>
-        <td id="LC571" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L572" class="blob-num js-line-number" data-line-number="572"></td>
-        <td id="LC572" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Type&quot;</span>           .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L573" class="blob-num js-line-number" data-line-number="573"></td>
-        <td id="LC573" class="blob-code js-file-line"><span class="c">&quot;       *Type            int, long, char, etc.</span></td>
-      </tr>
-      <tr>
-        <td id="L574" class="blob-num js-line-number" data-line-number="574"></td>
-        <td id="LC574" class="blob-code js-file-line"><span class="c">&quot;        StorageClass    static, register, volatile, etc.</span></td>
-      </tr>
-      <tr>
-        <td id="L575" class="blob-num js-line-number" data-line-number="575"></td>
-        <td id="LC575" class="blob-code js-file-line"><span class="c">&quot;        Structure       struct, union, enum, etc.</span></td>
-      </tr>
-      <tr>
-        <td id="L576" class="blob-num js-line-number" data-line-number="576"></td>
-        <td id="LC576" class="blob-code js-file-line"><span class="c">&quot;        Typedef         A typedef</span></td>
-      </tr>
-      <tr>
-        <td id="L577" class="blob-num js-line-number" data-line-number="577"></td>
-        <td id="LC577" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L578" class="blob-num js-line-number" data-line-number="578"></td>
-        <td id="LC578" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Special&quot;</span>        .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L579" class="blob-num js-line-number" data-line-number="579"></td>
-        <td id="LC579" class="blob-code js-file-line"><span class="c">&quot;       *Special         any special symbol</span></td>
-      </tr>
-      <tr>
-        <td id="L580" class="blob-num js-line-number" data-line-number="580"></td>
-        <td id="LC580" class="blob-code js-file-line"><span class="c">&quot;        SpecialChar     special character in a constant</span></td>
-      </tr>
-      <tr>
-        <td id="L581" class="blob-num js-line-number" data-line-number="581"></td>
-        <td id="LC581" class="blob-code js-file-line"><span class="c">&quot;        Tag             you can use CTRL-] on this</span></td>
-      </tr>
-      <tr>
-        <td id="L582" class="blob-num js-line-number" data-line-number="582"></td>
-        <td id="LC582" class="blob-code js-file-line"><span class="c">&quot;        Delimiter       character that needs attention</span></td>
-      </tr>
-      <tr>
-        <td id="L583" class="blob-num js-line-number" data-line-number="583"></td>
-        <td id="LC583" class="blob-code js-file-line"><span class="c">&quot;        SpecialComment  special things inside a comment</span></td>
-      </tr>
-      <tr>
-        <td id="L584" class="blob-num js-line-number" data-line-number="584"></td>
-        <td id="LC584" class="blob-code js-file-line"><span class="c">&quot;        Debug           debugging statements</span></td>
-      </tr>
-      <tr>
-        <td id="L585" class="blob-num js-line-number" data-line-number="585"></td>
-        <td id="LC585" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L586" class="blob-num js-line-number" data-line-number="586"></td>
-        <td id="LC586" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Underlined&quot;</span>     .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_violet .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L587" class="blob-num js-line-number" data-line-number="587"></td>
-        <td id="LC587" class="blob-code js-file-line"><span class="c">&quot;       *Underlined      text that stands out, HTML links</span></td>
-      </tr>
-      <tr>
-        <td id="L588" class="blob-num js-line-number" data-line-number="588"></td>
-        <td id="LC588" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L589" class="blob-num js-line-number" data-line-number="589"></td>
-        <td id="LC589" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Ignore&quot;</span>         .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L590" class="blob-num js-line-number" data-line-number="590"></td>
-        <td id="LC590" class="blob-code js-file-line"><span class="c">&quot;       *Ignore          left blank, hidden  |hl-Ignore|</span></td>
-      </tr>
-      <tr>
-        <td id="L591" class="blob-num js-line-number" data-line-number="591"></td>
-        <td id="LC591" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L592" class="blob-num js-line-number" data-line-number="592"></td>
-        <td id="LC592" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Error&quot;</span>          .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L593" class="blob-num js-line-number" data-line-number="593"></td>
-        <td id="LC593" class="blob-code js-file-line"><span class="c">&quot;       *Error           any erroneous construct</span></td>
-      </tr>
-      <tr>
-        <td id="L594" class="blob-num js-line-number" data-line-number="594"></td>
-        <td id="LC594" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L595" class="blob-num js-line-number" data-line-number="595"></td>
-        <td id="LC595" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Todo&quot;</span>           .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L596" class="blob-num js-line-number" data-line-number="596"></td>
-        <td id="LC596" class="blob-code js-file-line"><span class="c">&quot;       *Todo            anything that needs extra attention; mostly the</span></td>
-      </tr>
-      <tr>
-        <td id="L597" class="blob-num js-line-number" data-line-number="597"></td>
-        <td id="LC597" class="blob-code js-file-line"><span class="c">&quot;                        keywords TODO FIXME and XXX</span></td>
-      </tr>
-      <tr>
-        <td id="L598" class="blob-num js-line-number" data-line-number="598"></td>
-        <td id="LC598" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L599" class="blob-num js-line-number" data-line-number="599"></td>
-        <td id="LC599" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L600" class="blob-num js-line-number" data-line-number="600"></td>
-        <td id="LC600" class="blob-code js-file-line"><span class="c">&quot; Extended highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L601" class="blob-num js-line-number" data-line-number="601"></td>
-        <td id="LC601" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L602" class="blob-num js-line-number" data-line-number="602"></td>
-        <td id="LC602" class="blob-code js-file-line"><span class="k">if</span>      <span class="p">(</span><span class="k">g</span>:solarized_visibility<span class="p">==</span><span class="s2">&quot;high&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L603" class="blob-num js-line-number" data-line-number="603"></td>
-        <td id="LC603" class="blob-code js-file-line">    exe <span class="s2">&quot;hi! SpecialKey&quot;</span> .<span class="k">s</span>:fmt_revr   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L604" class="blob-num js-line-number" data-line-number="604"></td>
-        <td id="LC604" class="blob-code js-file-line">    exe <span class="s2">&quot;hi! NonText&quot;</span>    .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L605" class="blob-num js-line-number" data-line-number="605"></td>
-        <td id="LC605" class="blob-code js-file-line"><span class="k">elseif</span>  <span class="p">(</span><span class="k">g</span>:solarized_visibility<span class="p">==</span><span class="s2">&quot;low&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L606" class="blob-num js-line-number" data-line-number="606"></td>
-        <td id="LC606" class="blob-code js-file-line">    exe <span class="s2">&quot;hi! SpecialKey&quot;</span> .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_base02 .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L607" class="blob-num js-line-number" data-line-number="607"></td>
-        <td id="LC607" class="blob-code js-file-line">    exe <span class="s2">&quot;hi! NonText&quot;</span>    .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_base02 .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L608" class="blob-num js-line-number" data-line-number="608"></td>
-        <td id="LC608" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L609" class="blob-num js-line-number" data-line-number="609"></td>
-        <td id="LC609" class="blob-code js-file-line">    exe <span class="s2">&quot;hi! SpecialKey&quot;</span> .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_base02</td>
-      </tr>
-      <tr>
-        <td id="L610" class="blob-num js-line-number" data-line-number="610"></td>
-        <td id="LC610" class="blob-code js-file-line">    exe <span class="s2">&quot;hi! NonText&quot;</span>    .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L611" class="blob-num js-line-number" data-line-number="611"></td>
-        <td id="LC611" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L612" class="blob-num js-line-number" data-line-number="612"></td>
-        <td id="LC612" class="blob-code js-file-line">exe <span class="s2">&quot;hi! StatusLine&quot;</span>     .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base1  .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L613" class="blob-num js-line-number" data-line-number="613"></td>
-        <td id="LC613" class="blob-code js-file-line">exe <span class="s2">&quot;hi! StatusLineNC&quot;</span>   .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L614" class="blob-num js-line-number" data-line-number="614"></td>
-        <td id="LC614" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Visual&quot;</span>         .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_base03 .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L615" class="blob-num js-line-number" data-line-number="615"></td>
-        <td id="LC615" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Directory&quot;</span>      .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L616" class="blob-num js-line-number" data-line-number="616"></td>
-        <td id="LC616" class="blob-code js-file-line">exe <span class="s2">&quot;hi! ErrorMsg&quot;</span>       .<span class="k">s</span>:fmt_revr   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L617" class="blob-num js-line-number" data-line-number="617"></td>
-        <td id="LC617" class="blob-code js-file-line">exe <span class="s2">&quot;hi! IncSearch&quot;</span>      .<span class="k">s</span>:fmt_stnd   .<span class="k">s</span>:fg_orange .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L618" class="blob-num js-line-number" data-line-number="618"></td>
-        <td id="LC618" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Search&quot;</span>         .<span class="k">s</span>:fmt_revr   .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L619" class="blob-num js-line-number" data-line-number="619"></td>
-        <td id="LC619" class="blob-code js-file-line">exe <span class="s2">&quot;hi! MoreMsg&quot;</span>        .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L620" class="blob-num js-line-number" data-line-number="620"></td>
-        <td id="LC620" class="blob-code js-file-line">exe <span class="s2">&quot;hi! ModeMsg&quot;</span>        .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L621" class="blob-num js-line-number" data-line-number="621"></td>
-        <td id="LC621" class="blob-code js-file-line">exe <span class="s2">&quot;hi! LineNr&quot;</span>         .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_base02</td>
-      </tr>
-      <tr>
-        <td id="L622" class="blob-num js-line-number" data-line-number="622"></td>
-        <td id="LC622" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Question&quot;</span>       .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L623" class="blob-num js-line-number" data-line-number="623"></td>
-        <td id="LC623" class="blob-code js-file-line"><span class="k">if</span> <span class="p">(</span> has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span> <span class="p">||</span> &amp;<span class="nb">t_Co</span> <span class="p">&gt;</span> <span class="m">8</span> <span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L624" class="blob-num js-line-number" data-line-number="624"></td>
-        <td id="LC624" class="blob-code js-file-line">    exe <span class="s2">&quot;hi! VertSplit&quot;</span>  .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_base00</td>
-      </tr>
-      <tr>
-        <td id="L625" class="blob-num js-line-number" data-line-number="625"></td>
-        <td id="LC625" class="blob-code js-file-line"><span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L626" class="blob-num js-line-number" data-line-number="626"></td>
-        <td id="LC626" class="blob-code js-file-line">    exe <span class="s2">&quot;hi! VertSplit&quot;</span>  .<span class="k">s</span>:fmt_revbb  .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_base02</td>
-      </tr>
-      <tr>
-        <td id="L627" class="blob-num js-line-number" data-line-number="627"></td>
-        <td id="LC627" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L628" class="blob-num js-line-number" data-line-number="628"></td>
-        <td id="LC628" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Title&quot;</span>          .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_orange .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L629" class="blob-num js-line-number" data-line-number="629"></td>
-        <td id="LC629" class="blob-code js-file-line">exe <span class="s2">&quot;hi! VisualNOS&quot;</span>      .<span class="k">s</span>:fmt_stnd   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L630" class="blob-num js-line-number" data-line-number="630"></td>
-        <td id="LC630" class="blob-code js-file-line">exe <span class="s2">&quot;hi! WarningMsg&quot;</span>     .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L631" class="blob-num js-line-number" data-line-number="631"></td>
-        <td id="LC631" class="blob-code js-file-line">exe <span class="s2">&quot;hi! WildMenu&quot;</span>       .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base2  .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L632" class="blob-num js-line-number" data-line-number="632"></td>
-        <td id="LC632" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Folded&quot;</span>         .<span class="k">s</span>:fmt_undb   .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_base02  .<span class="k">s</span>:sp_base03</td>
-      </tr>
-      <tr>
-        <td id="L633" class="blob-num js-line-number" data-line-number="633"></td>
-        <td id="LC633" class="blob-code js-file-line">exe <span class="s2">&quot;hi! FoldColumn&quot;</span>     .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_base02</td>
-      </tr>
-      <tr>
-        <td id="L634" class="blob-num js-line-number" data-line-number="634"></td>
-        <td id="LC634" class="blob-code js-file-line"><span class="k">if</span>      <span class="p">(</span><span class="k">g</span>:solarized_diffmode<span class="p">==</span><span class="s2">&quot;high&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L635" class="blob-num js-line-number" data-line-number="635"></td>
-        <td id="LC635" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffAdd&quot;</span>        .<span class="k">s</span>:fmt_revr   .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L636" class="blob-num js-line-number" data-line-number="636"></td>
-        <td id="LC636" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffChange&quot;</span>     .<span class="k">s</span>:fmt_revr   .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L637" class="blob-num js-line-number" data-line-number="637"></td>
-        <td id="LC637" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffDelete&quot;</span>     .<span class="k">s</span>:fmt_revr   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L638" class="blob-num js-line-number" data-line-number="638"></td>
-        <td id="LC638" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffText&quot;</span>       .<span class="k">s</span>:fmt_revr   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L639" class="blob-num js-line-number" data-line-number="639"></td>
-        <td id="LC639" class="blob-code js-file-line"><span class="k">elseif</span>  <span class="p">(</span><span class="k">g</span>:solarized_diffmode<span class="p">==</span><span class="s2">&quot;low&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L640" class="blob-num js-line-number" data-line-number="640"></td>
-        <td id="LC640" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffAdd&quot;</span>        .<span class="k">s</span>:fmt_undr   .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none   .<span class="k">s</span>:sp_green</td>
-      </tr>
-      <tr>
-        <td id="L641" class="blob-num js-line-number" data-line-number="641"></td>
-        <td id="LC641" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffChange&quot;</span>     .<span class="k">s</span>:fmt_undr   .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none   .<span class="k">s</span>:sp_yellow</td>
-      </tr>
-      <tr>
-        <td id="L642" class="blob-num js-line-number" data-line-number="642"></td>
-        <td id="LC642" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffDelete&quot;</span>     .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L643" class="blob-num js-line-number" data-line-number="643"></td>
-        <td id="LC643" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffText&quot;</span>       .<span class="k">s</span>:fmt_undr   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:sp_blue</td>
-      </tr>
-      <tr>
-        <td id="L644" class="blob-num js-line-number" data-line-number="644"></td>
-        <td id="LC644" class="blob-code js-file-line"><span class="k">else</span> <span class="c">&quot; normal</span></td>
-      </tr>
-      <tr>
-        <td id="L645" class="blob-num js-line-number" data-line-number="645"></td>
-        <td id="LC645" class="blob-code js-file-line">    <span class="k">if</span> has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L646" class="blob-num js-line-number" data-line-number="646"></td>
-        <td id="LC646" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffAdd&quot;</span>        .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:sp_green</td>
-      </tr>
-      <tr>
-        <td id="L647" class="blob-num js-line-number" data-line-number="647"></td>
-        <td id="LC647" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffChange&quot;</span>     .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:sp_yellow</td>
-      </tr>
-      <tr>
-        <td id="L648" class="blob-num js-line-number" data-line-number="648"></td>
-        <td id="LC648" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffDelete&quot;</span>     .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_base02</td>
-      </tr>
-      <tr>
-        <td id="L649" class="blob-num js-line-number" data-line-number="649"></td>
-        <td id="LC649" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffText&quot;</span>       .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:sp_blue</td>
-      </tr>
-      <tr>
-        <td id="L650" class="blob-num js-line-number" data-line-number="650"></td>
-        <td id="LC650" class="blob-code js-file-line">    <span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L651" class="blob-num js-line-number" data-line-number="651"></td>
-        <td id="LC651" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffAdd&quot;</span>        .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:sp_green</td>
-      </tr>
-      <tr>
-        <td id="L652" class="blob-num js-line-number" data-line-number="652"></td>
-        <td id="LC652" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffChange&quot;</span>     .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:sp_yellow</td>
-      </tr>
-      <tr>
-        <td id="L653" class="blob-num js-line-number" data-line-number="653"></td>
-        <td id="LC653" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffDelete&quot;</span>     .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_base02</td>
-      </tr>
-      <tr>
-        <td id="L654" class="blob-num js-line-number" data-line-number="654"></td>
-        <td id="LC654" class="blob-code js-file-line">exe <span class="s2">&quot;hi! DiffText&quot;</span>       .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_base02 .<span class="k">s</span>:sp_blue</td>
-      </tr>
-      <tr>
-        <td id="L655" class="blob-num js-line-number" data-line-number="655"></td>
-        <td id="LC655" class="blob-code js-file-line">    <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L656" class="blob-num js-line-number" data-line-number="656"></td>
-        <td id="LC656" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L657" class="blob-num js-line-number" data-line-number="657"></td>
-        <td id="LC657" class="blob-code js-file-line">exe <span class="s2">&quot;hi! SignColumn&quot;</span>     .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base0</td>
-      </tr>
-      <tr>
-        <td id="L658" class="blob-num js-line-number" data-line-number="658"></td>
-        <td id="LC658" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Conceal&quot;</span>        .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L659" class="blob-num js-line-number" data-line-number="659"></td>
-        <td id="LC659" class="blob-code js-file-line">exe <span class="s2">&quot;hi! SpellBad&quot;</span>       .<span class="k">s</span>:fmt_curl   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_none    .<span class="k">s</span>:sp_red</td>
-      </tr>
-      <tr>
-        <td id="L660" class="blob-num js-line-number" data-line-number="660"></td>
-        <td id="LC660" class="blob-code js-file-line">exe <span class="s2">&quot;hi! SpellCap&quot;</span>       .<span class="k">s</span>:fmt_curl   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_none    .<span class="k">s</span>:sp_violet</td>
-      </tr>
-      <tr>
-        <td id="L661" class="blob-num js-line-number" data-line-number="661"></td>
-        <td id="LC661" class="blob-code js-file-line">exe <span class="s2">&quot;hi! SpellRare&quot;</span>      .<span class="k">s</span>:fmt_curl   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_none    .<span class="k">s</span>:sp_cyan</td>
-      </tr>
-      <tr>
-        <td id="L662" class="blob-num js-line-number" data-line-number="662"></td>
-        <td id="LC662" class="blob-code js-file-line">exe <span class="s2">&quot;hi! SpellLocal&quot;</span>     .<span class="k">s</span>:fmt_curl   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_none    .<span class="k">s</span>:sp_yellow</td>
-      </tr>
-      <tr>
-        <td id="L663" class="blob-num js-line-number" data-line-number="663"></td>
-        <td id="LC663" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Pmenu&quot;</span>          .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_base02  .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L664" class="blob-num js-line-number" data-line-number="664"></td>
-        <td id="LC664" class="blob-code js-file-line">exe <span class="s2">&quot;hi! PmenuSel&quot;</span>       .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_base2   .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L665" class="blob-num js-line-number" data-line-number="665"></td>
-        <td id="LC665" class="blob-code js-file-line">exe <span class="s2">&quot;hi! PmenuSbar&quot;</span>      .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base2  .<span class="k">s</span>:bg_base0   .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L666" class="blob-num js-line-number" data-line-number="666"></td>
-        <td id="LC666" class="blob-code js-file-line">exe <span class="s2">&quot;hi! PmenuThumb&quot;</span>     .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_base03  .<span class="k">s</span>:fmt_revbb</td>
-      </tr>
-      <tr>
-        <td id="L667" class="blob-num js-line-number" data-line-number="667"></td>
-        <td id="LC667" class="blob-code js-file-line">exe <span class="s2">&quot;hi! TabLine&quot;</span>        .<span class="k">s</span>:fmt_undr   .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_base02  .<span class="k">s</span>:sp_base0</td>
-      </tr>
-      <tr>
-        <td id="L668" class="blob-num js-line-number" data-line-number="668"></td>
-        <td id="LC668" class="blob-code js-file-line">exe <span class="s2">&quot;hi! TabLineFill&quot;</span>    .<span class="k">s</span>:fmt_undr   .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_base02  .<span class="k">s</span>:sp_base0</td>
-      </tr>
-      <tr>
-        <td id="L669" class="blob-num js-line-number" data-line-number="669"></td>
-        <td id="LC669" class="blob-code js-file-line">exe <span class="s2">&quot;hi! TabLineSel&quot;</span>     .<span class="k">s</span>:fmt_undr   .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_base2   .<span class="k">s</span>:sp_base0  .<span class="k">s</span>:fmt_revbbu</td>
-      </tr>
-      <tr>
-        <td id="L670" class="blob-num js-line-number" data-line-number="670"></td>
-        <td id="LC670" class="blob-code js-file-line">exe <span class="s2">&quot;hi! CursorColumn&quot;</span>   .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_base02</td>
-      </tr>
-      <tr>
-        <td id="L671" class="blob-num js-line-number" data-line-number="671"></td>
-        <td id="LC671" class="blob-code js-file-line">exe <span class="s2">&quot;hi! CursorLine&quot;</span>     .<span class="k">s</span>:fmt_uopt   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_base02  .<span class="k">s</span>:sp_base1</td>
-      </tr>
-      <tr>
-        <td id="L672" class="blob-num js-line-number" data-line-number="672"></td>
-        <td id="LC672" class="blob-code js-file-line">exe <span class="s2">&quot;hi! ColorColumn&quot;</span>    .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_none   .<span class="k">s</span>:bg_base02</td>
-      </tr>
-      <tr>
-        <td id="L673" class="blob-num js-line-number" data-line-number="673"></td>
-        <td id="LC673" class="blob-code js-file-line">exe <span class="s2">&quot;hi! Cursor&quot;</span>         .<span class="k">s</span>:fmt_none   .<span class="k">s</span>:fg_base03 .<span class="k">s</span>:bg_base0</td>
-      </tr>
-      <tr>
-        <td id="L674" class="blob-num js-line-number" data-line-number="674"></td>
-        <td id="LC674" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link lCursor Cursor</td>
-      </tr>
-      <tr>
-        <td id="L675" class="blob-num js-line-number" data-line-number="675"></td>
-        <td id="LC675" class="blob-code js-file-line">exe <span class="s2">&quot;hi! MatchParen&quot;</span>     .<span class="k">s</span>:fmt_bold   .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_base01</td>
-      </tr>
-      <tr>
-        <td id="L676" class="blob-num js-line-number" data-line-number="676"></td>
-        <td id="LC676" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L677" class="blob-num js-line-number" data-line-number="677"></td>
-        <td id="LC677" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L678" class="blob-num js-line-number" data-line-number="678"></td>
-        <td id="LC678" class="blob-code js-file-line"><span class="c">&quot; vim syntax highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L679" class="blob-num js-line-number" data-line-number="679"></td>
-        <td id="LC679" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L680" class="blob-num js-line-number" data-line-number="680"></td>
-        <td id="LC680" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! vimLineComment&quot; . s:fg_base01 .s:bg_none   .s:fmt_ital</span></td>
-      </tr>
-      <tr>
-        <td id="L681" class="blob-num js-line-number" data-line-number="681"></td>
-        <td id="LC681" class="blob-code js-file-line"><span class="c">&quot;hi! link vimComment Comment</span></td>
-      </tr>
-      <tr>
-        <td id="L682" class="blob-num js-line-number" data-line-number="682"></td>
-        <td id="LC682" class="blob-code js-file-line"><span class="c">&quot;hi! link vimLineComment Comment</span></td>
-      </tr>
-      <tr>
-        <td id="L683" class="blob-num js-line-number" data-line-number="683"></td>
-        <td id="LC683" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link vimVar Identifier</td>
-      </tr>
-      <tr>
-        <td id="L684" class="blob-num js-line-number" data-line-number="684"></td>
-        <td id="LC684" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link vimFunc Function</td>
-      </tr>
-      <tr>
-        <td id="L685" class="blob-num js-line-number" data-line-number="685"></td>
-        <td id="LC685" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link vimUserFunc Function</td>
-      </tr>
-      <tr>
-        <td id="L686" class="blob-num js-line-number" data-line-number="686"></td>
-        <td id="LC686" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link helpSpecial Special</td>
-      </tr>
-      <tr>
-        <td id="L687" class="blob-num js-line-number" data-line-number="687"></td>
-        <td id="LC687" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link vimSet Normal</td>
-      </tr>
-      <tr>
-        <td id="L688" class="blob-num js-line-number" data-line-number="688"></td>
-        <td id="LC688" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link vimSetEqual Normal</td>
-      </tr>
-      <tr>
-        <td id="L689" class="blob-num js-line-number" data-line-number="689"></td>
-        <td id="LC689" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimCommentString&quot;</span>  .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_violet .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L690" class="blob-num js-line-number" data-line-number="690"></td>
-        <td id="LC690" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimCommand&quot;</span>        .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L691" class="blob-num js-line-number" data-line-number="691"></td>
-        <td id="LC691" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimCmdSep&quot;</span>         .<span class="k">s</span>:fmt_bold    .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L692" class="blob-num js-line-number" data-line-number="692"></td>
-        <td id="LC692" class="blob-code js-file-line">exe <span class="s2">&quot;hi! helpExample&quot;</span>       .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_base1  .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L693" class="blob-num js-line-number" data-line-number="693"></td>
-        <td id="LC693" class="blob-code js-file-line">exe <span class="s2">&quot;hi! helpOption&quot;</span>        .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L694" class="blob-num js-line-number" data-line-number="694"></td>
-        <td id="LC694" class="blob-code js-file-line">exe <span class="s2">&quot;hi! helpNote&quot;</span>          .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L695" class="blob-num js-line-number" data-line-number="695"></td>
-        <td id="LC695" class="blob-code js-file-line">exe <span class="s2">&quot;hi! helpVim&quot;</span>           .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L696" class="blob-num js-line-number" data-line-number="696"></td>
-        <td id="LC696" class="blob-code js-file-line">exe <span class="s2">&quot;hi! helpHyperTextJump&quot;</span> .<span class="k">s</span>:fmt_undr    .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L697" class="blob-num js-line-number" data-line-number="697"></td>
-        <td id="LC697" class="blob-code js-file-line">exe <span class="s2">&quot;hi! helpHyperTextEntry&quot;</span>.<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L698" class="blob-num js-line-number" data-line-number="698"></td>
-        <td id="LC698" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimIsCommand&quot;</span>      .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L699" class="blob-num js-line-number" data-line-number="699"></td>
-        <td id="LC699" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimSynMtchOpt&quot;</span>     .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L700" class="blob-num js-line-number" data-line-number="700"></td>
-        <td id="LC700" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimSynType&quot;</span>        .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L701" class="blob-num js-line-number" data-line-number="701"></td>
-        <td id="LC701" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimHiLink&quot;</span>         .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L702" class="blob-num js-line-number" data-line-number="702"></td>
-        <td id="LC702" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimHiGroup&quot;</span>        .<span class="k">s</span>:fmt_none    .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L703" class="blob-num js-line-number" data-line-number="703"></td>
-        <td id="LC703" class="blob-code js-file-line">exe <span class="s2">&quot;hi! vimGroup&quot;</span>          .<span class="k">s</span>:fmt_undb    .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L704" class="blob-num js-line-number" data-line-number="704"></td>
-        <td id="LC704" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L705" class="blob-num js-line-number" data-line-number="705"></td>
-        <td id="LC705" class="blob-code js-file-line"><span class="c">&quot; diff highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L706" class="blob-num js-line-number" data-line-number="706"></td>
-        <td id="LC706" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L707" class="blob-num js-line-number" data-line-number="707"></td>
-        <td id="LC707" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link diffAdded Statement</td>
-      </tr>
-      <tr>
-        <td id="L708" class="blob-num js-line-number" data-line-number="708"></td>
-        <td id="LC708" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link diffLine Identifier</td>
-      </tr>
-      <tr>
-        <td id="L709" class="blob-num js-line-number" data-line-number="709"></td>
-        <td id="LC709" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L710" class="blob-num js-line-number" data-line-number="710"></td>
-        <td id="LC710" class="blob-code js-file-line"><span class="c">&quot; git &amp; gitcommit highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L711" class="blob-num js-line-number" data-line-number="711"></td>
-        <td id="LC711" class="blob-code js-file-line"><span class="c">&quot;git</span></td>
-      </tr>
-      <tr>
-        <td id="L712" class="blob-num js-line-number" data-line-number="712"></td>
-        <td id="LC712" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitDateHeader&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L713" class="blob-num js-line-number" data-line-number="713"></td>
-        <td id="LC713" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitIdentityHeader&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L714" class="blob-num js-line-number" data-line-number="714"></td>
-        <td id="LC714" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitIdentityKeyword&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L715" class="blob-num js-line-number" data-line-number="715"></td>
-        <td id="LC715" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitNotesHeader&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L716" class="blob-num js-line-number" data-line-number="716"></td>
-        <td id="LC716" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitReflogHeader&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L717" class="blob-num js-line-number" data-line-number="717"></td>
-        <td id="LC717" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitKeyword&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L718" class="blob-num js-line-number" data-line-number="718"></td>
-        <td id="LC718" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitIdentity&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L719" class="blob-num js-line-number" data-line-number="719"></td>
-        <td id="LC719" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitEmailDelimiter&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L720" class="blob-num js-line-number" data-line-number="720"></td>
-        <td id="LC720" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitEmail&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L721" class="blob-num js-line-number" data-line-number="721"></td>
-        <td id="LC721" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitDate&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L722" class="blob-num js-line-number" data-line-number="722"></td>
-        <td id="LC722" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitMode&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L723" class="blob-num js-line-number" data-line-number="723"></td>
-        <td id="LC723" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitHashAbbrev&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L724" class="blob-num js-line-number" data-line-number="724"></td>
-        <td id="LC724" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitHash&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L725" class="blob-num js-line-number" data-line-number="725"></td>
-        <td id="LC725" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitReflogMiddle&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L726" class="blob-num js-line-number" data-line-number="726"></td>
-        <td id="LC726" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitReference&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L727" class="blob-num js-line-number" data-line-number="727"></td>
-        <td id="LC727" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitStage&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L728" class="blob-num js-line-number" data-line-number="728"></td>
-        <td id="LC728" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitType&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L729" class="blob-num js-line-number" data-line-number="729"></td>
-        <td id="LC729" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitDiffAdded&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L730" class="blob-num js-line-number" data-line-number="730"></td>
-        <td id="LC730" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitDiffRemoved&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L731" class="blob-num js-line-number" data-line-number="731"></td>
-        <td id="LC731" class="blob-code js-file-line"><span class="c">&quot;gitcommit</span></td>
-      </tr>
-      <tr>
-        <td id="L732" class="blob-num js-line-number" data-line-number="732"></td>
-        <td id="LC732" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitcommitSummary&quot;      </span></td>
-      </tr>
-      <tr>
-        <td id="L733" class="blob-num js-line-number" data-line-number="733"></td>
-        <td id="LC733" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitComment&quot;</span>      .<span class="k">s</span>:fmt_ital     .<span class="k">s</span>:fg_base01    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L734" class="blob-num js-line-number" data-line-number="734"></td>
-        <td id="LC734" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link gitcommitUntracked gitcommitComment</td>
-      </tr>
-      <tr>
-        <td id="L735" class="blob-num js-line-number" data-line-number="735"></td>
-        <td id="LC735" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link gitcommitDiscarded gitcommitComment</td>
-      </tr>
-      <tr>
-        <td id="L736" class="blob-num js-line-number" data-line-number="736"></td>
-        <td id="LC736" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link gitcommitSelected  gitcommitComment</td>
-      </tr>
-      <tr>
-        <td id="L737" class="blob-num js-line-number" data-line-number="737"></td>
-        <td id="LC737" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitUnmerged&quot;</span>     .<span class="k">s</span>:fmt_bold     .<span class="k">s</span>:fg_green     .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L738" class="blob-num js-line-number" data-line-number="738"></td>
-        <td id="LC738" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitOnBranch&quot;</span>     .<span class="k">s</span>:fmt_bold     .<span class="k">s</span>:fg_base01    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L739" class="blob-num js-line-number" data-line-number="739"></td>
-        <td id="LC739" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitBranch&quot;</span>       .<span class="k">s</span>:fmt_bold     .<span class="k">s</span>:fg_magenta   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L740" class="blob-num js-line-number" data-line-number="740"></td>
-        <td id="LC740" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link gitcommitNoBranch gitcommitBranch</td>
-      </tr>
-      <tr>
-        <td id="L741" class="blob-num js-line-number" data-line-number="741"></td>
-        <td id="LC741" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitDiscardedType&quot;</span>.<span class="k">s</span>:fmt_none     .<span class="k">s</span>:fg_red       .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L742" class="blob-num js-line-number" data-line-number="742"></td>
-        <td id="LC742" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitSelectedType&quot;</span> .<span class="k">s</span>:fmt_none     .<span class="k">s</span>:fg_green     .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L743" class="blob-num js-line-number" data-line-number="743"></td>
-        <td id="LC743" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitcommitUnmergedType&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L744" class="blob-num js-line-number" data-line-number="744"></td>
-        <td id="LC744" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitcommitType&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L745" class="blob-num js-line-number" data-line-number="745"></td>
-        <td id="LC745" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitcommitNoChanges&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L746" class="blob-num js-line-number" data-line-number="746"></td>
-        <td id="LC746" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitcommitHeader&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L747" class="blob-num js-line-number" data-line-number="747"></td>
-        <td id="LC747" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitHeader&quot;</span>       .<span class="k">s</span>:fmt_none     .<span class="k">s</span>:fg_base01    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L748" class="blob-num js-line-number" data-line-number="748"></td>
-        <td id="LC748" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitUntrackedFile&quot;</span>.<span class="k">s</span>:fmt_bold     .<span class="k">s</span>:fg_cyan      .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L749" class="blob-num js-line-number" data-line-number="749"></td>
-        <td id="LC749" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitDiscardedFile&quot;</span>.<span class="k">s</span>:fmt_bold     .<span class="k">s</span>:fg_red       .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L750" class="blob-num js-line-number" data-line-number="750"></td>
-        <td id="LC750" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitSelectedFile&quot;</span> .<span class="k">s</span>:fmt_bold     .<span class="k">s</span>:fg_green     .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L751" class="blob-num js-line-number" data-line-number="751"></td>
-        <td id="LC751" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitUnmergedFile&quot;</span> .<span class="k">s</span>:fmt_bold     .<span class="k">s</span>:fg_yellow    .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L752" class="blob-num js-line-number" data-line-number="752"></td>
-        <td id="LC752" class="blob-code js-file-line">exe <span class="s2">&quot;hi! gitcommitFile&quot;</span>         .<span class="k">s</span>:fmt_bold     .<span class="k">s</span>:fg_base0     .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L753" class="blob-num js-line-number" data-line-number="753"></td>
-        <td id="LC753" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link gitcommitDiscardedArrow gitcommitDiscardedFile</td>
-      </tr>
-      <tr>
-        <td id="L754" class="blob-num js-line-number" data-line-number="754"></td>
-        <td id="LC754" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link gitcommitSelectedArrow  gitcommitSelectedFile</td>
-      </tr>
-      <tr>
-        <td id="L755" class="blob-num js-line-number" data-line-number="755"></td>
-        <td id="LC755" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link gitcommitUnmergedArrow  gitcommitUnmergedFile</td>
-      </tr>
-      <tr>
-        <td id="L756" class="blob-num js-line-number" data-line-number="756"></td>
-        <td id="LC756" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitcommitArrow&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L757" class="blob-num js-line-number" data-line-number="757"></td>
-        <td id="LC757" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitcommitOverflow&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L758" class="blob-num js-line-number" data-line-number="758"></td>
-        <td id="LC758" class="blob-code js-file-line"><span class="c">&quot;exe &quot;hi! gitcommitBlank&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L759" class="blob-num js-line-number" data-line-number="759"></td>
-        <td id="LC759" class="blob-code js-file-line"><span class="c">&quot; }}}</span></td>
-      </tr>
-      <tr>
-        <td id="L760" class="blob-num js-line-number" data-line-number="760"></td>
-        <td id="LC760" class="blob-code js-file-line"><span class="c">&quot; html highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L761" class="blob-num js-line-number" data-line-number="761"></td>
-        <td id="LC761" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L762" class="blob-num js-line-number" data-line-number="762"></td>
-        <td id="LC762" class="blob-code js-file-line">exe <span class="s2">&quot;hi! htmlTag&quot;</span>           .<span class="k">s</span>:fmt_none .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L763" class="blob-num js-line-number" data-line-number="763"></td>
-        <td id="LC763" class="blob-code js-file-line">exe <span class="s2">&quot;hi! htmlEndTag&quot;</span>        .<span class="k">s</span>:fmt_none .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L764" class="blob-num js-line-number" data-line-number="764"></td>
-        <td id="LC764" class="blob-code js-file-line">exe <span class="s2">&quot;hi! htmlTagN&quot;</span>          .<span class="k">s</span>:fmt_bold .<span class="k">s</span>:fg_base1  .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L765" class="blob-num js-line-number" data-line-number="765"></td>
-        <td id="LC765" class="blob-code js-file-line">exe <span class="s2">&quot;hi! htmlTagName&quot;</span>       .<span class="k">s</span>:fmt_bold .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L766" class="blob-num js-line-number" data-line-number="766"></td>
-        <td id="LC766" class="blob-code js-file-line">exe <span class="s2">&quot;hi! htmlSpecialTagName&quot;</span>.<span class="k">s</span>:fmt_ital .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L767" class="blob-num js-line-number" data-line-number="767"></td>
-        <td id="LC767" class="blob-code js-file-line">exe <span class="s2">&quot;hi! htmlArg&quot;</span>           .<span class="k">s</span>:fmt_none .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L768" class="blob-num js-line-number" data-line-number="768"></td>
-        <td id="LC768" class="blob-code js-file-line">exe <span class="s2">&quot;hi! javaScript&quot;</span>        .<span class="k">s</span>:fmt_none .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L769" class="blob-num js-line-number" data-line-number="769"></td>
-        <td id="LC769" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L770" class="blob-num js-line-number" data-line-number="770"></td>
-        <td id="LC770" class="blob-code js-file-line"><span class="c">&quot; perl highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L771" class="blob-num js-line-number" data-line-number="771"></td>
-        <td id="LC771" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L772" class="blob-num js-line-number" data-line-number="772"></td>
-        <td id="LC772" class="blob-code js-file-line">exe <span class="s2">&quot;hi! perlHereDoc&quot;</span>    . <span class="k">s</span>:fg_base1  .<span class="k">s</span>:bg_back   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L773" class="blob-num js-line-number" data-line-number="773"></td>
-        <td id="LC773" class="blob-code js-file-line">exe <span class="s2">&quot;hi! perlVarPlain&quot;</span>   . <span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_back   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L774" class="blob-num js-line-number" data-line-number="774"></td>
-        <td id="LC774" class="blob-code js-file-line">exe <span class="s2">&quot;hi! perlStatementFileDesc&quot;</span>. <span class="k">s</span>:fg_cyan.<span class="k">s</span>:bg_back.<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L775" class="blob-num js-line-number" data-line-number="775"></td>
-        <td id="LC775" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L776" class="blob-num js-line-number" data-line-number="776"></td>
-        <td id="LC776" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L777" class="blob-num js-line-number" data-line-number="777"></td>
-        <td id="LC777" class="blob-code js-file-line"><span class="c">&quot; tex highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L778" class="blob-num js-line-number" data-line-number="778"></td>
-        <td id="LC778" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L779" class="blob-num js-line-number" data-line-number="779"></td>
-        <td id="LC779" class="blob-code js-file-line">exe <span class="s2">&quot;hi! texStatement&quot;</span>   . <span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_back   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L780" class="blob-num js-line-number" data-line-number="780"></td>
-        <td id="LC780" class="blob-code js-file-line">exe <span class="s2">&quot;hi! texMathZoneX&quot;</span>   . <span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_back   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L781" class="blob-num js-line-number" data-line-number="781"></td>
-        <td id="LC781" class="blob-code js-file-line">exe <span class="s2">&quot;hi! texMathMatcher&quot;</span> . <span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_back   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L782" class="blob-num js-line-number" data-line-number="782"></td>
-        <td id="LC782" class="blob-code js-file-line">exe <span class="s2">&quot;hi! texMathMatcher&quot;</span> . <span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_back   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L783" class="blob-num js-line-number" data-line-number="783"></td>
-        <td id="LC783" class="blob-code js-file-line">exe <span class="s2">&quot;hi! texRefLabel&quot;</span>    . <span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_back   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L784" class="blob-num js-line-number" data-line-number="784"></td>
-        <td id="LC784" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L785" class="blob-num js-line-number" data-line-number="785"></td>
-        <td id="LC785" class="blob-code js-file-line"><span class="c">&quot; ruby highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L786" class="blob-num js-line-number" data-line-number="786"></td>
-        <td id="LC786" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L787" class="blob-num js-line-number" data-line-number="787"></td>
-        <td id="LC787" class="blob-code js-file-line">exe <span class="s2">&quot;hi! rubyDefine&quot;</span>     . <span class="k">s</span>:fg_base1  .<span class="k">s</span>:bg_back   .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L788" class="blob-num js-line-number" data-line-number="788"></td>
-        <td id="LC788" class="blob-code js-file-line"><span class="c">&quot;rubyInclude</span></td>
-      </tr>
-      <tr>
-        <td id="L789" class="blob-num js-line-number" data-line-number="789"></td>
-        <td id="LC789" class="blob-code js-file-line"><span class="c">&quot;rubySharpBang</span></td>
-      </tr>
-      <tr>
-        <td id="L790" class="blob-num js-line-number" data-line-number="790"></td>
-        <td id="LC790" class="blob-code js-file-line"><span class="c">&quot;rubyAccess</span></td>
-      </tr>
-      <tr>
-        <td id="L791" class="blob-num js-line-number" data-line-number="791"></td>
-        <td id="LC791" class="blob-code js-file-line"><span class="c">&quot;rubyPredefinedVariable</span></td>
-      </tr>
-      <tr>
-        <td id="L792" class="blob-num js-line-number" data-line-number="792"></td>
-        <td id="LC792" class="blob-code js-file-line"><span class="c">&quot;rubyBoolean</span></td>
-      </tr>
-      <tr>
-        <td id="L793" class="blob-num js-line-number" data-line-number="793"></td>
-        <td id="LC793" class="blob-code js-file-line"><span class="c">&quot;rubyClassVariable</span></td>
-      </tr>
-      <tr>
-        <td id="L794" class="blob-num js-line-number" data-line-number="794"></td>
-        <td id="LC794" class="blob-code js-file-line"><span class="c">&quot;rubyBeginEnd</span></td>
-      </tr>
-      <tr>
-        <td id="L795" class="blob-num js-line-number" data-line-number="795"></td>
-        <td id="LC795" class="blob-code js-file-line"><span class="c">&quot;rubyRepeatModifier</span></td>
-      </tr>
-      <tr>
-        <td id="L796" class="blob-num js-line-number" data-line-number="796"></td>
-        <td id="LC796" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyArrayDelimiter    Special  &quot; [ , , ]</span></td>
-      </tr>
-      <tr>
-        <td id="L797" class="blob-num js-line-number" data-line-number="797"></td>
-        <td id="LC797" class="blob-code js-file-line"><span class="c">&quot;rubyCurlyBlock  { , , }</span></td>
-      </tr>
-      <tr>
-        <td id="L798" class="blob-num js-line-number" data-line-number="798"></td>
-        <td id="LC798" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L799" class="blob-num js-line-number" data-line-number="799"></td>
-        <td id="LC799" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyClass             Keyword</span></td>
-      </tr>
-      <tr>
-        <td id="L800" class="blob-num js-line-number" data-line-number="800"></td>
-        <td id="LC800" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyModule            Keyword</span></td>
-      </tr>
-      <tr>
-        <td id="L801" class="blob-num js-line-number" data-line-number="801"></td>
-        <td id="LC801" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyKeyword           Keyword</span></td>
-      </tr>
-      <tr>
-        <td id="L802" class="blob-num js-line-number" data-line-number="802"></td>
-        <td id="LC802" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyOperator          Operator</span></td>
-      </tr>
-      <tr>
-        <td id="L803" class="blob-num js-line-number" data-line-number="803"></td>
-        <td id="LC803" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyIdentifier        Identifier</span></td>
-      </tr>
-      <tr>
-        <td id="L804" class="blob-num js-line-number" data-line-number="804"></td>
-        <td id="LC804" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyInstanceVariable  Identifier</span></td>
-      </tr>
-      <tr>
-        <td id="L805" class="blob-num js-line-number" data-line-number="805"></td>
-        <td id="LC805" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyGlobalVariable    Identifier</span></td>
-      </tr>
-      <tr>
-        <td id="L806" class="blob-num js-line-number" data-line-number="806"></td>
-        <td id="LC806" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyClassVariable     Identifier</span></td>
-      </tr>
-      <tr>
-        <td id="L807" class="blob-num js-line-number" data-line-number="807"></td>
-        <td id="LC807" class="blob-code js-file-line"><span class="c">&quot;hi! link rubyConstant          Type</span></td>
-      </tr>
-      <tr>
-        <td id="L808" class="blob-num js-line-number" data-line-number="808"></td>
-        <td id="LC808" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L809" class="blob-num js-line-number" data-line-number="809"></td>
-        <td id="LC809" class="blob-code js-file-line"><span class="c">&quot; haskell syntax highlighting&quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L810" class="blob-num js-line-number" data-line-number="810"></td>
-        <td id="LC810" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L811" class="blob-num js-line-number" data-line-number="811"></td>
-        <td id="LC811" class="blob-code js-file-line"><span class="c">&quot; For use with syntax/haskell.vim : Haskell Syntax File</span></td>
-      </tr>
-      <tr>
-        <td id="L812" class="blob-num js-line-number" data-line-number="812"></td>
-        <td id="LC812" class="blob-code js-file-line"><span class="c">&quot; http://www.vim.org/scripts/script.php?script_id=3034</span></td>
-      </tr>
-      <tr>
-        <td id="L813" class="blob-num js-line-number" data-line-number="813"></td>
-        <td id="LC813" class="blob-code js-file-line"><span class="c">&quot; See also Steffen Siering&#39;s github repository:</span></td>
-      </tr>
-      <tr>
-        <td id="L814" class="blob-num js-line-number" data-line-number="814"></td>
-        <td id="LC814" class="blob-code js-file-line"><span class="c">&quot; http://github.com/urso/dotrc/blob/master/vim/syntax/haskell.vim</span></td>
-      </tr>
-      <tr>
-        <td id="L815" class="blob-num js-line-number" data-line-number="815"></td>
-        <td id="LC815" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L816" class="blob-num js-line-number" data-line-number="816"></td>
-        <td id="LC816" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L817" class="blob-num js-line-number" data-line-number="817"></td>
-        <td id="LC817" class="blob-code js-file-line"><span class="c">&quot; Treat True and False specially, see the plugin referenced above</span></td>
-      </tr>
-      <tr>
-        <td id="L818" class="blob-num js-line-number" data-line-number="818"></td>
-        <td id="LC818" class="blob-code js-file-line"><span class="k">let</span> hs_highlight_boolean<span class="p">=</span><span class="m">1</span></td>
-      </tr>
-      <tr>
-        <td id="L819" class="blob-num js-line-number" data-line-number="819"></td>
-        <td id="LC819" class="blob-code js-file-line"><span class="c">&quot; highlight delims, see the plugin referenced above</span></td>
-      </tr>
-      <tr>
-        <td id="L820" class="blob-num js-line-number" data-line-number="820"></td>
-        <td id="LC820" class="blob-code js-file-line"><span class="k">let</span> hs_highlight_delimiters<span class="p">=</span><span class="m">1</span></td>
-      </tr>
-      <tr>
-        <td id="L821" class="blob-num js-line-number" data-line-number="821"></td>
-        <td id="LC821" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L822" class="blob-num js-line-number" data-line-number="822"></td>
-        <td id="LC822" class="blob-code js-file-line">exe <span class="s2">&quot;hi! cPreCondit&quot;</span>. <span class="k">s</span>:fg_orange.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L823" class="blob-num js-line-number" data-line-number="823"></td>
-        <td id="LC823" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L824" class="blob-num js-line-number" data-line-number="824"></td>
-        <td id="LC824" class="blob-code js-file-line">exe <span class="s2">&quot;hi! VarId&quot;</span>    . <span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L825" class="blob-num js-line-number" data-line-number="825"></td>
-        <td id="LC825" class="blob-code js-file-line">exe <span class="s2">&quot;hi! ConId&quot;</span>    . <span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L826" class="blob-num js-line-number" data-line-number="826"></td>
-        <td id="LC826" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsImport&quot;</span> . <span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L827" class="blob-num js-line-number" data-line-number="827"></td>
-        <td id="LC827" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsString&quot;</span> . <span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L828" class="blob-num js-line-number" data-line-number="828"></td>
-        <td id="LC828" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L829" class="blob-num js-line-number" data-line-number="829"></td>
-        <td id="LC829" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsStructure&quot;</span>        . <span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L830" class="blob-num js-line-number" data-line-number="830"></td>
-        <td id="LC830" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hs_hlFunctionName&quot;</span>  . <span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none</td>
-      </tr>
-      <tr>
-        <td id="L831" class="blob-num js-line-number" data-line-number="831"></td>
-        <td id="LC831" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsStatement&quot;</span>        . <span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L832" class="blob-num js-line-number" data-line-number="832"></td>
-        <td id="LC832" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsImportLabel&quot;</span>      . <span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L833" class="blob-num js-line-number" data-line-number="833"></td>
-        <td id="LC833" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hs_OpFunctionName&quot;</span>  . <span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L834" class="blob-num js-line-number" data-line-number="834"></td>
-        <td id="LC834" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hs_DeclareFunction&quot;</span> . <span class="k">s</span>:fg_orange .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L835" class="blob-num js-line-number" data-line-number="835"></td>
-        <td id="LC835" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsVarSym&quot;</span>           . <span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L836" class="blob-num js-line-number" data-line-number="836"></td>
-        <td id="LC836" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsType&quot;</span>             . <span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L837" class="blob-num js-line-number" data-line-number="837"></td>
-        <td id="LC837" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsTypedef&quot;</span>          . <span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L838" class="blob-num js-line-number" data-line-number="838"></td>
-        <td id="LC838" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsModuleName&quot;</span>       . <span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undr</td>
-      </tr>
-      <tr>
-        <td id="L839" class="blob-num js-line-number" data-line-number="839"></td>
-        <td id="LC839" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsModuleStartLabel&quot;</span> . <span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L840" class="blob-num js-line-number" data-line-number="840"></td>
-        <td id="LC840" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link hsImportParams      Delimiter</td>
-      </tr>
-      <tr>
-        <td id="L841" class="blob-num js-line-number" data-line-number="841"></td>
-        <td id="LC841" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link hsDelimTypeExport   Delimiter</td>
-      </tr>
-      <tr>
-        <td id="L842" class="blob-num js-line-number" data-line-number="842"></td>
-        <td id="LC842" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link hsModuleStartLabel  hsStructure</td>
-      </tr>
-      <tr>
-        <td id="L843" class="blob-num js-line-number" data-line-number="843"></td>
-        <td id="LC843" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link hsModuleWhereLabel  hsModuleStartLabel</td>
-      </tr>
-      <tr>
-        <td id="L844" class="blob-num js-line-number" data-line-number="844"></td>
-        <td id="LC844" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L845" class="blob-num js-line-number" data-line-number="845"></td>
-        <td id="LC845" class="blob-code js-file-line"><span class="c">&quot; following is for the haskell-conceal plugin</span></td>
-      </tr>
-      <tr>
-        <td id="L846" class="blob-num js-line-number" data-line-number="846"></td>
-        <td id="LC846" class="blob-code js-file-line"><span class="c">&quot; the first two items don&#39;t have an impact, but better safe</span></td>
-      </tr>
-      <tr>
-        <td id="L847" class="blob-num js-line-number" data-line-number="847"></td>
-        <td id="LC847" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsNiceOperator&quot;</span>     . <span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L848" class="blob-num js-line-number" data-line-number="848"></td>
-        <td id="LC848" class="blob-code js-file-line">exe <span class="s2">&quot;hi! hsniceoperator&quot;</span>     . <span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L849" class="blob-num js-line-number" data-line-number="849"></td>
-        <td id="LC849" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L850" class="blob-num js-line-number" data-line-number="850"></td>
-        <td id="LC850" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L851" class="blob-num js-line-number" data-line-number="851"></td>
-        <td id="LC851" class="blob-code js-file-line"><span class="c">&quot; pandoc markdown syntax highlighting &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L852" class="blob-num js-line-number" data-line-number="852"></td>
-        <td id="LC852" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L853" class="blob-num js-line-number" data-line-number="853"></td>
-        <td id="LC853" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L854" class="blob-num js-line-number" data-line-number="854"></td>
-        <td id="LC854" class="blob-code js-file-line"><span class="c">&quot;PandocHiLink pandocNormalBlock</span></td>
-      </tr>
-      <tr>
-        <td id="L855" class="blob-num js-line-number" data-line-number="855"></td>
-        <td id="LC855" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocTitleBlock&quot;</span>               .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L856" class="blob-num js-line-number" data-line-number="856"></td>
-        <td id="LC856" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocTitleBlockTitle&quot;</span>          .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L857" class="blob-num js-line-number" data-line-number="857"></td>
-        <td id="LC857" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocTitleComment&quot;</span>             .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L858" class="blob-num js-line-number" data-line-number="858"></td>
-        <td id="LC858" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocComment&quot;</span>                  .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_ital</td>
-      </tr>
-      <tr>
-        <td id="L859" class="blob-num js-line-number" data-line-number="859"></td>
-        <td id="LC859" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocVerbatimBlock&quot;</span>            .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L860" class="blob-num js-line-number" data-line-number="860"></td>
-        <td id="LC860" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link pandocVerbatimBlockDeep         pandocVerbatimBlock</td>
-      </tr>
-      <tr>
-        <td id="L861" class="blob-num js-line-number" data-line-number="861"></td>
-        <td id="LC861" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link pandocCodeBlock                 pandocVerbatimBlock</td>
-      </tr>
-      <tr>
-        <td id="L862" class="blob-num js-line-number" data-line-number="862"></td>
-        <td id="LC862" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link pandocCodeBlockDelim            pandocVerbatimBlock</td>
-      </tr>
-      <tr>
-        <td id="L863" class="blob-num js-line-number" data-line-number="863"></td>
-        <td id="LC863" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocBlockQuote&quot;</span>               .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L864" class="blob-num js-line-number" data-line-number="864"></td>
-        <td id="LC864" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocBlockQuoteLeader1&quot;</span>        .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L865" class="blob-num js-line-number" data-line-number="865"></td>
-        <td id="LC865" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocBlockQuoteLeader2&quot;</span>        .<span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L866" class="blob-num js-line-number" data-line-number="866"></td>
-        <td id="LC866" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocBlockQuoteLeader3&quot;</span>        .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L867" class="blob-num js-line-number" data-line-number="867"></td>
-        <td id="LC867" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocBlockQuoteLeader4&quot;</span>        .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L868" class="blob-num js-line-number" data-line-number="868"></td>
-        <td id="LC868" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocBlockQuoteLeader5&quot;</span>        .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L869" class="blob-num js-line-number" data-line-number="869"></td>
-        <td id="LC869" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocBlockQuoteLeader6&quot;</span>        .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L870" class="blob-num js-line-number" data-line-number="870"></td>
-        <td id="LC870" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocListMarker&quot;</span>               .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L871" class="blob-num js-line-number" data-line-number="871"></td>
-        <td id="LC871" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocListReference&quot;</span>            .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undr</td>
-      </tr>
-      <tr>
-        <td id="L872" class="blob-num js-line-number" data-line-number="872"></td>
-        <td id="LC872" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L873" class="blob-num js-line-number" data-line-number="873"></td>
-        <td id="LC873" class="blob-code js-file-line"><span class="c">&quot; Definitions</span></td>
-      </tr>
-      <tr>
-        <td id="L874" class="blob-num js-line-number" data-line-number="874"></td>
-        <td id="LC874" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L875" class="blob-num js-line-number" data-line-number="875"></td>
-        <td id="LC875" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:fg_pdef <span class="p">=</span> <span class="k">s</span>:fg_violet</td>
-      </tr>
-      <tr>
-        <td id="L876" class="blob-num js-line-number" data-line-number="876"></td>
-        <td id="LC876" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocDefinitionBlock&quot;</span>              .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L877" class="blob-num js-line-number" data-line-number="877"></td>
-        <td id="LC877" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocDefinitionTerm&quot;</span>               .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_stnd</td>
-      </tr>
-      <tr>
-        <td id="L878" class="blob-num js-line-number" data-line-number="878"></td>
-        <td id="LC878" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocDefinitionIndctr&quot;</span>             .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L879" class="blob-num js-line-number" data-line-number="879"></td>
-        <td id="LC879" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEmphasisDefinition&quot;</span>           .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_ital</td>
-      </tr>
-      <tr>
-        <td id="L880" class="blob-num js-line-number" data-line-number="880"></td>
-        <td id="LC880" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEmphasisNestedDefinition&quot;</span>     .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L881" class="blob-num js-line-number" data-line-number="881"></td>
-        <td id="LC881" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisDefinition&quot;</span>     .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L882" class="blob-num js-line-number" data-line-number="882"></td>
-        <td id="LC882" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisNestedDefinition&quot;</span>   .<span class="k">s</span>:fg_pdef.<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L883" class="blob-num js-line-number" data-line-number="883"></td>
-        <td id="LC883" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisEmphasisDefinition&quot;</span> .<span class="k">s</span>:fg_pdef.<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L884" class="blob-num js-line-number" data-line-number="884"></td>
-        <td id="LC884" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrikeoutDefinition&quot;</span>          .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_revr</td>
-      </tr>
-      <tr>
-        <td id="L885" class="blob-num js-line-number" data-line-number="885"></td>
-        <td id="LC885" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocVerbatimInlineDefinition&quot;</span>     .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L886" class="blob-num js-line-number" data-line-number="886"></td>
-        <td id="LC886" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocSuperscriptDefinition&quot;</span>        .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L887" class="blob-num js-line-number" data-line-number="887"></td>
-        <td id="LC887" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocSubscriptDefinition&quot;</span>          .<span class="k">s</span>:fg_pdef  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L888" class="blob-num js-line-number" data-line-number="888"></td>
-        <td id="LC888" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L889" class="blob-num js-line-number" data-line-number="889"></td>
-        <td id="LC889" class="blob-code js-file-line"><span class="c">&quot; Tables</span></td>
-      </tr>
-      <tr>
-        <td id="L890" class="blob-num js-line-number" data-line-number="890"></td>
-        <td id="LC890" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L891" class="blob-num js-line-number" data-line-number="891"></td>
-        <td id="LC891" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:fg_ptable <span class="p">=</span> <span class="k">s</span>:fg_blue</td>
-      </tr>
-      <tr>
-        <td id="L892" class="blob-num js-line-number" data-line-number="892"></td>
-        <td id="LC892" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocTable&quot;</span>                        .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L893" class="blob-num js-line-number" data-line-number="893"></td>
-        <td id="LC893" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocTableStructure&quot;</span>               .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L894" class="blob-num js-line-number" data-line-number="894"></td>
-        <td id="LC894" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link pandocTableStructureTop             pandocTableStructre</td>
-      </tr>
-      <tr>
-        <td id="L895" class="blob-num js-line-number" data-line-number="895"></td>
-        <td id="LC895" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link pandocTableStructureEnd             pandocTableStructre</td>
-      </tr>
-      <tr>
-        <td id="L896" class="blob-num js-line-number" data-line-number="896"></td>
-        <td id="LC896" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocTableZebraLight&quot;</span>              .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_base03.<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L897" class="blob-num js-line-number" data-line-number="897"></td>
-        <td id="LC897" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocTableZebraDark&quot;</span>               .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_base02.<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L898" class="blob-num js-line-number" data-line-number="898"></td>
-        <td id="LC898" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEmphasisTable&quot;</span>                .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_ital</td>
-      </tr>
-      <tr>
-        <td id="L899" class="blob-num js-line-number" data-line-number="899"></td>
-        <td id="LC899" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEmphasisNestedTable&quot;</span>          .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L900" class="blob-num js-line-number" data-line-number="900"></td>
-        <td id="LC900" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisTable&quot;</span>          .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L901" class="blob-num js-line-number" data-line-number="901"></td>
-        <td id="LC901" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisNestedTable&quot;</span>    .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L902" class="blob-num js-line-number" data-line-number="902"></td>
-        <td id="LC902" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisEmphasisTable&quot;</span>  .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L903" class="blob-num js-line-number" data-line-number="903"></td>
-        <td id="LC903" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrikeoutTable&quot;</span>               .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_revr</td>
-      </tr>
-      <tr>
-        <td id="L904" class="blob-num js-line-number" data-line-number="904"></td>
-        <td id="LC904" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocVerbatimInlineTable&quot;</span>          .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L905" class="blob-num js-line-number" data-line-number="905"></td>
-        <td id="LC905" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocSuperscriptTable&quot;</span>             .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L906" class="blob-num js-line-number" data-line-number="906"></td>
-        <td id="LC906" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocSubscriptTable&quot;</span>               .<span class="k">s</span>:fg_ptable.<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L907" class="blob-num js-line-number" data-line-number="907"></td>
-        <td id="LC907" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L908" class="blob-num js-line-number" data-line-number="908"></td>
-        <td id="LC908" class="blob-code js-file-line"><span class="c">&quot; Headings</span></td>
-      </tr>
-      <tr>
-        <td id="L909" class="blob-num js-line-number" data-line-number="909"></td>
-        <td id="LC909" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L910" class="blob-num js-line-number" data-line-number="910"></td>
-        <td id="LC910" class="blob-code js-file-line"><span class="k">let</span> <span class="k">s</span>:fg_phead <span class="p">=</span> <span class="k">s</span>:fg_orange</td>
-      </tr>
-      <tr>
-        <td id="L911" class="blob-num js-line-number" data-line-number="911"></td>
-        <td id="LC911" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocHeading&quot;</span>                      .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L912" class="blob-num js-line-number" data-line-number="912"></td>
-        <td id="LC912" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocHeadingMarker&quot;</span>                .<span class="k">s</span>:fg_yellow.<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L913" class="blob-num js-line-number" data-line-number="913"></td>
-        <td id="LC913" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEmphasisHeading&quot;</span>              .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L914" class="blob-num js-line-number" data-line-number="914"></td>
-        <td id="LC914" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEmphasisNestedHeading&quot;</span>        .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L915" class="blob-num js-line-number" data-line-number="915"></td>
-        <td id="LC915" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisHeading&quot;</span>        .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L916" class="blob-num js-line-number" data-line-number="916"></td>
-        <td id="LC916" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisNestedHeading&quot;</span>  .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L917" class="blob-num js-line-number" data-line-number="917"></td>
-        <td id="LC917" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisEmphasisHeading&quot;</span>.<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L918" class="blob-num js-line-number" data-line-number="918"></td>
-        <td id="LC918" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrikeoutHeading&quot;</span>             .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_revr</td>
-      </tr>
-      <tr>
-        <td id="L919" class="blob-num js-line-number" data-line-number="919"></td>
-        <td id="LC919" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocVerbatimInlineHeading&quot;</span>        .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L920" class="blob-num js-line-number" data-line-number="920"></td>
-        <td id="LC920" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocSuperscriptHeading&quot;</span>           .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L921" class="blob-num js-line-number" data-line-number="921"></td>
-        <td id="LC921" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocSubscriptHeading&quot;</span>             .<span class="k">s</span>:fg_phead .<span class="k">s</span>:bg_none.<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L922" class="blob-num js-line-number" data-line-number="922"></td>
-        <td id="LC922" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L923" class="blob-num js-line-number" data-line-number="923"></td>
-        <td id="LC923" class="blob-code js-file-line"><span class="c">&quot; Links</span></td>
-      </tr>
-      <tr>
-        <td id="L924" class="blob-num js-line-number" data-line-number="924"></td>
-        <td id="LC924" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L925" class="blob-num js-line-number" data-line-number="925"></td>
-        <td id="LC925" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocLinkDelim&quot;</span>                .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L926" class="blob-num js-line-number" data-line-number="926"></td>
-        <td id="LC926" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocLinkLabel&quot;</span>                .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undr</td>
-      </tr>
-      <tr>
-        <td id="L927" class="blob-num js-line-number" data-line-number="927"></td>
-        <td id="LC927" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocLinkText&quot;</span>                 .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undb</td>
-      </tr>
-      <tr>
-        <td id="L928" class="blob-num js-line-number" data-line-number="928"></td>
-        <td id="LC928" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocLinkURL&quot;</span>                  .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undr</td>
-      </tr>
-      <tr>
-        <td id="L929" class="blob-num js-line-number" data-line-number="929"></td>
-        <td id="LC929" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocLinkTitle&quot;</span>                .<span class="k">s</span>:fg_base00 .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undi</td>
-      </tr>
-      <tr>
-        <td id="L930" class="blob-num js-line-number" data-line-number="930"></td>
-        <td id="LC930" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocLinkTitleDelim&quot;</span>           .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undi   .<span class="k">s</span>:sp_base00</td>
-      </tr>
-      <tr>
-        <td id="L931" class="blob-num js-line-number" data-line-number="931"></td>
-        <td id="LC931" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocLinkDefinition&quot;</span>           .<span class="k">s</span>:fg_cyan   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undr   .<span class="k">s</span>:sp_base00</td>
-      </tr>
-      <tr>
-        <td id="L932" class="blob-num js-line-number" data-line-number="932"></td>
-        <td id="LC932" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocLinkDefinitionID&quot;</span>         .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L933" class="blob-num js-line-number" data-line-number="933"></td>
-        <td id="LC933" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocImageCaption&quot;</span>             .<span class="k">s</span>:fg_violet .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undb</td>
-      </tr>
-      <tr>
-        <td id="L934" class="blob-num js-line-number" data-line-number="934"></td>
-        <td id="LC934" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocFootnoteLink&quot;</span>             .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undr</td>
-      </tr>
-      <tr>
-        <td id="L935" class="blob-num js-line-number" data-line-number="935"></td>
-        <td id="LC935" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocFootnoteDefLink&quot;</span>          .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L936" class="blob-num js-line-number" data-line-number="936"></td>
-        <td id="LC936" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocFootnoteInline&quot;</span>           .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undb</td>
-      </tr>
-      <tr>
-        <td id="L937" class="blob-num js-line-number" data-line-number="937"></td>
-        <td id="LC937" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocFootnote&quot;</span>                 .<span class="k">s</span>:fg_green  .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L938" class="blob-num js-line-number" data-line-number="938"></td>
-        <td id="LC938" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocCitationDelim&quot;</span>            .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L939" class="blob-num js-line-number" data-line-number="939"></td>
-        <td id="LC939" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocCitation&quot;</span>                 .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L940" class="blob-num js-line-number" data-line-number="940"></td>
-        <td id="LC940" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocCitationID&quot;</span>               .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_undr</td>
-      </tr>
-      <tr>
-        <td id="L941" class="blob-num js-line-number" data-line-number="941"></td>
-        <td id="LC941" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocCitationRef&quot;</span>              .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L942" class="blob-num js-line-number" data-line-number="942"></td>
-        <td id="LC942" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L943" class="blob-num js-line-number" data-line-number="943"></td>
-        <td id="LC943" class="blob-code js-file-line"><span class="c">&quot; Main Styles</span></td>
-      </tr>
-      <tr>
-        <td id="L944" class="blob-num js-line-number" data-line-number="944"></td>
-        <td id="LC944" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L945" class="blob-num js-line-number" data-line-number="945"></td>
-        <td id="LC945" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStyleDelim&quot;</span>               .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L946" class="blob-num js-line-number" data-line-number="946"></td>
-        <td id="LC946" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEmphasis&quot;</span>                 .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_ital</td>
-      </tr>
-      <tr>
-        <td id="L947" class="blob-num js-line-number" data-line-number="947"></td>
-        <td id="LC947" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEmphasisNested&quot;</span>           .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L948" class="blob-num js-line-number" data-line-number="948"></td>
-        <td id="LC948" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasis&quot;</span>           .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L949" class="blob-num js-line-number" data-line-number="949"></td>
-        <td id="LC949" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisNested&quot;</span>     .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L950" class="blob-num js-line-number" data-line-number="950"></td>
-        <td id="LC950" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrongEmphasisEmphasis&quot;</span>   .<span class="k">s</span>:fg_base0  .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bldi</td>
-      </tr>
-      <tr>
-        <td id="L951" class="blob-num js-line-number" data-line-number="951"></td>
-        <td id="LC951" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocStrikeout&quot;</span>                .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_revr</td>
-      </tr>
-      <tr>
-        <td id="L952" class="blob-num js-line-number" data-line-number="952"></td>
-        <td id="LC952" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocVerbatimInline&quot;</span>           .<span class="k">s</span>:fg_yellow .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L953" class="blob-num js-line-number" data-line-number="953"></td>
-        <td id="LC953" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocSuperscript&quot;</span>              .<span class="k">s</span>:fg_violet .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L954" class="blob-num js-line-number" data-line-number="954"></td>
-        <td id="LC954" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocSubscript&quot;</span>                .<span class="k">s</span>:fg_violet .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L955" class="blob-num js-line-number" data-line-number="955"></td>
-        <td id="LC955" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L956" class="blob-num js-line-number" data-line-number="956"></td>
-        <td id="LC956" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocRule&quot;</span>                     .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L957" class="blob-num js-line-number" data-line-number="957"></td>
-        <td id="LC957" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocRuleLine&quot;</span>                 .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L958" class="blob-num js-line-number" data-line-number="958"></td>
-        <td id="LC958" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocEscapePair&quot;</span>               .<span class="k">s</span>:fg_red    .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L959" class="blob-num js-line-number" data-line-number="959"></td>
-        <td id="LC959" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocCitationRef&quot;</span>              .<span class="k">s</span>:fg_magenta.<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L960" class="blob-num js-line-number" data-line-number="960"></td>
-        <td id="LC960" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocNonBreakingSpace&quot;</span>         . <span class="k">s</span>:fg_red   .<span class="k">s</span>:bg_none  .<span class="k">s</span>:fmt_revr</td>
-      </tr>
-      <tr>
-        <td id="L961" class="blob-num js-line-number" data-line-number="961"></td>
-        <td id="LC961" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link pandocEscapedCharacter          pandocEscapePair</td>
-      </tr>
-      <tr>
-        <td id="L962" class="blob-num js-line-number" data-line-number="962"></td>
-        <td id="LC962" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link pandocLineBreak                 pandocEscapePair</td>
-      </tr>
-      <tr>
-        <td id="L963" class="blob-num js-line-number" data-line-number="963"></td>
-        <td id="LC963" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L964" class="blob-num js-line-number" data-line-number="964"></td>
-        <td id="LC964" class="blob-code js-file-line"><span class="c">&quot; Embedded Code</span></td>
-      </tr>
-      <tr>
-        <td id="L965" class="blob-num js-line-number" data-line-number="965"></td>
-        <td id="LC965" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L966" class="blob-num js-line-number" data-line-number="966"></td>
-        <td id="LC966" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocMetadataDelim&quot;</span>            .<span class="k">s</span>:fg_base01 .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L967" class="blob-num js-line-number" data-line-number="967"></td>
-        <td id="LC967" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocMetadata&quot;</span>                 .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L968" class="blob-num js-line-number" data-line-number="968"></td>
-        <td id="LC968" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocMetadataKey&quot;</span>              .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_none</td>
-      </tr>
-      <tr>
-        <td id="L969" class="blob-num js-line-number" data-line-number="969"></td>
-        <td id="LC969" class="blob-code js-file-line">exe <span class="s2">&quot;hi! pandocMetadata&quot;</span>                 .<span class="k">s</span>:fg_blue   .<span class="k">s</span>:bg_none   .<span class="k">s</span>:fmt_bold</td>
-      </tr>
-      <tr>
-        <td id="L970" class="blob-num js-line-number" data-line-number="970"></td>
-        <td id="LC970" class="blob-code js-file-line"><span class="k">hi</span><span class="p">!</span> link pandocMetadataTitle             pandocMetadata</td>
-      </tr>
-      <tr>
-        <td id="L971" class="blob-num js-line-number" data-line-number="971"></td>
-        <td id="LC971" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L972" class="blob-num js-line-number" data-line-number="972"></td>
-        <td id="LC972" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L973" class="blob-num js-line-number" data-line-number="973"></td>
-        <td id="LC973" class="blob-code js-file-line"><span class="c">&quot; Utility autocommand &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L974" class="blob-num js-line-number" data-line-number="974"></td>
-        <td id="LC974" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L975" class="blob-num js-line-number" data-line-number="975"></td>
-        <td id="LC975" class="blob-code js-file-line"><span class="c">&quot; In cases where Solarized is initialized inside a terminal vim session and </span></td>
-      </tr>
-      <tr>
-        <td id="L976" class="blob-num js-line-number" data-line-number="976"></td>
-        <td id="LC976" class="blob-code js-file-line"><span class="c">&quot; then transferred to a gui session via the command `:gui`, the gui vim process </span></td>
-      </tr>
-      <tr>
-        <td id="L977" class="blob-num js-line-number" data-line-number="977"></td>
-        <td id="LC977" class="blob-code js-file-line"><span class="c">&quot; does not re-read the colorscheme (or .vimrc for that matter) so any `has_gui` </span></td>
-      </tr>
-      <tr>
-        <td id="L978" class="blob-num js-line-number" data-line-number="978"></td>
-        <td id="LC978" class="blob-code js-file-line"><span class="c">&quot; related code that sets gui specific values isn&#39;t executed.</span></td>
-      </tr>
-      <tr>
-        <td id="L979" class="blob-num js-line-number" data-line-number="979"></td>
-        <td id="LC979" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L980" class="blob-num js-line-number" data-line-number="980"></td>
-        <td id="LC980" class="blob-code js-file-line"><span class="c">&quot; Currently, Solarized sets only the cterm or gui values for the colorscheme </span></td>
-      </tr>
-      <tr>
-        <td id="L981" class="blob-num js-line-number" data-line-number="981"></td>
-        <td id="LC981" class="blob-code js-file-line"><span class="c">&quot; depending on gui or terminal mode. It&#39;s possible that, if the following </span></td>
-      </tr>
-      <tr>
-        <td id="L982" class="blob-num js-line-number" data-line-number="982"></td>
-        <td id="LC982" class="blob-code js-file-line"><span class="c">&quot; autocommand method is deemed excessively poor form, that approach will be </span></td>
-      </tr>
-      <tr>
-        <td id="L983" class="blob-num js-line-number" data-line-number="983"></td>
-        <td id="LC983" class="blob-code js-file-line"><span class="c">&quot; used again and the autocommand below will be dropped.</span></td>
-      </tr>
-      <tr>
-        <td id="L984" class="blob-num js-line-number" data-line-number="984"></td>
-        <td id="LC984" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L985" class="blob-num js-line-number" data-line-number="985"></td>
-        <td id="LC985" class="blob-code js-file-line"><span class="c">&quot; However it seems relatively benign in this case to include the autocommand </span></td>
-      </tr>
-      <tr>
-        <td id="L986" class="blob-num js-line-number" data-line-number="986"></td>
-        <td id="LC986" class="blob-code js-file-line"><span class="c">&quot; here. It fires only in cases where vim is transferring from terminal to gui </span></td>
-      </tr>
-      <tr>
-        <td id="L987" class="blob-num js-line-number" data-line-number="987"></td>
-        <td id="LC987" class="blob-code js-file-line"><span class="c">&quot; mode (detected with the script scope s:vmode variable). It also allows for </span></td>
-      </tr>
-      <tr>
-        <td id="L988" class="blob-num js-line-number" data-line-number="988"></td>
-        <td id="LC988" class="blob-code js-file-line"><span class="c">&quot; other potential terminal customizations that might make gui mode suboptimal.</span></td>
-      </tr>
-      <tr>
-        <td id="L989" class="blob-num js-line-number" data-line-number="989"></td>
-        <td id="LC989" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L990" class="blob-num js-line-number" data-line-number="990"></td>
-        <td id="LC990" class="blob-code js-file-line"><span class="k">autocmd</span> <span class="nb">GUIEnter</span> * <span class="k">if</span> <span class="p">(</span><span class="k">s</span>:vmode <span class="p">!=</span> <span class="s2">&quot;gui&quot;</span><span class="p">)</span> <span class="p">|</span> exe <span class="s2">&quot;colorscheme &quot;</span> . <span class="k">g</span>:colors_name <span class="p">|</span> <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L991" class="blob-num js-line-number" data-line-number="991"></td>
-        <td id="LC991" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L992" class="blob-num js-line-number" data-line-number="992"></td>
-        <td id="LC992" class="blob-code js-file-line"><span class="c">&quot; Highlight Trailing Space {{{</span></td>
-      </tr>
-      <tr>
-        <td id="L993" class="blob-num js-line-number" data-line-number="993"></td>
-        <td id="LC993" class="blob-code js-file-line"><span class="c">&quot; Experimental: Different highlight when on cursorline</span></td>
-      </tr>
-      <tr>
-        <td id="L994" class="blob-num js-line-number" data-line-number="994"></td>
-        <td id="LC994" class="blob-code js-file-line"><span class="k">function</span><span class="p">!</span> <span class="k">s</span>:SolarizedHiTrail<span class="p">()</span></td>
-      </tr>
-      <tr>
-        <td id="L995" class="blob-num js-line-number" data-line-number="995"></td>
-        <td id="LC995" class="blob-code js-file-line">    <span class="k">if</span> <span class="k">g</span>:solarized_hitrail<span class="p">==</span><span class="m">0</span></td>
-      </tr>
-      <tr>
-        <td id="L996" class="blob-num js-line-number" data-line-number="996"></td>
-        <td id="LC996" class="blob-code js-file-line">        <span class="k">hi</span><span class="p">!</span> clear solarizedTrailingSpace</td>
-      </tr>
-      <tr>
-        <td id="L997" class="blob-num js-line-number" data-line-number="997"></td>
-        <td id="LC997" class="blob-code js-file-line">    <span class="k">else</span></td>
-      </tr>
-      <tr>
-        <td id="L998" class="blob-num js-line-number" data-line-number="998"></td>
-        <td id="LC998" class="blob-code js-file-line">        <span class="k">syn</span> <span class="k">match</span> solarizedTrailingSpace <span class="s2">&quot;\s*$&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L999" class="blob-num js-line-number" data-line-number="999"></td>
-        <td id="LC999" class="blob-code js-file-line">        exe <span class="s2">&quot;hi! solarizedTrailingSpace &quot;</span> .<span class="k">s</span>:fmt_undr .<span class="k">s</span>:fg_red .<span class="k">s</span>:bg_none .<span class="k">s</span>:sp_red</td>
-      </tr>
-      <tr>
-        <td id="L1000" class="blob-num js-line-number" data-line-number="1000"></td>
-        <td id="LC1000" class="blob-code js-file-line">    <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1001" class="blob-num js-line-number" data-line-number="1001"></td>
-        <td id="LC1001" class="blob-code js-file-line"><span class="k">endfunction</span>  </td>
-      </tr>
-      <tr>
-        <td id="L1002" class="blob-num js-line-number" data-line-number="1002"></td>
-        <td id="LC1002" class="blob-code js-file-line">augroup SolarizedHiTrail</td>
-      </tr>
-      <tr>
-        <td id="L1003" class="blob-num js-line-number" data-line-number="1003"></td>
-        <td id="LC1003" class="blob-code js-file-line">    <span class="k">autocmd</span><span class="p">!</span></td>
-      </tr>
-      <tr>
-        <td id="L1004" class="blob-num js-line-number" data-line-number="1004"></td>
-        <td id="LC1004" class="blob-code js-file-line">    <span class="k">if</span> <span class="k">g</span>:solarized_hitrail<span class="p">==</span><span class="m">1</span></td>
-      </tr>
-      <tr>
-        <td id="L1005" class="blob-num js-line-number" data-line-number="1005"></td>
-        <td id="LC1005" class="blob-code js-file-line">        <span class="k">autocmd</span><span class="p">!</span> <span class="nb">Syntax</span> * <span class="k">call</span> <span class="k">s</span>:SolarizedHiTrail<span class="p">()</span></td>
-      </tr>
-      <tr>
-        <td id="L1006" class="blob-num js-line-number" data-line-number="1006"></td>
-        <td id="LC1006" class="blob-code js-file-line">        <span class="k">autocmd</span><span class="p">!</span> <span class="nb">ColorScheme</span> * <span class="k">if</span> <span class="k">g</span>:colors_name <span class="p">==</span> <span class="s2">&quot;solarized&quot;</span> <span class="p">|</span> <span class="k">call</span> <span class="k">s</span>:SolarizedHiTrail<span class="p">()</span> <span class="p">|</span> <span class="k">else</span> <span class="p">|</span> augroup<span class="p">!</span> <span class="k">s</span>:SolarizedHiTrail <span class="p">|</span> <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1007" class="blob-num js-line-number" data-line-number="1007"></td>
-        <td id="LC1007" class="blob-code js-file-line">    <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1008" class="blob-num js-line-number" data-line-number="1008"></td>
-        <td id="LC1008" class="blob-code js-file-line">augroup END</td>
-      </tr>
-      <tr>
-        <td id="L1009" class="blob-num js-line-number" data-line-number="1009"></td>
-        <td id="LC1009" class="blob-code js-file-line"><span class="c">&quot; }}}</span></td>
-      </tr>
-      <tr>
-        <td id="L1010" class="blob-num js-line-number" data-line-number="1010"></td>
-        <td id="LC1010" class="blob-code js-file-line"><span class="c">&quot; Menus &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L1011" class="blob-num js-line-number" data-line-number="1011"></td>
-        <td id="LC1011" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L1012" class="blob-num js-line-number" data-line-number="1012"></td>
-        <td id="LC1012" class="blob-code js-file-line"><span class="c">&quot; Turn off Solarized menu by including the following assignment in your .vimrc:</span></td>
-      </tr>
-      <tr>
-        <td id="L1013" class="blob-num js-line-number" data-line-number="1013"></td>
-        <td id="LC1013" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1014" class="blob-num js-line-number" data-line-number="1014"></td>
-        <td id="LC1014" class="blob-code js-file-line"><span class="c">&quot;    let g:solarized_menu=0</span></td>
-      </tr>
-      <tr>
-        <td id="L1015" class="blob-num js-line-number" data-line-number="1015"></td>
-        <td id="LC1015" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1016" class="blob-num js-line-number" data-line-number="1016"></td>
-        <td id="LC1016" class="blob-code js-file-line"><span class="k">function</span><span class="p">!</span> <span class="k">s</span>:SolarizedOptions<span class="p">()</span></td>
-      </tr>
-      <tr>
-        <td id="L1017" class="blob-num js-line-number" data-line-number="1017"></td>
-        <td id="LC1017" class="blob-code js-file-line">    <span class="k">new</span> <span class="c">&quot;new buffer</span></td>
-      </tr>
-      <tr>
-        <td id="L1018" class="blob-num js-line-number" data-line-number="1018"></td>
-        <td id="LC1018" class="blob-code js-file-line">    <span class="k">setf</span> <span class="k">vim</span> <span class="c">&quot;vim filetype</span></td>
-      </tr>
-      <tr>
-        <td id="L1019" class="blob-num js-line-number" data-line-number="1019"></td>
-        <td id="LC1019" class="blob-code js-file-line">    <span class="k">let</span> failed <span class="p">=</span> append<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="k">s</span>:defaults_list<span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L1020" class="blob-num js-line-number" data-line-number="1020"></td>
-        <td id="LC1020" class="blob-code js-file-line">    <span class="k">let</span> failed <span class="p">=</span> append<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="k">s</span>:colorscheme_list<span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L1021" class="blob-num js-line-number" data-line-number="1021"></td>
-        <td id="LC1021" class="blob-code js-file-line">    <span class="k">let</span> failed <span class="p">=</span> append<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="k">s</span>:options_list<span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L1022" class="blob-num js-line-number" data-line-number="1022"></td>
-        <td id="LC1022" class="blob-code js-file-line">    <span class="k">let</span> failed <span class="p">=</span> append<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="k">s</span>:lazycat_list<span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L1023" class="blob-num js-line-number" data-line-number="1023"></td>
-        <td id="LC1023" class="blob-code js-file-line">    <span class="m">0</span> <span class="c">&quot;jump back to the top</span></td>
-      </tr>
-      <tr>
-        <td id="L1024" class="blob-num js-line-number" data-line-number="1024"></td>
-        <td id="LC1024" class="blob-code js-file-line"><span class="k">endfunction</span></td>
-      </tr>
-      <tr>
-        <td id="L1025" class="blob-num js-line-number" data-line-number="1025"></td>
-        <td id="LC1025" class="blob-code js-file-line"><span class="k">if</span> <span class="p">!</span>exists<span class="p">(</span><span class="s2">&quot;:SolarizedOptions&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L1026" class="blob-num js-line-number" data-line-number="1026"></td>
-        <td id="LC1026" class="blob-code js-file-line">    command SolarizedOptions :<span class="k">call</span> <span class="k">s</span>:SolarizedOptions<span class="p">()</span></td>
-      </tr>
-      <tr>
-        <td id="L1027" class="blob-num js-line-number" data-line-number="1027"></td>
-        <td id="LC1027" class="blob-code js-file-line"><span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1028" class="blob-num js-line-number" data-line-number="1028"></td>
-        <td id="LC1028" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1029" class="blob-num js-line-number" data-line-number="1029"></td>
-        <td id="LC1029" class="blob-code js-file-line"><span class="k">function</span><span class="p">!</span> SolarizedMenu<span class="p">()</span></td>
-      </tr>
-      <tr>
-        <td id="L1030" class="blob-num js-line-number" data-line-number="1030"></td>
-        <td id="LC1030" class="blob-code js-file-line">    <span class="k">if</span> exists<span class="p">(</span><span class="s2">&quot;g:loaded_solarized_menu&quot;</span><span class="p">)</span></td>
-      </tr>
-      <tr>
-        <td id="L1031" class="blob-num js-line-number" data-line-number="1031"></td>
-        <td id="LC1031" class="blob-code js-file-line">        <span class="k">try</span></td>
-      </tr>
-      <tr>
-        <td id="L1032" class="blob-num js-line-number" data-line-number="1032"></td>
-        <td id="LC1032" class="blob-code js-file-line">            <span class="k">silent</span><span class="p">!</span> aunmenu Solarized</td>
-      </tr>
-      <tr>
-        <td id="L1033" class="blob-num js-line-number" data-line-number="1033"></td>
-        <td id="LC1033" class="blob-code js-file-line">        <span class="k">endtry</span></td>
-      </tr>
-      <tr>
-        <td id="L1034" class="blob-num js-line-number" data-line-number="1034"></td>
-        <td id="LC1034" class="blob-code js-file-line">    <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1035" class="blob-num js-line-number" data-line-number="1035"></td>
-        <td id="LC1035" class="blob-code js-file-line">    <span class="k">let</span> <span class="k">g</span>:loaded_solarized_menu <span class="p">=</span> <span class="m">1</span></td>
-      </tr>
-      <tr>
-        <td id="L1036" class="blob-num js-line-number" data-line-number="1036"></td>
-        <td id="LC1036" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1037" class="blob-num js-line-number" data-line-number="1037"></td>
-        <td id="LC1037" class="blob-code js-file-line">    <span class="k">if</span> <span class="k">g</span>:colors_name <span class="p">==</span> <span class="s2">&quot;solarized&quot;</span> &amp;&amp; <span class="k">g</span>:solarized_menu <span class="p">!=</span> <span class="m">0</span></td>
-      </tr>
-      <tr>
-        <td id="L1038" class="blob-num js-line-number" data-line-number="1038"></td>
-        <td id="LC1038" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1039" class="blob-num js-line-number" data-line-number="1039"></td>
-        <td id="LC1039" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Contrast.&amp;Low\ Contrast        :<span class="k">let</span> <span class="k">g</span>:solarized_contrast<span class="p">=</span><span class="s2">&quot;low&quot;</span>       \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1040" class="blob-num js-line-number" data-line-number="1040"></td>
-        <td id="LC1040" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Contrast.&amp;Normal\ Contrast     :<span class="k">let</span> <span class="k">g</span>:solarized_contrast<span class="p">=</span><span class="s2">&quot;normal&quot;</span>    \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1041" class="blob-num js-line-number" data-line-number="1041"></td>
-        <td id="LC1041" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Contrast.&amp;High\ Contrast       :<span class="k">let</span> <span class="k">g</span>:solarized_contrast<span class="p">=</span><span class="s2">&quot;high&quot;</span>      \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1042" class="blob-num js-line-number" data-line-number="1042"></td>
-        <td id="LC1042" class="blob-code js-file-line">        an    &amp;Solarized.&amp;Contrast.<span class="p">-</span>sep<span class="p">-</span>                 <span class="p">&lt;</span>Nop<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1043" class="blob-num js-line-number" data-line-number="1043"></td>
-        <td id="LC1043" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Contrast.&amp;Help:\ Contrast      :help <span class="s1">&#39;solarized_contrast&#39;</span><span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1044" class="blob-num js-line-number" data-line-number="1044"></td>
-        <td id="LC1044" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1045" class="blob-num js-line-number" data-line-number="1045"></td>
-        <td id="LC1045" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Visibility.&amp;Low\ Visibility    :<span class="k">let</span> <span class="k">g</span>:solarized_visibility<span class="p">=</span><span class="s2">&quot;low&quot;</span>     \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1046" class="blob-num js-line-number" data-line-number="1046"></td>
-        <td id="LC1046" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Visibility.&amp;Normal\ Visibility :<span class="k">let</span> <span class="k">g</span>:solarized_visibility<span class="p">=</span><span class="s2">&quot;normal&quot;</span>  \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1047" class="blob-num js-line-number" data-line-number="1047"></td>
-        <td id="LC1047" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Visibility.&amp;High\ Visibility   :<span class="k">let</span> <span class="k">g</span>:solarized_visibility<span class="p">=</span><span class="s2">&quot;high&quot;</span>    \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1048" class="blob-num js-line-number" data-line-number="1048"></td>
-        <td id="LC1048" class="blob-code js-file-line">        an    &amp;Solarized.&amp;Visibility.<span class="p">-</span>sep<span class="p">-</span>                 <span class="p">&lt;</span>Nop<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1049" class="blob-num js-line-number" data-line-number="1049"></td>
-        <td id="LC1049" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Visibility.&amp;Help:\ Visibility    :help <span class="s1">&#39;solarized_visibility&#39;</span><span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1050" class="blob-num js-line-number" data-line-number="1050"></td>
-        <td id="LC1050" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1051" class="blob-num js-line-number" data-line-number="1051"></td>
-        <td id="LC1051" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Background.&amp;Toggle\ Background :ToggleBG<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1052" class="blob-num js-line-number" data-line-number="1052"></td>
-        <td id="LC1052" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Background.&amp;Dark\ Background   :<span class="k">set</span> <span class="nb">background</span><span class="p">=</span><span class="nb">dark</span>  \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1053" class="blob-num js-line-number" data-line-number="1053"></td>
-        <td id="LC1053" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Background.&amp;Light\ Background  :<span class="k">set</span> <span class="nb">background</span><span class="p">=</span><span class="nb">light</span> \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1054" class="blob-num js-line-number" data-line-number="1054"></td>
-        <td id="LC1054" class="blob-code js-file-line">        an    &amp;Solarized.&amp;Background.<span class="p">-</span>sep<span class="p">-</span>               <span class="p">&lt;</span>Nop<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1055" class="blob-num js-line-number" data-line-number="1055"></td>
-        <td id="LC1055" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Background.&amp;Help:\ ToggleBG     :help togglebg<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1056" class="blob-num js-line-number" data-line-number="1056"></td>
-        <td id="LC1056" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1057" class="blob-num js-line-number" data-line-number="1057"></td>
-        <td id="LC1057" class="blob-code js-file-line">        <span class="k">if</span> <span class="k">g</span>:solarized_bold<span class="p">==</span><span class="m">0</span> <span class="p">|</span> <span class="k">let</span> <span class="k">l</span>:boldswitch<span class="p">=</span><span class="s2">&quot;On&quot;</span> <span class="p">|</span> <span class="k">else</span> <span class="p">|</span> <span class="k">let</span> <span class="k">l</span>:boldswitch<span class="p">=</span><span class="s2">&quot;Off&quot;</span> <span class="p">|</span> <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1058" class="blob-num js-line-number" data-line-number="1058"></td>
-        <td id="LC1058" class="blob-code js-file-line">        exe <span class="s2">&quot;amenu &amp;Solarized.&amp;Styling.&amp;Turn\\ Bold\\ &quot;</span>.<span class="k">l</span>:boldswitch.<span class="s2">&quot; :let g:solarized_bold=(abs(g:solarized_bold-1)) \\| colorscheme solarized&lt;CR&gt;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1059" class="blob-num js-line-number" data-line-number="1059"></td>
-        <td id="LC1059" class="blob-code js-file-line">        <span class="k">if</span> <span class="k">g</span>:solarized_italic<span class="p">==</span><span class="m">0</span> <span class="p">|</span> <span class="k">let</span> <span class="k">l</span>:italicswitch<span class="p">=</span><span class="s2">&quot;On&quot;</span> <span class="p">|</span> <span class="k">else</span> <span class="p">|</span> <span class="k">let</span> <span class="k">l</span>:italicswitch<span class="p">=</span><span class="s2">&quot;Off&quot;</span> <span class="p">|</span> <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1060" class="blob-num js-line-number" data-line-number="1060"></td>
-        <td id="LC1060" class="blob-code js-file-line">        exe <span class="s2">&quot;amenu &amp;Solarized.&amp;Styling.&amp;Turn\\ Italic\\ &quot;</span>.<span class="k">l</span>:italicswitch.<span class="s2">&quot; :let g:solarized_italic=(abs(g:solarized_italic-1)) \\| colorscheme solarized&lt;CR&gt;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1061" class="blob-num js-line-number" data-line-number="1061"></td>
-        <td id="LC1061" class="blob-code js-file-line">        <span class="k">if</span> <span class="k">g</span>:solarized_underline<span class="p">==</span><span class="m">0</span> <span class="p">|</span> <span class="k">let</span> <span class="k">l</span>:underlineswitch<span class="p">=</span><span class="s2">&quot;On&quot;</span> <span class="p">|</span> <span class="k">else</span> <span class="p">|</span> <span class="k">let</span> <span class="k">l</span>:underlineswitch<span class="p">=</span><span class="s2">&quot;Off&quot;</span> <span class="p">|</span> <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1062" class="blob-num js-line-number" data-line-number="1062"></td>
-        <td id="LC1062" class="blob-code js-file-line">        exe <span class="s2">&quot;amenu &amp;Solarized.&amp;Styling.&amp;Turn\\ Underline\\ &quot;</span>.<span class="k">l</span>:underlineswitch.<span class="s2">&quot; :let g:solarized_underline=(abs(g:solarized_underline-1)) \\| colorscheme solarized&lt;CR&gt;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1063" class="blob-num js-line-number" data-line-number="1063"></td>
-        <td id="LC1063" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1064" class="blob-num js-line-number" data-line-number="1064"></td>
-        <td id="LC1064" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Diff\ Mode.&amp;Low\ Diff\ Mode    :<span class="k">let</span> <span class="k">g</span>:solarized_diffmode<span class="p">=</span><span class="s2">&quot;low&quot;</span>     \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1065" class="blob-num js-line-number" data-line-number="1065"></td>
-        <td id="LC1065" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Diff\ Mode.&amp;Normal\ Diff\ Mode :<span class="k">let</span> <span class="k">g</span>:solarized_diffmode<span class="p">=</span><span class="s2">&quot;normal&quot;</span>  \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1066" class="blob-num js-line-number" data-line-number="1066"></td>
-        <td id="LC1066" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Diff\ Mode.&amp;High\ Diff\ Mode   :<span class="k">let</span> <span class="k">g</span>:solarized_diffmode<span class="p">=</span><span class="s2">&quot;high&quot;</span>    \<span class="p">|</span> <span class="k">colorscheme</span> solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1067" class="blob-num js-line-number" data-line-number="1067"></td>
-        <td id="LC1067" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1068" class="blob-num js-line-number" data-line-number="1068"></td>
-        <td id="LC1068" class="blob-code js-file-line">        <span class="k">if</span> <span class="k">g</span>:solarized_hitrail<span class="p">==</span><span class="m">0</span> <span class="p">|</span> <span class="k">let</span> <span class="k">l</span>:hitrailswitch<span class="p">=</span><span class="s2">&quot;On&quot;</span> <span class="p">|</span> <span class="k">else</span> <span class="p">|</span> <span class="k">let</span> <span class="k">l</span>:hitrailswitch<span class="p">=</span><span class="s2">&quot;Off&quot;</span> <span class="p">|</span> <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1069" class="blob-num js-line-number" data-line-number="1069"></td>
-        <td id="LC1069" class="blob-code js-file-line">        exe <span class="s2">&quot;amenu &amp;Solarized.&amp;Experimental.&amp;Turn\\ Highlight\\ Trailing\\ Spaces\\ &quot;</span>.<span class="k">l</span>:hitrailswitch.<span class="s2">&quot; :let g:solarized_hitrail=(abs(g:solarized_hitrail-1)) \\| colorscheme solarized&lt;CR&gt;&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1070" class="blob-num js-line-number" data-line-number="1070"></td>
-        <td id="LC1070" class="blob-code js-file-line">        an    &amp;Solarized.&amp;Experimental.<span class="p">-</span>sep<span class="p">-</span>               <span class="p">&lt;</span>Nop<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1071" class="blob-num js-line-number" data-line-number="1071"></td>
-        <td id="LC1071" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Experimental.&amp;Help:\ HiTrail    :help <span class="s1">&#39;solarized_hitrail&#39;</span><span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1072" class="blob-num js-line-number" data-line-number="1072"></td>
-        <td id="LC1072" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1073" class="blob-num js-line-number" data-line-number="1073"></td>
-        <td id="LC1073" class="blob-code js-file-line">        an    &amp;Solarized.<span class="p">-</span>sep1<span class="p">-</span>                          <span class="p">&lt;</span>Nop<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1074" class="blob-num js-line-number" data-line-number="1074"></td>
-        <td id="LC1074" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1075" class="blob-num js-line-number" data-line-number="1075"></td>
-        <td id="LC1075" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Autogenerate\ <span class="k">options</span>          :SolarizedOptions<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1076" class="blob-num js-line-number" data-line-number="1076"></td>
-        <td id="LC1076" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1077" class="blob-num js-line-number" data-line-number="1077"></td>
-        <td id="LC1077" class="blob-code js-file-line">        an    &amp;Solarized.<span class="p">-</span>sep2<span class="p">-</span>                          <span class="p">&lt;</span>Nop<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1078" class="blob-num js-line-number" data-line-number="1078"></td>
-        <td id="LC1078" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1079" class="blob-num js-line-number" data-line-number="1079"></td>
-        <td id="LC1079" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Help.&amp;Solarized\ Help          :help solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1080" class="blob-num js-line-number" data-line-number="1080"></td>
-        <td id="LC1080" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Help.&amp;Toggle\ Background\ Help :help togglebg<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1081" class="blob-num js-line-number" data-line-number="1081"></td>
-        <td id="LC1081" class="blob-code js-file-line">        amenu &amp;Solarized.&amp;Help.&amp;Removing\ This\ Menu     :help solarized<span class="p">-</span>menu<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1082" class="blob-num js-line-number" data-line-number="1082"></td>
-        <td id="LC1082" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1083" class="blob-num js-line-number" data-line-number="1083"></td>
-        <td id="LC1083" class="blob-code js-file-line">        an <span class="m">9999</span>.<span class="m">77</span> &amp;Help.&amp;Solarized\ Colorscheme         :help solarized<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1084" class="blob-num js-line-number" data-line-number="1084"></td>
-        <td id="LC1084" class="blob-code js-file-line">        an <span class="m">9999</span>.<span class="m">78</span> &amp;Help.&amp;Toggle\ Background             :help togglebg<span class="p">&lt;</span>CR<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1085" class="blob-num js-line-number" data-line-number="1085"></td>
-        <td id="LC1085" class="blob-code js-file-line">        an <span class="m">9999</span>.<span class="m">79</span> &amp;Help.<span class="p">-</span>sep3<span class="p">-</span>                          <span class="p">&lt;</span>Nop<span class="p">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="L1086" class="blob-num js-line-number" data-line-number="1086"></td>
-        <td id="LC1086" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1087" class="blob-num js-line-number" data-line-number="1087"></td>
-        <td id="LC1087" class="blob-code js-file-line">    <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1088" class="blob-num js-line-number" data-line-number="1088"></td>
-        <td id="LC1088" class="blob-code js-file-line"><span class="k">endfunction</span></td>
-      </tr>
-      <tr>
-        <td id="L1089" class="blob-num js-line-number" data-line-number="1089"></td>
-        <td id="LC1089" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1090" class="blob-num js-line-number" data-line-number="1090"></td>
-        <td id="LC1090" class="blob-code js-file-line"><span class="k">autocmd</span> <span class="nb">ColorScheme</span> * <span class="k">if</span> <span class="k">g</span>:colors_name <span class="p">!=</span> <span class="s2">&quot;solarized&quot;</span> <span class="p">|</span> <span class="k">silent</span><span class="p">!</span> aunmenu Solarized <span class="p">|</span> <span class="k">else</span> <span class="p">|</span> <span class="k">call</span> SolarizedMenu<span class="p">()</span> <span class="p">|</span> <span class="k">endif</span></td>
-      </tr>
-      <tr>
-        <td id="L1091" class="blob-num js-line-number" data-line-number="1091"></td>
-        <td id="LC1091" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L1092" class="blob-num js-line-number" data-line-number="1092"></td>
-        <td id="LC1092" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-      <tr>
-        <td id="L1093" class="blob-num js-line-number" data-line-number="1093"></td>
-        <td id="LC1093" class="blob-code js-file-line"><span class="c">&quot; License &quot;{{{</span></td>
-      </tr>
-      <tr>
-        <td id="L1094" class="blob-num js-line-number" data-line-number="1094"></td>
-        <td id="LC1094" class="blob-code js-file-line"><span class="c">&quot; ---------------------------------------------------------------------</span></td>
-      </tr>
-      <tr>
-        <td id="L1095" class="blob-num js-line-number" data-line-number="1095"></td>
-        <td id="LC1095" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1096" class="blob-num js-line-number" data-line-number="1096"></td>
-        <td id="LC1096" class="blob-code js-file-line"><span class="c">&quot; Copyright (c) 2011 Ethan Schoonover</span></td>
-      </tr>
-      <tr>
-        <td id="L1097" class="blob-num js-line-number" data-line-number="1097"></td>
-        <td id="LC1097" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1098" class="blob-num js-line-number" data-line-number="1098"></td>
-        <td id="LC1098" class="blob-code js-file-line"><span class="c">&quot; Permission is hereby granted, free of charge, to any person obtaining a copy</span></td>
-      </tr>
-      <tr>
-        <td id="L1099" class="blob-num js-line-number" data-line-number="1099"></td>
-        <td id="LC1099" class="blob-code js-file-line"><span class="c">&quot; of this software and associated documentation files (the &quot;Software&quot;), to deal</span></td>
-      </tr>
-      <tr>
-        <td id="L1100" class="blob-num js-line-number" data-line-number="1100"></td>
-        <td id="LC1100" class="blob-code js-file-line"><span class="c">&quot; in the Software without restriction, including without limitation the rights</span></td>
-      </tr>
-      <tr>
-        <td id="L1101" class="blob-num js-line-number" data-line-number="1101"></td>
-        <td id="LC1101" class="blob-code js-file-line"><span class="c">&quot; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span></td>
-      </tr>
-      <tr>
-        <td id="L1102" class="blob-num js-line-number" data-line-number="1102"></td>
-        <td id="LC1102" class="blob-code js-file-line"><span class="c">&quot; copies of the Software, and to permit persons to whom the Software is</span></td>
-      </tr>
-      <tr>
-        <td id="L1103" class="blob-num js-line-number" data-line-number="1103"></td>
-        <td id="LC1103" class="blob-code js-file-line"><span class="c">&quot; furnished to do so, subject to the following conditions:</span></td>
-      </tr>
-      <tr>
-        <td id="L1104" class="blob-num js-line-number" data-line-number="1104"></td>
-        <td id="LC1104" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1105" class="blob-num js-line-number" data-line-number="1105"></td>
-        <td id="LC1105" class="blob-code js-file-line"><span class="c">&quot; The above copyright notice and this permission notice shall be included in</span></td>
-      </tr>
-      <tr>
-        <td id="L1106" class="blob-num js-line-number" data-line-number="1106"></td>
-        <td id="LC1106" class="blob-code js-file-line"><span class="c">&quot; all copies or substantial portions of the Software.</span></td>
-      </tr>
-      <tr>
-        <td id="L1107" class="blob-num js-line-number" data-line-number="1107"></td>
-        <td id="LC1107" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1108" class="blob-num js-line-number" data-line-number="1108"></td>
-        <td id="LC1108" class="blob-code js-file-line"><span class="c">&quot; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span></td>
-      </tr>
-      <tr>
-        <td id="L1109" class="blob-num js-line-number" data-line-number="1109"></td>
-        <td id="LC1109" class="blob-code js-file-line"><span class="c">&quot; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span></td>
-      </tr>
-      <tr>
-        <td id="L1110" class="blob-num js-line-number" data-line-number="1110"></td>
-        <td id="LC1110" class="blob-code js-file-line"><span class="c">&quot; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span></td>
-      </tr>
-      <tr>
-        <td id="L1111" class="blob-num js-line-number" data-line-number="1111"></td>
-        <td id="LC1111" class="blob-code js-file-line"><span class="c">&quot; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span></td>
-      </tr>
-      <tr>
-        <td id="L1112" class="blob-num js-line-number" data-line-number="1112"></td>
-        <td id="LC1112" class="blob-code js-file-line"><span class="c">&quot; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span></td>
-      </tr>
-      <tr>
-        <td id="L1113" class="blob-num js-line-number" data-line-number="1113"></td>
-        <td id="LC1113" class="blob-code js-file-line"><span class="c">&quot; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span></td>
-      </tr>
-      <tr>
-        <td id="L1114" class="blob-num js-line-number" data-line-number="1114"></td>
-        <td id="LC1114" class="blob-code js-file-line"><span class="c">&quot; THE SOFTWARE.</span></td>
-      </tr>
-      <tr>
-        <td id="L1115" class="blob-num js-line-number" data-line-number="1115"></td>
-        <td id="LC1115" class="blob-code js-file-line"><span class="c">&quot;</span></td>
-      </tr>
-      <tr>
-        <td id="L1116" class="blob-num js-line-number" data-line-number="1116"></td>
-        <td id="LC1116" class="blob-code js-file-line"><span class="c">&quot; vim:foldmethod=marker:foldlevel=0</span></td>
-      </tr>
-      <tr>
-        <td id="L1117" class="blob-num js-line-number" data-line-number="1117"></td>
-        <td id="LC1117" class="blob-code js-file-line"><span class="c">&quot;}}}</span></td>
-      </tr>
-</table>
-
-  </div>
-
-  </div>
-</div>
-
-<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
-<div id="jump-to-line" style="display:none">
-  <form accept-charset="UTF-8" class="js-jump-to-line-form">
-    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
-    <button type="submit" class="button">Go</button>
-  </form>
-</div>
-
-        </div>
-
-      </div><!-- /.repo-container -->
-      <div class="modal-backdrop"></div>
-    </div><!-- /.container -->
-  </div><!-- /.site -->
-
-
-    </div><!-- /.wrapper -->
-
-      <div class="container">
-  <div class="site-footer">
-    <ul class="site-footer-links right">
-      <li><a href="https://status.github.com/">Status</a></li>
-      <li><a href="http://developer.github.com">API</a></li>
-      <li><a href="http://training.github.com">Training</a></li>
-      <li><a href="http://shop.github.com">Shop</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/about">About</a></li>
-
-    </ul>
-
-    <a href="/" aria-label="Homepage">
-      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
-    </a>
-
-    <ul class="site-footer-links">
-      <li>&copy; 2014 <span title="0.06381s from github-fe127-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
-        <li><a href="/site/terms">Terms</a></li>
-        <li><a href="/site/privacy">Privacy</a></li>
-        <li><a href="/security">Security</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-  </div><!-- /.site-footer -->
-</div><!-- /.container -->
-
-
-    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
-  <div class="fullscreen-container js-suggester-container">
-    <div class="textarea-wrap">
-      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents js-suggester-field" placeholder=""></textarea>
-    </div>
-  </div>
-  <div class="fullscreen-sidebar">
-    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
-      <span class="mega-octicon octicon-screen-normal"></span>
-    </a>
-    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
-      aria-label="Switch themes">
-      <span class="octicon octicon-color-mode"></span>
-    </a>
-  </div>
-</div>
-
-
-
-    <div id="ajax-error-message" class="flash flash-error">
-      <span class="octicon octicon-alert"></span>
-      <a href="#" class="octicon octicon-x close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
-      Something went wrong with that request. Please try again.
-    </div>
-
-
-      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-bc28a4f6b05fd6cd91bbc92310bbbc53e54c6ec2.js" type="text/javascript"></script>
-      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-46193212c1e9feb8753d1ecfdfcfad0a23a015d2.js" type="text/javascript"></script>
-      
-      
-        <script async src="https://www.google-analytics.com/analytics.js"></script>
-  </body>
-</html>
-
+" Name:     Solarized vim colorscheme
+" Author:   Ethan Schoonover <es@ethanschoonover.com>
+" URL:      http://ethanschoonover.com/solarized
+"           (see this url for latest release & screenshots)
+" License:  OSI approved MIT license (see end of this file)
+" Created:  In the middle of the night
+" Modified: 2011 May 05
+"
+" Usage "{{{
+"
+" ---------------------------------------------------------------------
+" ABOUT:
+" ---------------------------------------------------------------------
+" Solarized is a carefully designed selective contrast colorscheme with dual
+" light and dark modes that runs in both GUI, 256 and 16 color modes.
+"
+" See the homepage above for screenshots and details.
+"
+" ---------------------------------------------------------------------
+" OPTIONS:
+" ---------------------------------------------------------------------
+" See the "solarized.txt" help file included with this colorscheme (in the 
+" "doc" subdirectory) for information on options, usage, the Toggle Background 
+" function and more. If you have already installed Solarized, this is available 
+" from the Solarized menu and command line as ":help solarized"
+"
+" ---------------------------------------------------------------------
+" INSTALLATION:
+" ---------------------------------------------------------------------
+" Two options for installation: manual or pathogen
+"
+" MANUAL INSTALLATION OPTION:
+" ---------------------------------------------------------------------
+"
+" 1.  Download the solarized distribution (available on the homepage above)
+"     and unarchive the file.
+" 2.  Move `solarized.vim` to your `.vim/colors` directory.
+" 3.  Move each of the files in each subdirectories to the corresponding .vim
+"     subdirectory (e.g. autoload/togglebg.vim goes into your .vim/autoload 
+"     directory as .vim/autoload/togglebg.vim).
+"
+" RECOMMENDED PATHOGEN INSTALLATION OPTION:
+" ---------------------------------------------------------------------
+"
+" 1.  Download and install Tim Pope's Pathogen from:
+"     https://github.com/tpope/vim-pathogen
+"
+" 2.  Next, move or clone the `vim-colors-solarized` directory so that it is
+"     a subdirectory of the `.vim/bundle` directory.
+"
+"     a. **clone with git:**
+"
+"       $ cd ~/.vim/bundle
+"       $ git clone git://github.com/altercation/vim-colors-solarized.git
+"
+"     b. **or move manually into the pathogen bundle directory:**
+"         In the parent directory of vim-colors-solarized:
+"
+"         $ mv vim-colors-solarized ~/.vim/bundle/
+"
+" MODIFY VIMRC:
+"
+" After either Option 1 or Option 2 above, put the following two lines in your
+" .vimrc:
+"
+"     syntax enable
+"     set background=dark
+"     colorscheme solarized
+"
+" or, for the light background mode of Solarized:
+"
+"     syntax enable
+"     set background=light
+"     colorscheme solarized
+"
+" I like to have a different background in GUI and terminal modes, so I can use
+" the following if-then. However, I find vim's background autodetection to be
+" pretty good and, at least with MacVim, I can leave this background value
+" assignment out entirely and get the same results.
+"
+"     if has('gui_running')
+"       set background=light
+"     else
+"       set background=dark
+"     endif
+"
+" See the Solarized homepage at http://ethanschoonover.com/solarized for
+" screenshots which will help you select either the light or dark background.
+"
+" ---------------------------------------------------------------------
+" COLOR VALUES
+" ---------------------------------------------------------------------
+" Download palettes and files from: http://ethanschoonover.com/solarized
+"
+" L\*a\*b values are canonical (White D65, Reference D50), other values are
+" matched in sRGB space.
+"
+" SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      sRGB        HSB
+" --------- ------- ---- -------  ----------- ---------- ----------- -----------
+" base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
+" base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26
+" base01    #586e75 10/7 brgreen  240 #4e4e4e 45 -07 -07  88 110 117 194  25  46
+" base00    #657b83 11/7 bryellow 241 #585858 50 -07 -07 101 123 131 195  23  51
+" base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59
+" base1     #93a1a1 14/4 brcyan   245 #8a8a8a 65 -05 -02 147 161 161 180   9  63
+" base2     #eee8d5  7/7 white    254 #d7d7af 92 -00  10 238 232 213  44  11  93
+" base3     #fdf6e3 15/7 brwhite  230 #ffffd7 97  00  10 253 246 227  44  10  99
+" yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  71
+" orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
+" red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
+" magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
+" violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
+" blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
+" cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
+" green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
+"
+" ---------------------------------------------------------------------
+" COLORSCHEME HACKING
+" ---------------------------------------------------------------------
+"
+" Useful commands for testing colorschemes:
+" :source $VIMRUNTIME/syntax/hitest.vim
+" :help highlight-groups
+" :help cterm-colors
+" :help group-name
+"
+" Useful links for developing colorschemes:
+" http://www.vim.org/scripts/script.php?script_id=2937
+" http://vimcasts.org/episodes/creating-colorschemes-for-vim/
+" http://www.frexx.de/xterm-256-notes/"
+"
+" }}}
+" Environment Specific Overrides "{{{
+" Allow or disallow certain features based on current terminal emulator or 
+" environment.
+
+" Terminals that support italics
+let s:terms_italic=[
+            \"rxvt",
+            \"gnome-terminal"
+            \]
+" For reference only, terminals are known to be incomptible.
+" Terminals that are in neither list need to be tested.
+let s:terms_noitalic=[
+            \"iTerm.app",
+            \"Apple_Terminal"
+            \]
+if has("gui_running")
+    let s:terminal_italic=1 " TODO: could refactor to not require this at all
+else
+    let s:terminal_italic=0 " terminals will be guilty until proven compatible
+    for term in s:terms_italic
+        if $TERM_PROGRAM =~ term
+            let s:terminal_italic=1
+        endif
+    endfor
+endif
+
+" }}}
+" Default option values"{{{
+" ---------------------------------------------------------------------
+" s:options_list is used to autogenerate a list of all non-default options 
+" using "call SolarizedOptions()" or with the "Generate .vimrc commands" 
+" Solarized menu option. See the "Menus" section below for the function itself.
+let s:options_list=[
+            \'" this block of commands has been autogenerated by solarized.vim and',
+            \'" includes the current, non-default Solarized option values.',
+            \'" To use, place these commands in your .vimrc file (replacing any',
+            \'" existing colorscheme commands). See also ":help solarized"',
+            \'',
+            \'" ------------------------------------------------------------------',
+            \'" Solarized Colorscheme Config',
+            \'" ------------------------------------------------------------------',
+            \]
+let s:colorscheme_list=[
+            \'syntax enable',
+            \'set background='.&background,
+            \'colorscheme solarized',
+            \]
+let s:defaults_list=[
+            \'" ------------------------------------------------------------------',
+            \'',
+            \'" The following items are available options, but do not need to be',
+            \'" included in your .vimrc as they are currently set to their defaults.',
+            \''
+            \]
+let s:lazycat_list=[
+            \'" lazy method of appending this onto your .vimrc ":w! >> ~/.vimrc"',
+            \'" ------------------------------------------------------------------',
+            \]
+
+function! s:SetOption(name,default)
+    if type(a:default) == type(0)
+        let l:wrap=''
+        let l:ewrap=''
+    else
+        let l:wrap='"'
+        let l:ewrap='\"'
+    endif
+    if !exists("g:solarized_".a:name) || g:solarized_{a:name}==a:default
+        exe 'let g:solarized_'.a:name.'='.l:wrap.a:default.l:wrap.'"'
+        exe 'call add(s:defaults_list, "\" let g:solarized_'.a:name.'='.l:ewrap.g:solarized_{a:name}.l:ewrap.'")'
+    else
+        exe 'call add(s:options_list,  "let g:solarized_'.a:name.'='.l:ewrap.g:solarized_{a:name}.l:ewrap.'    \"default value is '.a:default.'")'
+    endif
+endfunction
+
+if ($TERM_PROGRAM ==? "apple_terminal" && &t_Co < 256)
+    let s:solarized_termtrans_default = 1
+else
+    let s:solarized_termtrans_default = 0
+endif
+call s:SetOption("termtrans",s:solarized_termtrans_default)
+call s:SetOption("degrade",0)
+call s:SetOption("bold",1)
+call s:SetOption("underline",1)
+call s:SetOption("italic",1) " note that we need to override this later if the terminal doesn't support
+call s:SetOption("termcolors",16)
+call s:SetOption("contrast","normal")
+call s:SetOption("visibility","normal")
+call s:SetOption("diffmode","normal")
+call s:SetOption("hitrail",0)
+call s:SetOption("menu",1)
+
+"}}}
+" Colorscheme initialization "{{{
+" ---------------------------------------------------------------------
+hi clear
+if exists("syntax_on")
+  syntax reset
+endif
+let colors_name = "solarized"
+
+"}}}
+" GUI & CSApprox hexadecimal palettes"{{{
+" ---------------------------------------------------------------------
+"
+" Set both gui and terminal color values in separate conditional statements
+" Due to possibility that CSApprox is running (though I suppose we could just
+" leave the hex values out entirely in that case and include only cterm colors)
+" We also check to see if user has set solarized (force use of the
+" neutral gray monotone palette component)
+if (has("gui_running") && g:solarized_degrade == 0)
+    let s:vmode       = "gui"
+    let s:base03      = "#002b36"
+    let s:base02      = "#073642"
+    let s:base01      = "#586e75"
+    let s:base00      = "#657b83"
+    let s:base0       = "#839496"
+    let s:base1       = "#93a1a1"
+    let s:base2       = "#eee8d5"
+    let s:base3       = "#fdf6e3"
+    let s:yellow      = "#b58900"
+    let s:orange      = "#cb4b16"
+    let s:red         = "#dc322f"
+    let s:magenta     = "#d33682"
+    let s:violet      = "#6c71c4"
+    let s:blue        = "#268bd2"
+    let s:cyan        = "#2aa198"
+    "let s:green       = "#859900" "original
+    let s:green       = "#719e07" "experimental
+elseif (has("gui_running") && g:solarized_degrade == 1)
+    " These colors are identical to the 256 color mode. They may be viewed
+    " while in gui mode via "let g:solarized_degrade=1", though this is not
+    " recommened and is for testing only.
+    let s:vmode       = "gui"
+    let s:base03      = "#1c1c1c"
+    let s:base02      = "#262626"
+    let s:base01      = "#4e4e4e"
+    let s:base00      = "#585858"
+    let s:base0       = "#808080"
+    let s:base1       = "#8a8a8a"
+    let s:base2       = "#d7d7af"
+    let s:base3       = "#ffffd7"
+    let s:yellow      = "#af8700"
+    let s:orange      = "#d75f00"
+    let s:red         = "#af0000"
+    let s:magenta     = "#af005f"
+    let s:violet      = "#5f5faf"
+    let s:blue        = "#0087ff"
+    let s:cyan        = "#00afaf"
+    let s:green       = "#5f8700"
+elseif g:solarized_termcolors != 256 && &t_Co >= 16
+    let s:vmode       = "cterm"
+    let s:base03      = "8"
+    let s:base02      = "0"
+    let s:base01      = "10"
+    let s:base00      = "11"
+    let s:base0       = "12"
+    let s:base1       = "14"
+    let s:base2       = "7"
+    let s:base3       = "15"
+    let s:yellow      = "3"
+    let s:orange      = "9"
+    let s:red         = "1"
+    let s:magenta     = "5"
+    let s:violet      = "13"
+    let s:blue        = "4"
+    let s:cyan        = "6"
+    let s:green       = "2"
+elseif g:solarized_termcolors == 256
+    let s:vmode       = "cterm"
+    let s:base03      = "234"
+    let s:base02      = "235"
+    let s:base01      = "239"
+    let s:base00      = "240"
+    let s:base0       = "244"
+    let s:base1       = "245"
+    let s:base2       = "187"
+    let s:base3       = "230"
+    let s:yellow      = "136"
+    let s:orange      = "166"
+    let s:red         = "124"
+    let s:magenta     = "125"
+    let s:violet      = "61"
+    let s:blue        = "33"
+    let s:cyan        = "37"
+    let s:green       = "64"
+else
+    let s:vmode       = "cterm"
+    let s:bright      = "* term=bold cterm=bold"
+"   let s:base03      = "0".s:bright
+"   let s:base02      = "0"
+"   let s:base01      = "2".s:bright
+"   let s:base00      = "3".s:bright
+"   let s:base0       = "4".s:bright
+"   let s:base1       = "6".s:bright
+"   let s:base2       = "7"
+"   let s:base3       = "7".s:bright
+"   let s:yellow      = "3"
+"   let s:orange      = "1".s:bright
+"   let s:red         = "1"
+"   let s:magenta     = "5"
+"   let s:violet      = "5".s:bright
+"   let s:blue        = "4"
+"   let s:cyan        = "6"
+"   let s:green       = "2"
+    let s:base03      = "DarkGray"      " 0*
+    let s:base02      = "Black"         " 0
+    let s:base01      = "LightGreen"    " 2*
+    let s:base00      = "LightYellow"   " 3*
+    let s:base0       = "LightBlue"     " 4*
+    let s:base1       = "LightCyan"     " 6*
+    let s:base2       = "LightGray"     " 7
+    let s:base3       = "White"         " 7*
+    let s:yellow      = "DarkYellow"    " 3
+    let s:orange      = "LightRed"      " 1*
+    let s:red         = "DarkRed"       " 1
+    let s:magenta     = "DarkMagenta"   " 5
+    let s:violet      = "LightMagenta"  " 5*
+    let s:blue        = "DarkBlue"      " 4
+    let s:cyan        = "DarkCyan"      " 6
+    let s:green       = "DarkGreen"     " 2
+
+endif
+"}}}
+" Formatting options and null values for passthrough effect "{{{
+" ---------------------------------------------------------------------
+    let s:none            = "NONE"
+    let s:none            = "NONE"
+    let s:t_none          = "NONE"
+    let s:n               = "NONE"
+    let s:c               = ",undercurl"
+    let s:r               = ",reverse"
+    let s:s               = ",standout"
+    let s:ou              = ""
+    let s:ob              = ""
+"}}}
+" Background value based on termtrans setting "{{{
+" ---------------------------------------------------------------------
+if (has("gui_running") || g:solarized_termtrans == 0)
+    let s:back        = s:base03
+else
+    let s:back        = "NONE"
+endif
+"}}}
+" Alternate light scheme "{{{
+" ---------------------------------------------------------------------
+if &background == "light"
+    let s:temp03      = s:base03
+    let s:temp02      = s:base02
+    let s:temp01      = s:base01
+    let s:temp00      = s:base00
+    let s:base03      = s:base3
+    let s:base02      = s:base2
+    let s:base01      = s:base1
+    let s:base00      = s:base0
+    let s:base0       = s:temp00
+    let s:base1       = s:temp01
+    let s:base2       = s:temp02
+    let s:base3       = s:temp03
+    if (s:back != "NONE")
+        let s:back    = s:base03
+    endif
+endif
+"}}}
+" Optional contrast schemes "{{{
+" ---------------------------------------------------------------------
+if g:solarized_contrast == "high"
+    let s:base01      = s:base00
+    let s:base00      = s:base0
+    let s:base0       = s:base1
+    let s:base1       = s:base2
+    let s:base2       = s:base3
+    let s:back        = s:back
+endif
+if g:solarized_contrast == "low"
+    let s:back        = s:base02
+    let s:ou          = ",underline"
+endif
+"}}}
+" Overrides dependent on user specified values and environment "{{{
+" ---------------------------------------------------------------------
+if (g:solarized_bold == 0 || &t_Co == 8 )
+    let s:b           = ""
+    let s:bb          = ",bold"
+else
+    let s:b           = ",bold"
+    let s:bb          = ""
+endif
+
+if g:solarized_underline == 0
+    let s:u           = ""
+else
+    let s:u           = ",underline"
+endif
+
+if g:solarized_italic == 0 || s:terminal_italic == 0
+    let s:i           = ""
+else
+    let s:i           = ",italic"
+endif
+"}}}
+" Highlighting primitives"{{{
+" ---------------------------------------------------------------------
+
+exe "let s:bg_none      = ' ".s:vmode."bg=".s:none   ."'"
+exe "let s:bg_back      = ' ".s:vmode."bg=".s:back   ."'"
+exe "let s:bg_base03    = ' ".s:vmode."bg=".s:base03 ."'"
+exe "let s:bg_base02    = ' ".s:vmode."bg=".s:base02 ."'"
+exe "let s:bg_base01    = ' ".s:vmode."bg=".s:base01 ."'"
+exe "let s:bg_base00    = ' ".s:vmode."bg=".s:base00 ."'"
+exe "let s:bg_base0     = ' ".s:vmode."bg=".s:base0  ."'"
+exe "let s:bg_base1     = ' ".s:vmode."bg=".s:base1  ."'"
+exe "let s:bg_base2     = ' ".s:vmode."bg=".s:base2  ."'"
+exe "let s:bg_base3     = ' ".s:vmode."bg=".s:base3  ."'"
+exe "let s:bg_green     = ' ".s:vmode."bg=".s:green  ."'"
+exe "let s:bg_yellow    = ' ".s:vmode."bg=".s:yellow ."'"
+exe "let s:bg_orange    = ' ".s:vmode."bg=".s:orange ."'"
+exe "let s:bg_red       = ' ".s:vmode."bg=".s:red    ."'"
+exe "let s:bg_magenta   = ' ".s:vmode."bg=".s:magenta."'"
+exe "let s:bg_violet    = ' ".s:vmode."bg=".s:violet ."'"
+exe "let s:bg_blue      = ' ".s:vmode."bg=".s:blue   ."'"
+exe "let s:bg_cyan      = ' ".s:vmode."bg=".s:cyan   ."'"
+
+exe "let s:fg_none      = ' ".s:vmode."fg=".s:none   ."'"
+exe "let s:fg_back      = ' ".s:vmode."fg=".s:back   ."'"
+exe "let s:fg_base03    = ' ".s:vmode."fg=".s:base03 ."'"
+exe "let s:fg_base02    = ' ".s:vmode."fg=".s:base02 ."'"
+exe "let s:fg_base01    = ' ".s:vmode."fg=".s:base01 ."'"
+exe "let s:fg_base00    = ' ".s:vmode."fg=".s:base00 ."'"
+exe "let s:fg_base0     = ' ".s:vmode."fg=".s:base0  ."'"
+exe "let s:fg_base1     = ' ".s:vmode."fg=".s:base1  ."'"
+exe "let s:fg_base2     = ' ".s:vmode."fg=".s:base2  ."'"
+exe "let s:fg_base3     = ' ".s:vmode."fg=".s:base3  ."'"
+exe "let s:fg_green     = ' ".s:vmode."fg=".s:green  ."'"
+exe "let s:fg_yellow    = ' ".s:vmode."fg=".s:yellow ."'"
+exe "let s:fg_orange    = ' ".s:vmode."fg=".s:orange ."'"
+exe "let s:fg_red       = ' ".s:vmode."fg=".s:red    ."'"
+exe "let s:fg_magenta   = ' ".s:vmode."fg=".s:magenta."'"
+exe "let s:fg_violet    = ' ".s:vmode."fg=".s:violet ."'"
+exe "let s:fg_blue      = ' ".s:vmode."fg=".s:blue   ."'"
+exe "let s:fg_cyan      = ' ".s:vmode."fg=".s:cyan   ."'"
+
+exe "let s:fmt_none     = ' ".s:vmode."=NONE".          " term=NONE".    "'"
+exe "let s:fmt_bold     = ' ".s:vmode."=NONE".s:b.      " term=NONE".s:b."'"
+exe "let s:fmt_bldi     = ' ".s:vmode."=NONE".s:b.      " term=NONE".s:b."'"
+exe "let s:fmt_undr     = ' ".s:vmode."=NONE".s:u.      " term=NONE".s:u."'"
+exe "let s:fmt_undb     = ' ".s:vmode."=NONE".s:u.s:b.  " term=NONE".s:u.s:b."'"
+exe "let s:fmt_undi     = ' ".s:vmode."=NONE".s:u.      " term=NONE".s:u."'"
+exe "let s:fmt_uopt     = ' ".s:vmode."=NONE".s:ou.     " term=NONE".s:ou."'"
+exe "let s:fmt_curl     = ' ".s:vmode."=NONE".s:c.      " term=NONE".s:c."'"
+exe "let s:fmt_ital     = ' ".s:vmode."=NONE".s:i.      " term=NONE".s:i."'"
+exe "let s:fmt_stnd     = ' ".s:vmode."=NONE".s:s.      " term=NONE".s:s."'"
+exe "let s:fmt_revr     = ' ".s:vmode."=NONE".s:r.      " term=NONE".s:r."'"
+exe "let s:fmt_revb     = ' ".s:vmode."=NONE".s:r.s:b.  " term=NONE".s:r.s:b."'"
+" revbb (reverse bold for bright colors) is only set to actual bold in low 
+" color terminals (t_co=8, such as OS X Terminal.app) and should only be used 
+" with colors 8-15.
+exe "let s:fmt_revbb    = ' ".s:vmode."=NONE".s:r.s:bb.   " term=NONE".s:r.s:bb."'"
+exe "let s:fmt_revbbu   = ' ".s:vmode."=NONE".s:r.s:bb.s:u." term=NONE".s:r.s:bb.s:u."'"
+
+if has("gui_running")
+    exe "let s:sp_none      = ' guisp=".s:none   ."'"
+    exe "let s:sp_back      = ' guisp=".s:back   ."'"
+    exe "let s:sp_base03    = ' guisp=".s:base03 ."'"
+    exe "let s:sp_base02    = ' guisp=".s:base02 ."'"
+    exe "let s:sp_base01    = ' guisp=".s:base01 ."'"
+    exe "let s:sp_base00    = ' guisp=".s:base00 ."'"
+    exe "let s:sp_base0     = ' guisp=".s:base0  ."'"
+    exe "let s:sp_base1     = ' guisp=".s:base1  ."'"
+    exe "let s:sp_base2     = ' guisp=".s:base2  ."'"
+    exe "let s:sp_base3     = ' guisp=".s:base3  ."'"
+    exe "let s:sp_green     = ' guisp=".s:green  ."'"
+    exe "let s:sp_yellow    = ' guisp=".s:yellow ."'"
+    exe "let s:sp_orange    = ' guisp=".s:orange ."'"
+    exe "let s:sp_red       = ' guisp=".s:red    ."'"
+    exe "let s:sp_magenta   = ' guisp=".s:magenta."'"
+    exe "let s:sp_violet    = ' guisp=".s:violet ."'"
+    exe "let s:sp_blue      = ' guisp=".s:blue   ."'"
+    exe "let s:sp_cyan      = ' guisp=".s:cyan   ."'"
+else
+    let s:sp_none      = ""
+    let s:sp_back      = ""
+    let s:sp_base03    = ""
+    let s:sp_base02    = ""
+    let s:sp_base01    = ""
+    let s:sp_base00    = ""
+    let s:sp_base0     = ""
+    let s:sp_base1     = ""
+    let s:sp_base2     = ""
+    let s:sp_base3     = ""
+    let s:sp_green     = ""
+    let s:sp_yellow    = ""
+    let s:sp_orange    = ""
+    let s:sp_red       = ""
+    let s:sp_magenta   = ""
+    let s:sp_violet    = ""
+    let s:sp_blue      = ""
+    let s:sp_cyan      = ""
+endif
+
+"}}}
+" Basic highlighting"{{{
+" ---------------------------------------------------------------------
+" note that link syntax to avoid duplicate configuration doesn't work with the
+" exe compiled formats
+
+exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
+
+exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
+"       *Comment         any comment
+
+exe "hi! Constant"       .s:fmt_none   .s:fg_cyan   .s:bg_none
+"       *Constant        any constant
+"        String          a string constant: "this is a string"
+"        Character       a character constant: 'c', '\n'
+"        Number          a number constant: 234, 0xff
+"        Boolean         a boolean constant: TRUE, false
+"        Float           a floating point constant: 2.3e10
+
+exe "hi! Identifier"     .s:fmt_none   .s:fg_blue   .s:bg_none
+"       *Identifier      any variable name
+"        Function        function name (also: methods for classes)
+"
+exe "hi! Statement"      .s:fmt_none   .s:fg_green  .s:bg_none
+"       *Statement       any statement
+"        Conditional     if, then, else, endif, switch, etc.
+"        Repeat          for, do, while, etc.
+"        Label           case, default, etc.
+"        Operator        "sizeof", "+", "*", etc.
+"        Keyword         any other keyword
+"        Exception       try, catch, throw
+
+exe "hi! PreProc"        .s:fmt_none   .s:fg_orange .s:bg_none
+"       *PreProc         generic Preprocessor
+"        Include         preprocessor #include
+"        Define          preprocessor #define
+"        Macro           same as Define
+"        PreCondit       preprocessor #if, #else, #endif, etc.
+
+exe "hi! Type"           .s:fmt_none   .s:fg_yellow .s:bg_none
+"       *Type            int, long, char, etc.
+"        StorageClass    static, register, volatile, etc.
+"        Structure       struct, union, enum, etc.
+"        Typedef         A typedef
+
+exe "hi! Special"        .s:fmt_none   .s:fg_red    .s:bg_none
+"       *Special         any special symbol
+"        SpecialChar     special character in a constant
+"        Tag             you can use CTRL-] on this
+"        Delimiter       character that needs attention
+"        SpecialComment  special things inside a comment
+"        Debug           debugging statements
+
+exe "hi! Underlined"     .s:fmt_none   .s:fg_violet .s:bg_none
+"       *Underlined      text that stands out, HTML links
+
+exe "hi! Ignore"         .s:fmt_none   .s:fg_none   .s:bg_none
+"       *Ignore          left blank, hidden  |hl-Ignore|
+
+exe "hi! Error"          .s:fmt_bold   .s:fg_red    .s:bg_none
+"       *Error           any erroneous construct
+
+exe "hi! Todo"           .s:fmt_bold   .s:fg_magenta.s:bg_none
+"       *Todo            anything that needs extra attention; mostly the
+"                        keywords TODO FIXME and XXX
+"
+"}}}
+" Extended highlighting "{{{
+" ---------------------------------------------------------------------
+if      (g:solarized_visibility=="high")
+    exe "hi! SpecialKey" .s:fmt_revr   .s:fg_red    .s:bg_none
+    exe "hi! NonText"    .s:fmt_bold   .s:fg_red    .s:bg_none
+elseif  (g:solarized_visibility=="low")
+    exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base02 .s:bg_none
+    exe "hi! NonText"    .s:fmt_bold   .s:fg_base02 .s:bg_none
+else
+    exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
+    exe "hi! NonText"    .s:fmt_bold   .s:fg_base00 .s:bg_none
+endif
+exe "hi! StatusLine"     .s:fmt_none   .s:fg_base1  .s:bg_base02 .s:fmt_revbb
+exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base00 .s:bg_base02 .s:fmt_revbb
+exe "hi! Visual"         .s:fmt_none   .s:fg_base01 .s:bg_base03 .s:fmt_revbb
+exe "hi! Directory"      .s:fmt_none   .s:fg_blue   .s:bg_none
+exe "hi! ErrorMsg"       .s:fmt_revr   .s:fg_red    .s:bg_none
+exe "hi! IncSearch"      .s:fmt_stnd   .s:fg_orange .s:bg_none
+exe "hi! Search"         .s:fmt_revr   .s:fg_yellow .s:bg_none
+exe "hi! MoreMsg"        .s:fmt_none   .s:fg_blue   .s:bg_none
+exe "hi! ModeMsg"        .s:fmt_none   .s:fg_blue   .s:bg_none
+exe "hi! LineNr"         .s:fmt_none   .s:fg_base01 .s:bg_base02
+exe "hi! Question"       .s:fmt_bold   .s:fg_cyan   .s:bg_none
+if ( has("gui_running") || &t_Co > 8 )
+    exe "hi! VertSplit"  .s:fmt_none   .s:fg_base00 .s:bg_base00
+else
+    exe "hi! VertSplit"  .s:fmt_revbb  .s:fg_base00 .s:bg_base02
+endif
+exe "hi! Title"          .s:fmt_bold   .s:fg_orange .s:bg_none
+exe "hi! VisualNOS"      .s:fmt_stnd   .s:fg_none   .s:bg_base02 .s:fmt_revbb
+exe "hi! WarningMsg"     .s:fmt_bold   .s:fg_red    .s:bg_none
+exe "hi! WildMenu"       .s:fmt_none   .s:fg_base2  .s:bg_base02 .s:fmt_revbb
+exe "hi! Folded"         .s:fmt_undb   .s:fg_base0  .s:bg_base02  .s:sp_base03
+exe "hi! FoldColumn"     .s:fmt_none   .s:fg_base0  .s:bg_base02
+if      (g:solarized_diffmode=="high")
+exe "hi! DiffAdd"        .s:fmt_revr   .s:fg_green  .s:bg_none
+exe "hi! DiffChange"     .s:fmt_revr   .s:fg_yellow .s:bg_none
+exe "hi! DiffDelete"     .s:fmt_revr   .s:fg_red    .s:bg_none
+exe "hi! DiffText"       .s:fmt_revr   .s:fg_blue   .s:bg_none
+elseif  (g:solarized_diffmode=="low")
+exe "hi! DiffAdd"        .s:fmt_undr   .s:fg_green  .s:bg_none   .s:sp_green
+exe "hi! DiffChange"     .s:fmt_undr   .s:fg_yellow .s:bg_none   .s:sp_yellow
+exe "hi! DiffDelete"     .s:fmt_bold   .s:fg_red    .s:bg_none
+exe "hi! DiffText"       .s:fmt_undr   .s:fg_blue   .s:bg_none   .s:sp_blue
+else " normal
+    if has("gui_running")
+exe "hi! DiffAdd"        .s:fmt_bold   .s:fg_green  .s:bg_base02 .s:sp_green
+exe "hi! DiffChange"     .s:fmt_bold   .s:fg_yellow .s:bg_base02 .s:sp_yellow
+exe "hi! DiffDelete"     .s:fmt_bold   .s:fg_red    .s:bg_base02
+exe "hi! DiffText"       .s:fmt_bold   .s:fg_blue   .s:bg_base02 .s:sp_blue
+    else
+exe "hi! DiffAdd"        .s:fmt_none   .s:fg_green  .s:bg_base02 .s:sp_green
+exe "hi! DiffChange"     .s:fmt_none   .s:fg_yellow .s:bg_base02 .s:sp_yellow
+exe "hi! DiffDelete"     .s:fmt_none   .s:fg_red    .s:bg_base02
+exe "hi! DiffText"       .s:fmt_none   .s:fg_blue   .s:bg_base02 .s:sp_blue
+    endif
+endif
+exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0
+exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
+exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
+exe "hi! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
+exe "hi! SpellRare"      .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_cyan
+exe "hi! SpellLocal"     .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_yellow
+exe "hi! Pmenu"          .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:fmt_revbb
+exe "hi! PmenuSel"       .s:fmt_none   .s:fg_base01 .s:bg_base2   .s:fmt_revbb
+exe "hi! PmenuSbar"      .s:fmt_none   .s:fg_base2  .s:bg_base0   .s:fmt_revbb
+exe "hi! PmenuThumb"     .s:fmt_none   .s:fg_base0  .s:bg_base03  .s:fmt_revbb
+exe "hi! TabLine"        .s:fmt_undr   .s:fg_base0  .s:bg_base02  .s:sp_base0
+exe "hi! TabLineFill"    .s:fmt_undr   .s:fg_base0  .s:bg_base02  .s:sp_base0
+exe "hi! TabLineSel"     .s:fmt_undr   .s:fg_base01 .s:bg_base2   .s:sp_base0  .s:fmt_revbbu
+exe "hi! CursorColumn"   .s:fmt_none   .s:fg_none   .s:bg_base02
+exe "hi! CursorLine"     .s:fmt_uopt   .s:fg_none   .s:bg_base02  .s:sp_base1
+exe "hi! ColorColumn"    .s:fmt_none   .s:fg_none   .s:bg_base02
+exe "hi! Cursor"         .s:fmt_none   .s:fg_base03 .s:bg_base0
+hi! link lCursor Cursor
+exe "hi! MatchParen"     .s:fmt_bold   .s:fg_red    .s:bg_base01
+
+"}}}
+" vim syntax highlighting "{{{
+" ---------------------------------------------------------------------
+"exe "hi! vimLineComment" . s:fg_base01 .s:bg_none   .s:fmt_ital
+"hi! link vimComment Comment
+"hi! link vimLineComment Comment
+hi! link vimVar Identifier
+hi! link vimFunc Function
+hi! link vimUserFunc Function
+hi! link helpSpecial Special
+hi! link vimSet Normal
+hi! link vimSetEqual Normal
+exe "hi! vimCommentString"  .s:fmt_none    .s:fg_violet .s:bg_none
+exe "hi! vimCommand"        .s:fmt_none    .s:fg_yellow .s:bg_none
+exe "hi! vimCmdSep"         .s:fmt_bold    .s:fg_blue   .s:bg_none
+exe "hi! helpExample"       .s:fmt_none    .s:fg_base1  .s:bg_none
+exe "hi! helpOption"        .s:fmt_none    .s:fg_cyan   .s:bg_none
+exe "hi! helpNote"          .s:fmt_none    .s:fg_magenta.s:bg_none
+exe "hi! helpVim"           .s:fmt_none    .s:fg_magenta.s:bg_none
+exe "hi! helpHyperTextJump" .s:fmt_undr    .s:fg_blue   .s:bg_none
+exe "hi! helpHyperTextEntry".s:fmt_none    .s:fg_green  .s:bg_none
+exe "hi! vimIsCommand"      .s:fmt_none    .s:fg_base00 .s:bg_none
+exe "hi! vimSynMtchOpt"     .s:fmt_none    .s:fg_yellow .s:bg_none
+exe "hi! vimSynType"        .s:fmt_none    .s:fg_cyan   .s:bg_none
+exe "hi! vimHiLink"         .s:fmt_none    .s:fg_blue   .s:bg_none
+exe "hi! vimHiGroup"        .s:fmt_none    .s:fg_blue   .s:bg_none
+exe "hi! vimGroup"          .s:fmt_undb    .s:fg_blue   .s:bg_none
+"}}}
+" diff highlighting "{{{
+" ---------------------------------------------------------------------
+hi! link diffAdded Statement
+hi! link diffLine Identifier
+"}}}
+" git & gitcommit highlighting "{{{
+"git
+"exe "hi! gitDateHeader"
+"exe "hi! gitIdentityHeader"
+"exe "hi! gitIdentityKeyword"
+"exe "hi! gitNotesHeader"
+"exe "hi! gitReflogHeader"
+"exe "hi! gitKeyword"
+"exe "hi! gitIdentity"
+"exe "hi! gitEmailDelimiter"
+"exe "hi! gitEmail"
+"exe "hi! gitDate"
+"exe "hi! gitMode"
+"exe "hi! gitHashAbbrev"
+"exe "hi! gitHash"
+"exe "hi! gitReflogMiddle"
+"exe "hi! gitReference"
+"exe "hi! gitStage"
+"exe "hi! gitType"
+"exe "hi! gitDiffAdded"
+"exe "hi! gitDiffRemoved"
+"gitcommit
+"exe "hi! gitcommitSummary"      
+exe "hi! gitcommitComment"      .s:fmt_ital     .s:fg_base01    .s:bg_none
+hi! link gitcommitUntracked gitcommitComment
+hi! link gitcommitDiscarded gitcommitComment
+hi! link gitcommitSelected  gitcommitComment
+exe "hi! gitcommitUnmerged"     .s:fmt_bold     .s:fg_green     .s:bg_none
+exe "hi! gitcommitOnBranch"     .s:fmt_bold     .s:fg_base01    .s:bg_none
+exe "hi! gitcommitBranch"       .s:fmt_bold     .s:fg_magenta   .s:bg_none
+hi! link gitcommitNoBranch gitcommitBranch
+exe "hi! gitcommitDiscardedType".s:fmt_none     .s:fg_red       .s:bg_none
+exe "hi! gitcommitSelectedType" .s:fmt_none     .s:fg_green     .s:bg_none
+"exe "hi! gitcommitUnmergedType"
+"exe "hi! gitcommitType"
+"exe "hi! gitcommitNoChanges"
+"exe "hi! gitcommitHeader"
+exe "hi! gitcommitHeader"       .s:fmt_none     .s:fg_base01    .s:bg_none
+exe "hi! gitcommitUntrackedFile".s:fmt_bold     .s:fg_cyan      .s:bg_none
+exe "hi! gitcommitDiscardedFile".s:fmt_bold     .s:fg_red       .s:bg_none
+exe "hi! gitcommitSelectedFile" .s:fmt_bold     .s:fg_green     .s:bg_none
+exe "hi! gitcommitUnmergedFile" .s:fmt_bold     .s:fg_yellow    .s:bg_none
+exe "hi! gitcommitFile"         .s:fmt_bold     .s:fg_base0     .s:bg_none
+hi! link gitcommitDiscardedArrow gitcommitDiscardedFile
+hi! link gitcommitSelectedArrow  gitcommitSelectedFile
+hi! link gitcommitUnmergedArrow  gitcommitUnmergedFile
+"exe "hi! gitcommitArrow"
+"exe "hi! gitcommitOverflow"
+"exe "hi! gitcommitBlank"
+" }}}
+" html highlighting "{{{
+" ---------------------------------------------------------------------
+exe "hi! htmlTag"           .s:fmt_none .s:fg_base01 .s:bg_none
+exe "hi! htmlEndTag"        .s:fmt_none .s:fg_base01 .s:bg_none
+exe "hi! htmlTagN"          .s:fmt_bold .s:fg_base1  .s:bg_none
+exe "hi! htmlTagName"       .s:fmt_bold .s:fg_blue   .s:bg_none
+exe "hi! htmlSpecialTagName".s:fmt_ital .s:fg_blue   .s:bg_none
+exe "hi! htmlArg"           .s:fmt_none .s:fg_base00 .s:bg_none
+exe "hi! javaScript"        .s:fmt_none .s:fg_yellow .s:bg_none
+"}}}
+" perl highlighting "{{{
+" ---------------------------------------------------------------------
+exe "hi! perlHereDoc"    . s:fg_base1  .s:bg_back   .s:fmt_none
+exe "hi! perlVarPlain"   . s:fg_yellow .s:bg_back   .s:fmt_none
+exe "hi! perlStatementFileDesc". s:fg_cyan.s:bg_back.s:fmt_none
+
+"}}}
+" tex highlighting "{{{
+" ---------------------------------------------------------------------
+exe "hi! texStatement"   . s:fg_cyan   .s:bg_back   .s:fmt_none
+exe "hi! texMathZoneX"   . s:fg_yellow .s:bg_back   .s:fmt_none
+exe "hi! texMathMatcher" . s:fg_yellow .s:bg_back   .s:fmt_none
+exe "hi! texMathMatcher" . s:fg_yellow .s:bg_back   .s:fmt_none
+exe "hi! texRefLabel"    . s:fg_yellow .s:bg_back   .s:fmt_none
+"}}}
+" ruby highlighting "{{{
+" ---------------------------------------------------------------------
+exe "hi! rubyDefine"     . s:fg_base1  .s:bg_back   .s:fmt_bold
+"rubyInclude
+"rubySharpBang
+"rubyAccess
+"rubyPredefinedVariable
+"rubyBoolean
+"rubyClassVariable
+"rubyBeginEnd
+"rubyRepeatModifier
+"hi! link rubyArrayDelimiter    Special  " [ , , ]
+"rubyCurlyBlock  { , , }
+
+"hi! link rubyClass             Keyword
+"hi! link rubyModule            Keyword
+"hi! link rubyKeyword           Keyword
+"hi! link rubyOperator          Operator
+"hi! link rubyIdentifier        Identifier
+"hi! link rubyInstanceVariable  Identifier
+"hi! link rubyGlobalVariable    Identifier
+"hi! link rubyClassVariable     Identifier
+"hi! link rubyConstant          Type
+"}}}
+" haskell syntax highlighting"{{{
+" ---------------------------------------------------------------------
+" For use with syntax/haskell.vim : Haskell Syntax File
+" http://www.vim.org/scripts/script.php?script_id=3034
+" See also Steffen Siering's github repository:
+" http://github.com/urso/dotrc/blob/master/vim/syntax/haskell.vim
+" ---------------------------------------------------------------------
+"
+" Treat True and False specially, see the plugin referenced above
+let hs_highlight_boolean=1
+" highlight delims, see the plugin referenced above
+let hs_highlight_delimiters=1
+
+exe "hi! cPreCondit". s:fg_orange.s:bg_none   .s:fmt_none
+
+exe "hi! VarId"    . s:fg_blue   .s:bg_none   .s:fmt_none
+exe "hi! ConId"    . s:fg_yellow .s:bg_none   .s:fmt_none
+exe "hi! hsImport" . s:fg_magenta.s:bg_none   .s:fmt_none
+exe "hi! hsString" . s:fg_base00 .s:bg_none   .s:fmt_none
+
+exe "hi! hsStructure"        . s:fg_cyan   .s:bg_none   .s:fmt_none
+exe "hi! hs_hlFunctionName"  . s:fg_blue   .s:bg_none
+exe "hi! hsStatement"        . s:fg_cyan   .s:bg_none   .s:fmt_none
+exe "hi! hsImportLabel"      . s:fg_cyan   .s:bg_none   .s:fmt_none
+exe "hi! hs_OpFunctionName"  . s:fg_yellow .s:bg_none   .s:fmt_none
+exe "hi! hs_DeclareFunction" . s:fg_orange .s:bg_none   .s:fmt_none
+exe "hi! hsVarSym"           . s:fg_cyan   .s:bg_none   .s:fmt_none
+exe "hi! hsType"             . s:fg_yellow .s:bg_none   .s:fmt_none
+exe "hi! hsTypedef"          . s:fg_cyan   .s:bg_none   .s:fmt_none
+exe "hi! hsModuleName"       . s:fg_green  .s:bg_none   .s:fmt_undr
+exe "hi! hsModuleStartLabel" . s:fg_magenta.s:bg_none   .s:fmt_none
+hi! link hsImportParams      Delimiter
+hi! link hsDelimTypeExport   Delimiter
+hi! link hsModuleStartLabel  hsStructure
+hi! link hsModuleWhereLabel  hsModuleStartLabel
+
+" following is for the haskell-conceal plugin
+" the first two items don't have an impact, but better safe
+exe "hi! hsNiceOperator"     . s:fg_cyan   .s:bg_none   .s:fmt_none
+exe "hi! hsniceoperator"     . s:fg_cyan   .s:bg_none   .s:fmt_none
+
+"}}}
+" pandoc markdown syntax highlighting "{{{
+" ---------------------------------------------------------------------
+
+"PandocHiLink pandocNormalBlock
+exe "hi! pandocTitleBlock"               .s:fg_blue   .s:bg_none   .s:fmt_none
+exe "hi! pandocTitleBlockTitle"          .s:fg_blue   .s:bg_none   .s:fmt_bold
+exe "hi! pandocTitleComment"             .s:fg_blue   .s:bg_none   .s:fmt_bold
+exe "hi! pandocComment"                  .s:fg_base01 .s:bg_none   .s:fmt_ital
+exe "hi! pandocVerbatimBlock"            .s:fg_yellow .s:bg_none   .s:fmt_none
+hi! link pandocVerbatimBlockDeep         pandocVerbatimBlock
+hi! link pandocCodeBlock                 pandocVerbatimBlock
+hi! link pandocCodeBlockDelim            pandocVerbatimBlock
+exe "hi! pandocBlockQuote"               .s:fg_blue   .s:bg_none   .s:fmt_none
+exe "hi! pandocBlockQuoteLeader1"        .s:fg_blue   .s:bg_none   .s:fmt_none
+exe "hi! pandocBlockQuoteLeader2"        .s:fg_cyan   .s:bg_none   .s:fmt_none
+exe "hi! pandocBlockQuoteLeader3"        .s:fg_yellow .s:bg_none   .s:fmt_none
+exe "hi! pandocBlockQuoteLeader4"        .s:fg_red    .s:bg_none   .s:fmt_none
+exe "hi! pandocBlockQuoteLeader5"        .s:fg_base0  .s:bg_none   .s:fmt_none
+exe "hi! pandocBlockQuoteLeader6"        .s:fg_base01 .s:bg_none   .s:fmt_none
+exe "hi! pandocListMarker"               .s:fg_magenta.s:bg_none   .s:fmt_none
+exe "hi! pandocListReference"            .s:fg_magenta.s:bg_none   .s:fmt_undr
+
+" Definitions
+" ---------------------------------------------------------------------
+let s:fg_pdef = s:fg_violet
+exe "hi! pandocDefinitionBlock"              .s:fg_pdef  .s:bg_none  .s:fmt_none
+exe "hi! pandocDefinitionTerm"               .s:fg_pdef  .s:bg_none  .s:fmt_stnd
+exe "hi! pandocDefinitionIndctr"             .s:fg_pdef  .s:bg_none  .s:fmt_bold
+exe "hi! pandocEmphasisDefinition"           .s:fg_pdef  .s:bg_none  .s:fmt_ital
+exe "hi! pandocEmphasisNestedDefinition"     .s:fg_pdef  .s:bg_none  .s:fmt_bldi
+exe "hi! pandocStrongEmphasisDefinition"     .s:fg_pdef  .s:bg_none  .s:fmt_bold
+exe "hi! pandocStrongEmphasisNestedDefinition"   .s:fg_pdef.s:bg_none.s:fmt_bldi
+exe "hi! pandocStrongEmphasisEmphasisDefinition" .s:fg_pdef.s:bg_none.s:fmt_bldi
+exe "hi! pandocStrikeoutDefinition"          .s:fg_pdef  .s:bg_none  .s:fmt_revr
+exe "hi! pandocVerbatimInlineDefinition"     .s:fg_pdef  .s:bg_none  .s:fmt_none
+exe "hi! pandocSuperscriptDefinition"        .s:fg_pdef  .s:bg_none  .s:fmt_none
+exe "hi! pandocSubscriptDefinition"          .s:fg_pdef  .s:bg_none  .s:fmt_none
+
+" Tables
+" ---------------------------------------------------------------------
+let s:fg_ptable = s:fg_blue
+exe "hi! pandocTable"                        .s:fg_ptable.s:bg_none  .s:fmt_none
+exe "hi! pandocTableStructure"               .s:fg_ptable.s:bg_none  .s:fmt_none
+hi! link pandocTableStructureTop             pandocTableStructre
+hi! link pandocTableStructureEnd             pandocTableStructre
+exe "hi! pandocTableZebraLight"              .s:fg_ptable.s:bg_base03.s:fmt_none
+exe "hi! pandocTableZebraDark"               .s:fg_ptable.s:bg_base02.s:fmt_none
+exe "hi! pandocEmphasisTable"                .s:fg_ptable.s:bg_none  .s:fmt_ital
+exe "hi! pandocEmphasisNestedTable"          .s:fg_ptable.s:bg_none  .s:fmt_bldi
+exe "hi! pandocStrongEmphasisTable"          .s:fg_ptable.s:bg_none  .s:fmt_bold
+exe "hi! pandocStrongEmphasisNestedTable"    .s:fg_ptable.s:bg_none  .s:fmt_bldi
+exe "hi! pandocStrongEmphasisEmphasisTable"  .s:fg_ptable.s:bg_none  .s:fmt_bldi
+exe "hi! pandocStrikeoutTable"               .s:fg_ptable.s:bg_none  .s:fmt_revr
+exe "hi! pandocVerbatimInlineTable"          .s:fg_ptable.s:bg_none  .s:fmt_none
+exe "hi! pandocSuperscriptTable"             .s:fg_ptable.s:bg_none  .s:fmt_none
+exe "hi! pandocSubscriptTable"               .s:fg_ptable.s:bg_none  .s:fmt_none
+
+" Headings
+" ---------------------------------------------------------------------
+let s:fg_phead = s:fg_orange
+exe "hi! pandocHeading"                      .s:fg_phead .s:bg_none.s:fmt_bold
+exe "hi! pandocHeadingMarker"                .s:fg_yellow.s:bg_none.s:fmt_bold
+exe "hi! pandocEmphasisHeading"              .s:fg_phead .s:bg_none.s:fmt_bldi
+exe "hi! pandocEmphasisNestedHeading"        .s:fg_phead .s:bg_none.s:fmt_bldi
+exe "hi! pandocStrongEmphasisHeading"        .s:fg_phead .s:bg_none.s:fmt_bold
+exe "hi! pandocStrongEmphasisNestedHeading"  .s:fg_phead .s:bg_none.s:fmt_bldi
+exe "hi! pandocStrongEmphasisEmphasisHeading".s:fg_phead .s:bg_none.s:fmt_bldi
+exe "hi! pandocStrikeoutHeading"             .s:fg_phead .s:bg_none.s:fmt_revr
+exe "hi! pandocVerbatimInlineHeading"        .s:fg_phead .s:bg_none.s:fmt_bold
+exe "hi! pandocSuperscriptHeading"           .s:fg_phead .s:bg_none.s:fmt_bold
+exe "hi! pandocSubscriptHeading"             .s:fg_phead .s:bg_none.s:fmt_bold
+
+" Links
+" ---------------------------------------------------------------------
+exe "hi! pandocLinkDelim"                .s:fg_base01 .s:bg_none   .s:fmt_none
+exe "hi! pandocLinkLabel"                .s:fg_blue   .s:bg_none   .s:fmt_undr
+exe "hi! pandocLinkText"                 .s:fg_blue   .s:bg_none   .s:fmt_undb
+exe "hi! pandocLinkURL"                  .s:fg_base00 .s:bg_none   .s:fmt_undr
+exe "hi! pandocLinkTitle"                .s:fg_base00 .s:bg_none   .s:fmt_undi
+exe "hi! pandocLinkTitleDelim"           .s:fg_base01 .s:bg_none   .s:fmt_undi   .s:sp_base00
+exe "hi! pandocLinkDefinition"           .s:fg_cyan   .s:bg_none   .s:fmt_undr   .s:sp_base00
+exe "hi! pandocLinkDefinitionID"         .s:fg_blue   .s:bg_none   .s:fmt_bold
+exe "hi! pandocImageCaption"             .s:fg_violet .s:bg_none   .s:fmt_undb
+exe "hi! pandocFootnoteLink"             .s:fg_green  .s:bg_none   .s:fmt_undr
+exe "hi! pandocFootnoteDefLink"          .s:fg_green  .s:bg_none   .s:fmt_bold
+exe "hi! pandocFootnoteInline"           .s:fg_green  .s:bg_none   .s:fmt_undb
+exe "hi! pandocFootnote"                 .s:fg_green  .s:bg_none   .s:fmt_none
+exe "hi! pandocCitationDelim"            .s:fg_magenta.s:bg_none   .s:fmt_none
+exe "hi! pandocCitation"                 .s:fg_magenta.s:bg_none   .s:fmt_none
+exe "hi! pandocCitationID"               .s:fg_magenta.s:bg_none   .s:fmt_undr
+exe "hi! pandocCitationRef"              .s:fg_magenta.s:bg_none   .s:fmt_none
+
+" Main Styles
+" ---------------------------------------------------------------------
+exe "hi! pandocStyleDelim"               .s:fg_base01 .s:bg_none  .s:fmt_none
+exe "hi! pandocEmphasis"                 .s:fg_base0  .s:bg_none  .s:fmt_ital
+exe "hi! pandocEmphasisNested"           .s:fg_base0  .s:bg_none  .s:fmt_bldi
+exe "hi! pandocStrongEmphasis"           .s:fg_base0  .s:bg_none  .s:fmt_bold
+exe "hi! pandocStrongEmphasisNested"     .s:fg_base0  .s:bg_none  .s:fmt_bldi
+exe "hi! pandocStrongEmphasisEmphasis"   .s:fg_base0  .s:bg_none  .s:fmt_bldi
+exe "hi! pandocStrikeout"                .s:fg_base01 .s:bg_none  .s:fmt_revr
+exe "hi! pandocVerbatimInline"           .s:fg_yellow .s:bg_none  .s:fmt_none
+exe "hi! pandocSuperscript"              .s:fg_violet .s:bg_none  .s:fmt_none
+exe "hi! pandocSubscript"                .s:fg_violet .s:bg_none  .s:fmt_none
+
+exe "hi! pandocRule"                     .s:fg_blue   .s:bg_none  .s:fmt_bold
+exe "hi! pandocRuleLine"                 .s:fg_blue   .s:bg_none  .s:fmt_bold
+exe "hi! pandocEscapePair"               .s:fg_red    .s:bg_none  .s:fmt_bold
+exe "hi! pandocCitationRef"              .s:fg_magenta.s:bg_none   .s:fmt_none
+exe "hi! pandocNonBreakingSpace"         . s:fg_red   .s:bg_none  .s:fmt_revr
+hi! link pandocEscapedCharacter          pandocEscapePair
+hi! link pandocLineBreak                 pandocEscapePair
+
+" Embedded Code
+" ---------------------------------------------------------------------
+exe "hi! pandocMetadataDelim"            .s:fg_base01 .s:bg_none   .s:fmt_none
+exe "hi! pandocMetadata"                 .s:fg_blue   .s:bg_none   .s:fmt_none
+exe "hi! pandocMetadataKey"              .s:fg_blue   .s:bg_none   .s:fmt_none
+exe "hi! pandocMetadata"                 .s:fg_blue   .s:bg_none   .s:fmt_bold
+hi! link pandocMetadataTitle             pandocMetadata
+
+"}}}
+" Utility autocommand "{{{
+" ---------------------------------------------------------------------
+" In cases where Solarized is initialized inside a terminal vim session and 
+" then transferred to a gui session via the command `:gui`, the gui vim process 
+" does not re-read the colorscheme (or .vimrc for that matter) so any `has_gui` 
+" related code that sets gui specific values isn't executed.
+"
+" Currently, Solarized sets only the cterm or gui values for the colorscheme 
+" depending on gui or terminal mode. It's possible that, if the following 
+" autocommand method is deemed excessively poor form, that approach will be 
+" used again and the autocommand below will be dropped.
+"
+" However it seems relatively benign in this case to include the autocommand 
+" here. It fires only in cases where vim is transferring from terminal to gui 
+" mode (detected with the script scope s:vmode variable). It also allows for 
+" other potential terminal customizations that might make gui mode suboptimal.
+"
+autocmd GUIEnter * if (s:vmode != "gui") | exe "colorscheme " . g:colors_name | endif
+"}}}
+" Highlight Trailing Space {{{
+" Experimental: Different highlight when on cursorline
+function! s:SolarizedHiTrail()
+    if g:solarized_hitrail==0
+        hi! clear solarizedTrailingSpace
+    else
+        syn match solarizedTrailingSpace "\s*$"
+        exe "hi! solarizedTrailingSpace " .s:fmt_undr .s:fg_red .s:bg_none .s:sp_red
+    endif
+endfunction  
+augroup SolarizedHiTrail
+    autocmd!
+    if g:solarized_hitrail==1
+        autocmd! Syntax * call s:SolarizedHiTrail()
+        autocmd! ColorScheme * if g:colors_name == "solarized" | call s:SolarizedHiTrail() | else | augroup! s:SolarizedHiTrail | endif
+    endif
+augroup END
+" }}}
+" Menus "{{{
+" ---------------------------------------------------------------------
+" Turn off Solarized menu by including the following assignment in your .vimrc:
+"
+"    let g:solarized_menu=0
+
+function! s:SolarizedOptions()
+    new "new buffer
+    setf vim "vim filetype
+    let failed = append(0, s:defaults_list)
+    let failed = append(0, s:colorscheme_list)
+    let failed = append(0, s:options_list)
+    let failed = append(0, s:lazycat_list)
+    0 "jump back to the top
+endfunction
+if !exists(":SolarizedOptions")
+    command SolarizedOptions :call s:SolarizedOptions()
+endif
+
+function! SolarizedMenu()
+    if exists("g:loaded_solarized_menu")
+        try
+            silent! aunmenu Solarized
+        endtry
+    endif
+    let g:loaded_solarized_menu = 1
+
+    if g:colors_name == "solarized" && g:solarized_menu != 0
+
+        amenu &Solarized.&Contrast.&Low\ Contrast        :let g:solarized_contrast="low"       \| colorscheme solarized<CR>
+        amenu &Solarized.&Contrast.&Normal\ Contrast     :let g:solarized_contrast="normal"    \| colorscheme solarized<CR>
+        amenu &Solarized.&Contrast.&High\ Contrast       :let g:solarized_contrast="high"      \| colorscheme solarized<CR>
+        an    &Solarized.&Contrast.-sep-                 <Nop>
+        amenu &Solarized.&Contrast.&Help:\ Contrast      :help 'solarized_contrast'<CR>
+
+        amenu &Solarized.&Visibility.&Low\ Visibility    :let g:solarized_visibility="low"     \| colorscheme solarized<CR>
+        amenu &Solarized.&Visibility.&Normal\ Visibility :let g:solarized_visibility="normal"  \| colorscheme solarized<CR>
+        amenu &Solarized.&Visibility.&High\ Visibility   :let g:solarized_visibility="high"    \| colorscheme solarized<CR>
+        an    &Solarized.&Visibility.-sep-                 <Nop>
+        amenu &Solarized.&Visibility.&Help:\ Visibility    :help 'solarized_visibility'<CR>
+
+        amenu &Solarized.&Background.&Toggle\ Background :ToggleBG<CR>
+        amenu &Solarized.&Background.&Dark\ Background   :set background=dark  \| colorscheme solarized<CR>
+        amenu &Solarized.&Background.&Light\ Background  :set background=light \| colorscheme solarized<CR>
+        an    &Solarized.&Background.-sep-               <Nop>
+        amenu &Solarized.&Background.&Help:\ ToggleBG     :help togglebg<CR>
+
+        if g:solarized_bold==0 | let l:boldswitch="On" | else | let l:boldswitch="Off" | endif
+        exe "amenu &Solarized.&Styling.&Turn\\ Bold\\ ".l:boldswitch." :let g:solarized_bold=(abs(g:solarized_bold-1)) \\| colorscheme solarized<CR>"
+        if g:solarized_italic==0 | let l:italicswitch="On" | else | let l:italicswitch="Off" | endif
+        exe "amenu &Solarized.&Styling.&Turn\\ Italic\\ ".l:italicswitch." :let g:solarized_italic=(abs(g:solarized_italic-1)) \\| colorscheme solarized<CR>"
+        if g:solarized_underline==0 | let l:underlineswitch="On" | else | let l:underlineswitch="Off" | endif
+        exe "amenu &Solarized.&Styling.&Turn\\ Underline\\ ".l:underlineswitch." :let g:solarized_underline=(abs(g:solarized_underline-1)) \\| colorscheme solarized<CR>"
+
+        amenu &Solarized.&Diff\ Mode.&Low\ Diff\ Mode    :let g:solarized_diffmode="low"     \| colorscheme solarized<CR>
+        amenu &Solarized.&Diff\ Mode.&Normal\ Diff\ Mode :let g:solarized_diffmode="normal"  \| colorscheme solarized<CR>
+        amenu &Solarized.&Diff\ Mode.&High\ Diff\ Mode   :let g:solarized_diffmode="high"    \| colorscheme solarized<CR>
+
+        if g:solarized_hitrail==0 | let l:hitrailswitch="On" | else | let l:hitrailswitch="Off" | endif
+        exe "amenu &Solarized.&Experimental.&Turn\\ Highlight\\ Trailing\\ Spaces\\ ".l:hitrailswitch." :let g:solarized_hitrail=(abs(g:solarized_hitrail-1)) \\| colorscheme solarized<CR>"
+        an    &Solarized.&Experimental.-sep-               <Nop>
+        amenu &Solarized.&Experimental.&Help:\ HiTrail    :help 'solarized_hitrail'<CR>
+
+        an    &Solarized.-sep1-                          <Nop>
+
+        amenu &Solarized.&Autogenerate\ options          :SolarizedOptions<CR>
+
+        an    &Solarized.-sep2-                          <Nop>
+
+        amenu &Solarized.&Help.&Solarized\ Help          :help solarized<CR>
+        amenu &Solarized.&Help.&Toggle\ Background\ Help :help togglebg<CR>
+        amenu &Solarized.&Help.&Removing\ This\ Menu     :help solarized-menu<CR>
+
+        an 9999.77 &Help.&Solarized\ Colorscheme         :help solarized<CR>
+        an 9999.78 &Help.&Toggle\ Background             :help togglebg<CR>
+        an 9999.79 &Help.-sep3-                          <Nop>
+
+    endif
+endfunction
+
+autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarized | else | call SolarizedMenu() | endif
+
+"}}}
+" License "{{{
+" ---------------------------------------------------------------------
+"
+" Copyright (c) 2011 Ethan Schoonover
+"
+" Permission is hereby granted, free of charge, to any person obtaining a copy
+" of this software and associated documentation files (the "Software"), to deal
+" in the Software without restriction, including without limitation the rights
+" to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+" copies of the Software, and to permit persons to whom the Software is
+" furnished to do so, subject to the following conditions:
+"
+" The above copyright notice and this permission notice shall be included in
+" all copies or substantial portions of the Software.
+"
+" THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+" FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+" AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+" LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+" OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+" THE SOFTWARE.
+"
+" vim:foldmethod=marker:foldlevel=0
+"}}}
