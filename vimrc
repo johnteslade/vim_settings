@@ -61,6 +61,7 @@ else
     let g:ack_default_options = " -H --nocolor --nogroup --column"
 endif
 
+set t_Co=256 " Force terminal to 256
 
 set helplang=en
 set history=50
@@ -69,9 +70,8 @@ set isfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=,:
 set mouse=a
 set ruler
 set termencoding=utf-8
-set viminfo='20,\"50
 set window=69
-set number
+set number " Show line numbers
 
 " Tab Settings
 set tabstop=4
@@ -190,11 +190,16 @@ au FileType python setl shiftwidth=4 tabstop=4
 " Setup tags to recurse back up tree
 set tags=tags;/
 
-" F key mappings
+" Function key mappings
+
 map <F2> :NERDTreeToggle<CR>
-map <F3> :TlistToggle<CR>
+" Loader definitions
+map <F3> :TlistToggle<CR> 
+" Build
 map <F7> :make<CR>
+" Close buffer and keep window layout (Ctrl for discard changes)
 map <F11> :bn<CR> :bd# <CR>
+map <C-F11> :bn!<CR> :bd! # <CR>
 
 " vim pipe
 let &splitright=1
