@@ -17,6 +17,22 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 
+" Colorschemes
+
+Plugin 'morhetz/gruvbox'
+Plugin 'vim-scripts/herald.vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jnurmine/Zenburn'
+Plugin '29decibel/codeschool-vim-theme'
+Plugin 'endel/vim-github-colorscheme'
+Plugin 'twerth/ir_black'
+Plugin 'vim-scripts/moria'
+Plugin 'vim-scripts/nuvola.vim'
+Plugin 'vim-scripts/Wombat'
+
+filetype plugin indent on "required!
+
 set background=dark
 set backspace=indent,eol,start
 set cscopeprg=/usr/bin/cscope
