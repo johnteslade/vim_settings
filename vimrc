@@ -204,6 +204,7 @@ map <C-F11> :bn!<CR> :bd! # <CR>
 " vim pipe
 let &splitright=1
 autocmd FileType python let b:vimpipe_command="python"
+autocmd FileType c let b:vimpipe_command="gcc -Wall -x c - && ./a.out"
 
 " pylint settings
 autocmd FileType python set makeprg=pylint\ --reports=n\ --msg-template=\"{path}:{line}:\ {msg_id}\ {symbol},\ {obj}\ {msg}\"\ %:p
