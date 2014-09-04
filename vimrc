@@ -1,7 +1,6 @@
 " Setup vundle
 set rtp+=~/.vim/bundle/vundle/
-let path = '~/.vim/plugin/vundle_installed/'
-call vundle#rc(path)
+call vundle#rc()
 
 Plugin 'techlivezheng/vim-plugin-minibufexpl'
 Plugin 'taglist.vim'
