@@ -162,7 +162,6 @@ noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
-
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
@@ -210,6 +209,8 @@ autocmd FileType c let b:vimpipe_command="gcc -Wall -x c - && ./a.out"
 autocmd FileType python set makeprg=pylint\ --reports=n\ --msg-template=\"{path}:{line}:\ {msg_id}\ {symbol},\ {obj}\ {msg}\"\ %:p
 autocmd FileType python set errorformat=%f:%l:\ %m
 
+autocmd FileType c set makeprg=make
+
 " Create ctags
 command! Tags !ctags -R && cscope -Rb
  
@@ -220,6 +221,7 @@ let g:CommandTMinHeight=20
 let g:CommandTMaxHeight=20
 let g:CommandTCursorStartMap='<Home>'
 let g:CommandTCursorEndMap='<End>'
+let g:CommandTMaxFiles=50000
 
 " Ack search
 map <leader>a :Ack <cword><CR>
