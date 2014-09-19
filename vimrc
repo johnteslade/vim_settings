@@ -16,6 +16,7 @@ Plugin 'wincent/Command-T'
 Plugin 'Yggdroot/indentLine'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ShowTrailingWhitespace'
 
 " Colorschemes
 
@@ -85,6 +86,15 @@ set smartindent
 " Force minibuf to start - prevents problems with using command-T
 let g:miniBufExplAutoStart = 1
 let g:miniBufExplBuffersNeeded = 0
+
+" Fixing Whitespace problems
+function! s:FixWhitespace(line1,line2)
+    let l:save_cursor = getpos(".")
+    silent! execute ':' . a:line1 . ',' . a:line2 . 's/\s\+$//'
+    call setpos('.', l:save_cursor)
+endfunction
+command! -range=% FixWhitespace call <SID>FixWhitespace(<line1>,<line2>)
+vnoremap <F6> :FixWhitespace <CR>
 
 " Copy to clipboard
 
