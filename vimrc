@@ -97,9 +97,11 @@ nnoremap <leader>cf :let @+=expand("%:t")<CR>
 " directory name (/something/src)
 nnoremap <leader>cd :let @+=expand("%:p:h")<CR>
 
+" Indent
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 " Font sizes
-
 nmap <F10> <Plug>FontsizeInc
 nmap <F9> <Plug>FontsizeDec
 
