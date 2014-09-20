@@ -81,6 +81,7 @@ set smarttab
 set expandtab
 set autoindent
 set smartindent
+set guioptions-=T guioptions-=m " No tool bars
 
 " Force minibuf to start - prevents problems with using command-T
 let g:miniBufExplAutoStart = 1
@@ -119,6 +120,12 @@ function! ToggleColMarkings()
     echo "Columns not marked"
   endif
 endfunction
+
+" Fullscreen
+
+map <silent> <F6>
+    \   :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
+
 
 """"" COLORS
 set background=dark
