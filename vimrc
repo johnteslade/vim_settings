@@ -16,6 +16,7 @@ Plugin 'wincent/Command-T'
 Plugin 'Yggdroot/indentLine'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ShowTrailingWhitespace'
 
 " Colorschemes
 
@@ -47,7 +48,7 @@ set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver
 "set guifont=Liberation\ Mono\ 10
 "set guifont=Monaco\ 10
 "set guifont=DroidSansMono\ 10
-"set guifont=DejaVuSansMono\ 9 
+"set guifont=DejaVuSansMono\ 9
 "set guifont=CodingFontTobi\ 12
 "set guifont=Monaco\ 9
 
@@ -87,6 +88,15 @@ set guioptions-=T guioptions-=m " No tool bars
 let g:miniBufExplAutoStart = 1
 let g:miniBufExplBuffersNeeded = 0
 
+" Fixing Whitespace problems
+function! s:FixWhitespace(line1,line2)
+    let l:save_cursor = getpos(".")
+    silent! execute ':' . a:line1 . ',' . a:line2 . 's/\s\+$//'
+    call setpos('.', l:save_cursor)
+endfunction
+command! -range=% FixWhitespace call <SID>FixWhitespace(<line1>,<line2>)
+vnoremap <F6> :FixWhitespace <CR>
+
 " Copy to clipboard
 
 " relative path (src/foo.txt)
@@ -98,9 +108,11 @@ nnoremap <leader>cf :let @+=expand("%:t")<CR>
 " directory name (/something/src)
 nnoremap <leader>cd :let @+=expand("%:p:h")<CR>
 
+" Indent
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 " Font sizes
-
 nmap <F10> <Plug>FontsizeInc
 nmap <F9> <Plug>FontsizeDec
 
@@ -169,26 +181,25 @@ noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
-
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1 
+let g:miniBufExplModSelTarget = 1
 
-" Setup django 
+" Setup django
 au BufRead,BufNewFile *.html set filetype=htmldjango
 
 " scons
 au BufRead,BufNewFile SConstruct set filetype=python
 au BufRead,BufNewFile Sconscript set filetype=python
 
-" Setup scala 
+" Setup scala
 au BufRead,BufNewFile *.scala set filetype=java
 
 " Json
 au BufNewFile,BufRead *.json set ft=javascript
 
-" vim: set ft=vim 
+" vim: set ft=vim
 
 " Specific python settings
 au FileType python set expandtab
@@ -201,7 +212,7 @@ set tags=tags;/
 
 map <F2> :NERDTreeToggle<CR>
 " Loader definitions
-map <F3> :TlistToggle<CR> 
+map <F3> :TlistToggle<CR>
 " Build
 map <F7> :make<CR>
 " Close buffer and keep window layout (Ctrl for discard changes)
@@ -217,9 +228,11 @@ autocmd FileType c let b:vimpipe_command="gcc -Wall -x c - && ./a.out"
 autocmd FileType python set makeprg=pylint\ --reports=n\ --msg-template=\"{path}:{line}:\ {msg_id}\ {symbol},\ {obj}\ {msg}\"\ %:p
 autocmd FileType python set errorformat=%f:%l:\ %m
 
+autocmd FileType c set makeprg=make
+
 " Create ctags
 command! Tags !ctags -R && cscope -Rb
- 
+
 " Setup command T
 map <C-T> <Leader>t
 map <C-B> <Leader>b
@@ -227,6 +240,7 @@ let g:CommandTMinHeight=20
 let g:CommandTMaxHeight=20
 let g:CommandTCursorStartMap='<Home>'
 let g:CommandTCursorEndMap='<End>'
+let g:CommandTMaxFiles=50000
 
 " Ack search
 map <leader>a :Ack <cword><CR>
@@ -246,7 +260,7 @@ set encoding=utf-8
 let g:lightline = {
       \ 'component_function': {
       \   'fugitive': 'MyFugitive',
-      \ },  
+      \ },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
