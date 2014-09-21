@@ -134,8 +134,7 @@ function! ToggleColMarkings()
 endfunction
 
 " Fullscreen
-
-map <silent> <F6>
+map <silent> <F11>
     \   :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 
 
@@ -170,8 +169,8 @@ map <C-V> "+gP
 map <C-A> ggVG
 
 " Ctrl-V in insert mode
-set pastetoggle=<F12>
-inoremap <C-v> <F12><C-r>+<F12>
+set pastetoggle=<C-F12>
+inoremap <C-v> <C-F12><C-r>+<C-F12>
 
 " Ctrl-V in command line mode
 cmap <C-V> <C-R>+
@@ -216,8 +215,8 @@ map <F3> :TlistToggle<CR>
 " Build
 map <F7> :make<CR>
 " Close buffer and keep window layout (Ctrl for discard changes)
-map <F11> :bn<CR> :bd# <CR>
-map <C-F11> :bn!<CR> :bd! # <CR>
+map <F12> :bn<CR> :bd# <CR>
+map <C-F12> :bn!<CR> :bd! # <CR>
 
 " vim pipe
 let &splitright=1
