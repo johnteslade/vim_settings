@@ -239,7 +239,8 @@ let g:CommandTMinHeight=20
 let g:CommandTMaxHeight=20
 let g:CommandTCursorStartMap='<Home>'
 let g:CommandTCursorEndMap='<End>'
-let g:CommandTMaxFiles=50000
+let g:CommandTMaxFiles=500000
+let g:CommandTFileScanner='find'
 
 " Ack search
 map <leader>a :Ack <cword><CR>
