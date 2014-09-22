@@ -217,6 +217,8 @@ map <F7> :make<CR>
 " Close buffer and keep window layout (Ctrl for discard changes)
 map <F12> :bn<CR> :bd# <CR>
 map <C-F12> :bn!<CR> :bd! # <CR>
+" New file
+map <C-n> :enew<CR>
 
 " vim pipe
 let &splitright=1
@@ -233,14 +235,15 @@ autocmd FileType c set makeprg=make
 command! Tags !ctags -R && cscope -Rb
 
 " Setup command T
-map <C-T> <Leader>t
-map <C-B> <Leader>b
+map <C-T> :CommandT .<CR>
+map <C-B> :CommandTMRU<CR>
 let g:CommandTMinHeight=20
 let g:CommandTMaxHeight=20
 let g:CommandTCursorStartMap='<Home>'
 let g:CommandTCursorEndMap='<End>'
 let g:CommandTMaxFiles=500000
 let g:CommandTFileScanner='find'
+let g:CommandTMaxCachedDirectories=10
 
 " Ack search
 map <leader>a :Ack <cword><CR>
