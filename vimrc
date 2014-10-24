@@ -34,14 +34,15 @@ Plugin 'vim-scripts/Wombat'
 
 filetype plugin indent on "required!
 
-set background=dark
-set backspace=indent,eol,start
-set cscopeprg=/usr/bin/cscope
-set cscopetag
-set cscopeverbose
+set backspace=indent,eol,start " backspace as normal
 set fileencodings=ucs-bom,utf-8,latin1
 set formatoptions=tcql
 set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon175,a:blinkon0
+
+" cscope settings
+set cscopeprg=/usr/bin/cscope
+set cscopetag
+set cscopeverbose
 
 """"" FONTS
 "set guifont=LucidaTypewriter\ 9
