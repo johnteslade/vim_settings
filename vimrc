@@ -75,6 +75,8 @@ set termencoding=utf-8
 set window=69
 set number " Show line numbers
 
+let g:is_posix = 1 " Do POSIX formatting for .sh files
+
 " Tab Settings
 set tabstop=4
 set shiftwidth=4
