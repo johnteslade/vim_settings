@@ -223,6 +223,8 @@ map <C-F12> :bn!<CR> :bd! # <CR>
 " New file
 map <C-n> :enew<CR>
 
+au BufRead,BufNewFile *.rs set filetype=rust
+
 " vim pipe
 let &splitright=1
 autocmd FileType python let b:vimpipe_command="python"
