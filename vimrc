@@ -295,5 +295,16 @@ function! MyFugitive()
   return ''
 endfunction
 
+" Diff setup
+
+noremap <Leader>d :call DiffToggle()<CR>
+
+function! DiffToggle()
+    if &diff
+        diffoff
+    else
+        diffthis
+    endif
+:endfunction
 
 
