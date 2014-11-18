@@ -188,24 +188,23 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
-" Setup django
+" File type settings
+
+" django
 au BufRead,BufNewFile *.html set filetype=htmldjango
 
 " scons
 au BufRead,BufNewFile SConstruct set filetype=python
 au BufRead,BufNewFile Sconscript set filetype=python
 
-" Setup scala
+" scala
 au BufRead,BufNewFile *.scala set filetype=java
 
 " Json
-au BufNewFile,BufRead *.json set ft=javascript
+au BufNewFile,BufRead *.json set filetype=javascript
 
-" vim: set ft=vim
-
-" Specific python settings
-au FileType python set expandtab
-au FileType python setl shiftwidth=4 tabstop=4
+" Conf files
+au BufRead,BufNewFile *.conf set filetype=dosini
 
 " Setup tags to recurse back up tree
 set tags=tags;/
