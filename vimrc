@@ -17,6 +17,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ShowTrailingWhitespace'
+Plugin 'majutsushi/tagbar'
 
 " Colorschemes
 
@@ -214,6 +215,7 @@ set tags=tags;/
 map <F2> :NERDTreeToggle<CR>
 " Loader definitions
 map <F3> :TlistToggle<CR>
+map <F4> :TagbarToggle<CR>
 " Build
 map <F7> :make<CR>
 " Close buffer and keep window layout (Ctrl for discard changes)
