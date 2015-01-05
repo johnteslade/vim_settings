@@ -125,7 +125,7 @@ nmap <F9> <Plug>FontsizeDec
 nnoremap <F8> :call ToggleColMarkings()<CR>
 function! ToggleColMarkings()
   if &cc == 0
-    set cc=80
+    set cc=81
     hi ColorColumn ctermbg=red ctermfg=white guibg=#592929
     highlight OverLength ctermbg=red ctermfg=white guibg=#592929
     match OverLength /\%81v.\+/
