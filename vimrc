@@ -144,6 +144,7 @@ map <silent> <F11>
 
 """"" COLORS
 set background=dark
+set rtp+=~/.vim/bundle/gruvbox
 colorscheme gruvbox
 
 " lhs comments
