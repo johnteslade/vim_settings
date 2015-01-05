@@ -58,6 +58,7 @@ set cscopeverbose
 let os = substitute(system('lsb_release -si'), "\n", "", "")
 if os == "Fedora"
     set guifont=Liberation\ Mono\ for\ Powerline\ 10
+    let g:ack_default_options = " --ignore-file=is:tags -s -H --nocolor --nogroup --column "
 else
     set guifont=Liberation\ Mono\ for\ Powerline\ 9
     " Fix for ack on Ubuntu
