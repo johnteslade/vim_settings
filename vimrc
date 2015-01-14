@@ -1,6 +1,6 @@
 " Setup vundle
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 Plugin 'techlivezheng/vim-plugin-minibufexpl'
 Plugin 'taglist.vim'
