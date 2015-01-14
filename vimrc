@@ -143,7 +143,7 @@ map <silent> <F11>
     \   :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 
 
-""""" COLORS
+""""" COLORS - need install path to theme
 set background=dark
 set rtp+=~/.vim/bundle/gruvbox
 colorscheme gruvbox
