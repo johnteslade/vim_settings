@@ -1,6 +1,6 @@
 " Setup vundle
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 Plugin 'techlivezheng/vim-plugin-minibufexpl'
 Plugin 'taglist.vim'
@@ -58,6 +58,7 @@ set cscopeverbose
 let os = substitute(system('lsb_release -si'), "\n", "", "")
 if os == "Fedora"
     set guifont=Liberation\ Mono\ for\ Powerline\ 10
+    let g:ack_default_options = " --ignore-file=is:tags -s -H --nocolor --nogroup --column "
 else
     set guifont=Liberation\ Mono\ for\ Powerline\ 9
     " Fix for ack on Ubuntu
@@ -125,7 +126,7 @@ nmap <F9> <Plug>FontsizeDec
 nnoremap <F8> :call ToggleColMarkings()<CR>
 function! ToggleColMarkings()
   if &cc == 0
-    set cc=80
+    set cc=81
     hi ColorColumn ctermbg=red ctermfg=white guibg=#592929
     highlight OverLength ctermbg=red ctermfg=white guibg=#592929
     match OverLength /\%81v.\+/
@@ -142,8 +143,9 @@ map <silent> <F11>
     \   :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 
 
-""""" COLORS
+""""" COLORS - need install path to theme
 set background=dark
+set rtp+=~/.vim/bundle/gruvbox
 colorscheme gruvbox
 
 " lhs comments
@@ -257,9 +259,10 @@ map <leader>a :Ack <cword><CR>
 " Files to ignore
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,*.o,*.orig,*~
 
-" Python debug line
+" Python specific stuff
 nnoremap <leader>p yyp^Cimport pdb; pdb.set_trace()<ESC>
 nnoremap <leader>pm 0^Cif __name__ == "__main__":<CR><Tab>
+command! SetPy setfiletype python
 
 "" Lightline setup
 
@@ -272,7 +275,7 @@ let g:lightline = {
       \ },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \             [ 'fugitive', 'readonly', 'relativepath', 'modified' ] ]
       \ },
       \ 'component': {
       \   'readonly': '%{&filetype=="help"?"":&readonly?"\ue0a2":""}',
