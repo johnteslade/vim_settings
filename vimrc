@@ -33,6 +33,7 @@ Plugin 'vim-scripts/moria'
 Plugin 'vim-scripts/nuvola.vim'
 Plugin 'vim-scripts/Wombat'
 
+call vundle#end()            " required
 filetype plugin indent on "required!
 
 set backspace=indent,eol,start " backspace as normal
