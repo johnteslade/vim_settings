@@ -219,7 +219,7 @@ map <F2> :NERDTreeToggle<CR>
 map <F3> :TlistToggle<CR>
 map <F4> :TagbarToggle<CR>
 map <F5> :CommandTFlush<CR>
-map <F6> :MBEToggle<CR>
+map <F1> :MBEToggle<CR>
 " Build
 map <F7> :make<CR>
 " Close buffer and keep window layout (Ctrl for discard changes)
