@@ -314,4 +314,24 @@ function! DiffToggle()
     endif
 :endfunction
 
+" Spell check
+
+noremap <Leader>s :call SpellToggle()<CR>
+noremap <Leader>ss z=
+inoremap <Leader>ss <C-O>z=
+
+function! SpellToggle()
+   set spelllang=en_gb
+   if &spell
+      setlocal nospell
+   else
+      setlocal spell
+   endif
+:endfunction
+
+set complete+=kspell
+
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
+
 
