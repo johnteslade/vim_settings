@@ -206,6 +206,7 @@ au BufRead,BufNewFile *.scala set filetype=java
 
 " Json
 au BufNewFile,BufRead *.json set filetype=javascript
+command! JsonPretty %!json_xs -f json -t json-pretty
 
 " Conf files
 au BufRead,BufNewFile *.conf set filetype=dosini
