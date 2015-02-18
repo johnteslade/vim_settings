@@ -227,6 +227,9 @@ map <C-n> :enew<CR>
 
 au BufRead,BufNewFile *.rs set filetype=rust
 
+" Nerdtree find
+map <leader>f :NERDTreeFind<CR>
+
 " vim pipe
 let &splitright=1
 autocmd FileType python let b:vimpipe_command="python"
