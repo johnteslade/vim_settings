@@ -18,6 +18,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ShowTrailingWhitespace'
 Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/nagios-syntax'
 
 " Colorschemes
 
