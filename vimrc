@@ -115,10 +115,6 @@ nnoremap <leader>cf :let @+=expand("%:t")<CR>
 " directory name (/something/src)
 nnoremap <leader>cd :let @+=expand("%:p:h")<CR>
 
-" Indent
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
-
 " Font sizes
 nmap <F10> <Plug>FontsizeInc
 nmap <F9> <Plug>FontsizeDec
@@ -207,6 +203,7 @@ au BufRead,BufNewFile *.scala set filetype=java
 
 " Json
 au BufNewFile,BufRead *.json set filetype=javascript
+command! JsonPretty %!json_xs -f json -t json-pretty
 
 " Conf files
 au BufRead,BufNewFile *.conf set filetype=dosini
@@ -217,9 +214,10 @@ set tags=tags;/
 " Function key mappings
 
 map <F2> :NERDTreeToggle<CR>
-" Loader definitions
 map <F3> :TlistToggle<CR>
 map <F4> :TagbarToggle<CR>
+map <F5> :CommandTFlush<CR>
+map <F1> :MBEToggle<CR>
 " Build
 map <F7> :make<CR>
 " Close buffer and keep window layout (Ctrl for discard changes)
@@ -229,6 +227,10 @@ map <C-F12> :bn!<CR> :bd! # <CR>
 map <C-n> :enew<CR>
 
 au BufRead,BufNewFile *.rs set filetype=rust
+
+" Nerdtree
+map <leader>f :NERDTreeFind<CR>
+let NERDTreeIgnore = ['\.pyc$']
 
 " vim pipe
 let &splitright=1
@@ -313,4 +315,38 @@ function! DiffToggle()
     endif
 :endfunction
 
+" Spell check
+
+noremap <Leader>s :call SpellToggle()<CR>
+noremap <Leader>ss z=
+inoremap <Leader>ss <C-O>z=
+
+function! SpellToggle()
+   set spelllang=en_gb
+   if &spell
+      setlocal nospell
+   else
+      setlocal spell
+   endif
+:endfunction
+
+set complete+=kspell
+
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
+
+" Tab completion
+" will insert tab at beginning of line,
+" will use completion if not at beginning
+set wildmode=list:longest,list:full
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+    endfunction
+inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <S-Tab> <c-n>
 
