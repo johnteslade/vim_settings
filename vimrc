@@ -146,6 +146,9 @@ set background=dark
 set rtp+=~/.vim/bundle/gruvbox
 colorscheme gruvbox
 
+" Open images in eog
+nnoremap g0 :silent exe '!eog '.expand("%:p:h").'/'.expand('<cfile>').'&'<CR>:redraw!<CR>
+
 " lhs comments
 map ,# :s/^/#/<CR>:noh<CR>
 map ,/ :s/^/\/\//<CR>:noh<CR>
