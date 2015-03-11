@@ -77,6 +77,7 @@ set ruler
 set termencoding=utf-8
 set window=69
 set number " Show line numbers
+set completeopt=longest,menuone " Don't autofill in complete options
 
 let g:is_posix = 1 " Do POSIX formatting for .sh files
 
