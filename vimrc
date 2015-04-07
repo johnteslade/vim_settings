@@ -202,6 +202,9 @@ au BufRead,BufNewFile *.html set filetype=htmldjango
 au BufRead,BufNewFile SConstruct set filetype=python
 au BufRead,BufNewFile Sconscript set filetype=python
 
+" vagrant
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
+
 " scala
 au BufRead,BufNewFile *.scala set filetype=java
 
