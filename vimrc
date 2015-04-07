@@ -237,7 +237,7 @@ au BufRead,BufNewFile *.rs set filetype=rust
 
 " Nerdtree
 map <leader>f :NERDTreeFind<CR>
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.o$']
 
 " vim pipe
 let &splitright=1
