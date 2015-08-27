@@ -33,6 +33,7 @@ Plugin 'twerth/ir_black'
 Plugin 'vim-scripts/moria'
 Plugin 'vim-scripts/nuvola.vim'
 Plugin 'vim-scripts/Wombat'
+Plugin 'chriskempson/vim-tomorrow-theme'
 
 call vundle#end()            " required
 filetype plugin indent on "required!
@@ -144,8 +145,10 @@ map <silent> <F11>
 
 """"" COLORS - need install path to theme
 set background=dark
-set rtp+=~/.vim/bundle/gruvbox
-colorscheme gruvbox
+"set rtp+=~/.vim/bundle/gruvbox
+"colorscheme gruvbox
+set rtp+=~/.vim/bundle/vim-tomorrow-theme
+colorscheme Tomorrow-Night
 
 " Open images in eog
 nnoremap g0 :silent exe '!eog '.expand("%:p:h").'/'.expand('<cfile>').'&'<CR>:redraw!<CR>
