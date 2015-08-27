@@ -218,6 +218,9 @@ command! JsonPretty %!json_xs -f json -t json-pretty
 " Conf files
 au BufRead,BufNewFile *.conf set filetype=dosini
 
+" Markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+
 " Setup tags to recurse back up tree
 set tags=tags;/
 
