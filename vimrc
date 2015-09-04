@@ -34,6 +34,7 @@ Plugin 'vim-scripts/moria'
 Plugin 'vim-scripts/nuvola.vim'
 Plugin 'vim-scripts/Wombat'
 Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'lepture/vim-jinja'
 
 call vundle#end()            " required
 filetype plugin indent on "required!
@@ -198,9 +199,6 @@ let g:miniBufExplModSelTarget = 1
 
 " File type settings
 
-" django
-au BufRead,BufNewFile *.html set filetype=htmldjango
-
 " scons
 au BufRead,BufNewFile SConstruct set filetype=python
 au BufRead,BufNewFile Sconscript set filetype=python
@@ -240,6 +238,9 @@ map <C-F12> :bn!<CR> :bd! # <CR>
 map <C-n> :enew<CR>
 
 au BufRead,BufNewFile *.rs set filetype=rust
+
+" HTML settings
+au FileType jinja setl ts=2 sw=2 sts=2 et
 
 " Nerdtree
 map <leader>f :NERDTreeFind<CR>
