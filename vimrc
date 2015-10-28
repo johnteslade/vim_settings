@@ -140,10 +140,11 @@ map <silent> <F11>
 
 """"" COLORS - need install path to theme
 set background=dark
-"set rtp+=~/.vim/bundle/gruvbox
-"colorscheme gruvbox
-set rtp+=~/.vim/bundle/vim-tomorrow-theme
-colorscheme Tomorrow-Night
+set rtp+=~/.vim/bundle/gruvbox
+let g:gruvbox_contrast_dark='medium'
+colorscheme gruvbox
+"set rtp+=~/.vim/bundle/vim-tomorrow-theme
+"colorscheme Tomorrow-Night
 
 " Open images in eog
 nnoremap g0 :silent exe '!eog '.expand("%:p:h").'/'.expand('<cfile>').'&'<CR>:redraw!<CR>
