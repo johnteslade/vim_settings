@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ShowTrailingWhitespace'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/nagios-syntax'
+Plugin 'docker/docker' , {'rtp': 'contrib/syntax/vim/'}
 
 " Colorschemes
 
@@ -33,6 +34,8 @@ Plugin 'twerth/ir_black'
 Plugin 'vim-scripts/moria'
 Plugin 'vim-scripts/nuvola.vim'
 Plugin 'vim-scripts/Wombat'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'lepture/vim-jinja'
 
 call vundle#end()            " required
 filetype plugin indent on "required!
@@ -57,15 +60,8 @@ set cscopeverbose
 "set guifont=Monaco\ 9
 
 "" Switch depending on distro
-let os = substitute(system('lsb_release -si'), "\n", "", "")
-if os == "Fedora"
-    set guifont=Liberation\ Mono\ for\ Powerline\ 10
-    let g:ack_default_options = " --ignore-file=is:tags -s -H --nocolor --nogroup --column "
-else
-    set guifont=Liberation\ Mono\ for\ Powerline\ 9
-    " Fix for ack on Ubuntu
-    let g:ack_default_options = " -H --nocolor --nogroup --column"
-endif
+set guifont=Hack\ 10
+let g:ack_default_options = " --ignore-file=is:tags -s -H --nocolor --nogroup --column "
 
 set t_Co=256 " Force terminal to 256
 
@@ -125,10 +121,10 @@ nmap <F9> <Plug>FontsizeDec
 nnoremap <F8> :call ToggleColMarkings()<CR>
 function! ToggleColMarkings()
   if &cc == 0
-    set cc=81
+    set cc=80
     hi ColorColumn ctermbg=red ctermfg=white guibg=#592929
     highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-    match OverLength /\%81v.\+/
+    match OverLength /\%80v.\+/
     echo "Columns marked"
   else
     set cc=0
@@ -145,7 +141,10 @@ map <silent> <F11>
 """"" COLORS - need install path to theme
 set background=dark
 set rtp+=~/.vim/bundle/gruvbox
+let g:gruvbox_contrast_dark='medium'
 colorscheme gruvbox
+"set rtp+=~/.vim/bundle/vim-tomorrow-theme
+"colorscheme Tomorrow-Night
 
 " Open images in eog
 nnoremap g0 :silent exe '!eog '.expand("%:p:h").'/'.expand('<cfile>').'&'<CR>:redraw!<CR>
@@ -195,9 +194,6 @@ let g:miniBufExplModSelTarget = 1
 
 " File type settings
 
-" django
-au BufRead,BufNewFile *.html set filetype=htmldjango
-
 " scons
 au BufRead,BufNewFile SConstruct set filetype=python
 au BufRead,BufNewFile Sconscript set filetype=python
@@ -214,6 +210,12 @@ command! JsonPretty %!json_xs -f json -t json-pretty
 
 " Conf files
 au BufRead,BufNewFile *.conf set filetype=dosini
+
+" Markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+
+" Dockerfile
+au BufNewFile,BufRead [Dd]ockerfile,Dockerfile.* set filetype=dockerfile
 
 " Setup tags to recurse back up tree
 set tags=tags;/
@@ -234,6 +236,9 @@ map <C-F12> :bn!<CR> :bd! # <CR>
 map <C-n> :enew<CR>
 
 au BufRead,BufNewFile *.rs set filetype=rust
+
+" HTML settings
+au FileType jinja setl ts=2 sw=2 sts=2 et
 
 " Nerdtree
 map <leader>f :NERDTreeFind<CR>
