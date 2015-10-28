@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ShowTrailingWhitespace'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/nagios-syntax'
+Plugin 'docker/docker' , {'rtp': 'contrib/syntax/vim/'}
 
 " Colorschemes
 
@@ -218,6 +219,9 @@ au BufRead,BufNewFile *.conf set filetype=dosini
 
 " Markdown
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Dockerfile
+au BufNewFile,BufRead [Dd]ockerfile,Dockerfile.* set filetype=dockerfile
 
 " Setup tags to recurse back up tree
 set tags=tags;/
