@@ -60,15 +60,8 @@ set cscopeverbose
 "set guifont=Monaco\ 9
 
 "" Switch depending on distro
-let os = substitute(system('lsb_release -si'), "\n", "", "")
-if os == "Fedora"
-    set guifont=Liberation\ Mono\ for\ Powerline\ 10
-    let g:ack_default_options = " --ignore-file=is:tags -s -H --nocolor --nogroup --column "
-else
-    set guifont=Liberation\ Mono\ for\ Powerline\ 9
-    " Fix for ack on Ubuntu
-    let g:ack_default_options = " -H --nocolor --nogroup --column"
-endif
+set guifont=Hack\ 10
+let g:ack_default_options = " --ignore-file=is:tags -s -H --nocolor --nogroup --column "
 
 set t_Co=256 " Force terminal to 256
 
