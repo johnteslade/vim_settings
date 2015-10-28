@@ -271,7 +271,7 @@ map <leader>a :Ack <cword><CR>
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,*.o,*.orig,*~
 
 " Python specific stuff
-nnoremap <leader>p yyp^Cimport pdb; pdb.set_trace()<ESC>
+nnoremap <leader>pd yyp^Cimport pdb; pdb.set_trace()<ESC>
 nnoremap <leader>pm 0^Cif __name__ == "__main__":<CR><Tab>
 command! SetPy setfiletype python
 
