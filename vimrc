@@ -14,7 +14,7 @@ Plugin 'wincent/Command-T'
 "Plugin 'scrooloose/syntastic'
 "Plugin 'wting/rust.vim'
 Plugin 'Yggdroot/indentLine'
-Plugin 'itchyny/lightline.vim'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-fugitive'
 Plugin 'ShowTrailingWhitespace'
 Plugin 'majutsushi/tagbar'
@@ -286,32 +286,8 @@ nnoremap <leader>pd yyp^Cimport pdb; pdb.set_trace()<ESC>
 nnoremap <leader>pm 0^Cif __name__ == "__main__":<CR><Tab>
 command! SetPy setfiletype python
 
-"" Lightline setup
-
-scriptencoding utf-8
-set encoding=utf-8
-
-let g:lightline = {
-      \ 'component_function': {
-      \   'fugitive': 'MyFugitive',
-      \ },
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'readonly', 'relativepath', 'modified' ] ]
-      \ },
-      \ 'component': {
-      \   'readonly': '%{&filetype=="help"?"":&readonly?"\ue0a2":""}',
-      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-      \ },
-      \ 'component_visible_condition': {
-      \   'readonly': '(&filetype!="help"&& &readonly)',
-      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
-      \ },
-      \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-      \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
-      \ }
+" Powerline setup
+set laststatus=2
 
 function! MyFugitive()
   if exists("*fugitive#head")
