@@ -20,6 +20,7 @@ Plugin 'ShowTrailingWhitespace'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/nagios-syntax'
 Plugin 'docker/docker' , {'rtp': 'contrib/syntax/vim/'}
+Plugin 'klen/python-mode'
 
 " Colorschemes
 
@@ -87,6 +88,10 @@ set expandtab
 set autoindent
 set smartindent
 set guioptions-=T guioptions-=m " No tool bars
+
+" Python mode settings
+let g:pymode_folding = 0
+let g:pymode_syntax = 1
 
 " Force minibuf to start - prevents problems with using command-T
 let g:miniBufExplAutoStart = 1
