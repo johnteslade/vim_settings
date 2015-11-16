@@ -142,9 +142,17 @@ map <silent> <F11>
 set background=dark
 set rtp+=~/.vim/bundle/gruvbox
 let g:gruvbox_contrast_dark='medium'
+let g:gruvbox_contrast_light='medium'
 colorscheme gruvbox
-"set rtp+=~/.vim/bundle/vim-tomorrow-theme
-"colorscheme Tomorrow-Night
+
+nnoremap <F7> :call ToggleBackground()<CR>
+function! ToggleBackground()
+  if &background == "dark"
+    set background=light
+  else
+    set background=dark
+  endif
+endfunction
 
 " Open images in eog
 nnoremap g0 :silent exe '!eog '.expand("%:p:h").'/'.expand('<cfile>').'&'<CR>:redraw!<CR>
@@ -227,8 +235,6 @@ map <F3> :TlistToggle<CR>
 map <F4> :TagbarToggle<CR>
 map <F5> :CommandTFlush<CR>
 map <F1> :MBEToggle<CR>
-" Build
-map <F7> :make<CR>
 " Close buffer and keep window layout (Ctrl for discard changes)
 map <F12> :bn<CR> :bd# <CR>
 map <C-F12> :bn!<CR> :bd! # <CR>
