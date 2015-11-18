@@ -230,6 +230,10 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " Dockerfile
 au BufNewFile,BufRead [Dd]ockerfile,Dockerfile.* set filetype=dockerfile
 
+" Set indent amounts
+au FileType html setl tabstop=2 shiftwidth=2 softtabstop=2
+let g:indentLine_char = '┆'
+
 " Setup tags to recurse back up tree
 set tags=tags;/
 
