@@ -48,3 +48,7 @@ su -c "/tmp/install-ubuntufonts-fedora.sh"
 dnf copr enable heliocastro/hack-fonts
 dnf install hack-fonts
 ```
+
+## Bash prompt
+
+https://github.com/twolfson/sexy-bash-prompt
