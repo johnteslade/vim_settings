@@ -10,7 +10,7 @@ vim +PluginInstall +qall
 ### Fullscreen
 
 ```
-yum install wmctrl
+dnf install wmctrl
 ```
 
 ### Install powerline fonts
@@ -24,7 +24,7 @@ https://github.com/Lokaltog/powerline-fonts
 Needs ruby
 
 ```
-yum install ruby ruby-devel
+dnf install ruby ruby-devel
 cd ~/.vim/bundle/Command-T/ruby/command-t/
 ruby extconf.rb
 make
